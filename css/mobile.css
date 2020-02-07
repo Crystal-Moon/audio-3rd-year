@@ -1,0 +1,37 @@
+
+header{
+    --device:tablet;
+}
+nav{
+    overflow: hidden;
+    height: 1px;
+}
+#loader img{
+    width: 60%;
+    height: auto;
+}
+
+
+@media screen and (max-width:1050px), screen and (max-device-width:1050px){
+
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
+
+}
+
+@media screen and (max-width:877px) {
+
+    footer{
+    font-size: 1em;
+    }
+    footer *{
+        font-size: 1em;
+    }
+
+    #logo{
+        height: 1.5em;
+        width: 1.5em;
+    }
+
+}

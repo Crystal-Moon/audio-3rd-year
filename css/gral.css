@@ -1,0 +1,164 @@
+
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#loader{
+	display: none;
+
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(2, 2, 2, 0.5);
+	color: white;
+}
+#loader img{
+	width: auto;
+	height: 60%;
+	/*background-image: url('../img/loading.gif');
+	background-size: 100% 100%;*/
+}
+#loader *{
+	position: absolute;
+	width: max-content;
+	height: max-content;
+	display: block;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+header{
+	background-color: black;
+
+	border-bottom-left-radius: 100%;
+    width: 60%;
+    height: 15em;
+    /* right: 0; */
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    --device:pc;
+}
+nav{
+	display: flex;
+	flex-direction: row-reverse;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+a img{
+	width: 100%;
+	height: 100%;
+}
+ul{
+	/*display: flex;
+	flex-direction: row;*/
+	justify-content: space-around;
+	margin: 0;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+}
+li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+li:first-child{
+	background-image: url('../img/home.png');
+}
+li:first-child{
+	width: 4em;
+	min-width: 4em;
+	max-width: 4em;
+	left: 10%;
+    top: 5%;
+    background-position: center center;
+    background-size: 100% 100%;
+
+}
+#menu>div{
+	width: 4em;
+	height: 4em;
+	right: 5%;
+	left: auto;
+	background-image: url('../img/menu.png');
+	background-size: 100% 100%;
+	    margin-left: auto;
+    margin-right: 0.4em;
+    margin-top: 0.4em;
+}
+#menu{
+	position: absolute;
+	width: 6em;
+	height: 6em;
+	right: 0;
+	margin-left: auto;
+	top: 0;
+	z-index: 100;
+
+	background-color: red;
+	border-bottom-left-radius: 100%;
+}
+li{
+	width: min-content;
+	height: min-content;
+	position: absolute;
+	height: 4em;
+	width: 20%;
+    min-width: 8em;
+}
+li.b{
+	    right: 47%;
+    background-color: white;
+    top: 21%;
+}
+li.wb{
+	background-color: red;
+    right: 12%;
+    top: 47%;
+}
+
+/*********************************************/
+footer{
+    text-align: center;
+    /*font-size: 2em;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding: 0.3em;
+    bottom: 0;
+    width: 100%;
+}
+footer *{
+    font-size: 0.8em;
+    color: inherit;
+}
+footer a{
+    text-decoration: underline;
+}
+#logo{
+    height: 1em;
+    display: inline-block;
+    width: 1em;
+    background-image: url('../img/logo_CM.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+}
