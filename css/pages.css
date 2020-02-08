@@ -1,0 +1,97 @@
+
+main{
+	position: absolute;
+	width: 100%;
+	margin-top: 7em;
+	/* overflow: auto; */
+	height: max-content;
+	/* margin-bottom: 8em; */
+}
+#list{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	/* margin-top: 1em; */
+	overflow: auto;
+	margin-bottom: 3em;
+}
+.song{
+	margin: 0.3em;
+	display: flex;
+	flex-direction: row;
+	border-bottom-left-radius: 1em;
+	border-top-right-radius: 1em;
+	font-size: 1.5em;
+	line-height: 2em;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+}
+.song div, .song a{
+	padding: 0.4em;
+}
+.page{
+	border-bottom-left-radius: 1em;
+	width: 2em;
+	text-align: center;
+}
+.songName{
+
+}
+.btns{
+	right: 0;
+	margin-left: auto;
+	border-top-right-radius: 1em;
+	display: flex;
+	flex-direction: row;
+}
+.btns a, .btns div {
+    width: 2em;
+    padding: 0;
+    height: 2em;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.play{ background-image: url('../img/play.png'); }
+.play:hover{background-image: url('../img/play_hover.png');}
+.pause{ background-image: url('../img/pause.png'); }
+.pause:hover{ background-image: url('../img/pause_hover.png'); }
+.down{ background-image: url('../img/down.png'); }
+.down:hover{ background-image: url('../img/down_hover.png'); }
+
+footer{
+	position: absolute;
+	margin-top: auto;
+	bottom: 0;
+	height: 12em;
+	padding-bottom: 9em;
+}
+
+
+#play{
+position: fixed;
+bottom: 0;
+width: 100%;
+height: 8em;
+background-color: black;
+border-top-left-radius: 2.2em;
+border-top-right-radius: 2.2em;
+border: 9px double;
+z-index: 200;
+box-sizing: border-box;
+border-bottom-right-radius: 2.2em;
+border-bottom-left-radius: 2.2em;
+transition: all 0.5s ease;
+overflow: hidden;
+}
+#controls{
+position: absolute;
+margin-left: 2em;
+color: white;
+margin-top: 1em;
+}
+#audio{
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+	/* margin-bottom: 0.3em; */
+}

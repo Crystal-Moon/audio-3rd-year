@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Sriracha|Ubuntu&display=swap|Lobster&display=swap');
+/*
+font-family: 'Sriracha', cursive;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Lobster', cursive;
+*/
+
 
 html, body{
 	margin: 0;
@@ -5,10 +12,10 @@ html, body{
 	width: 100%;
 	height: 100%;
 	position: relative;
+	background-color: pink;
 }
 #loader{
 	display: none;
-
 	position: fixed;
 	height: 100%;
 	width: 100%;
@@ -18,8 +25,6 @@ html, body{
 #loader img{
 	width: auto;
 	height: 60%;
-	/*background-image: url('../img/loading.gif');
-	background-size: 100% 100%;*/
 }
 #loader *{
 	position: absolute;
@@ -32,18 +37,36 @@ html, body{
 	left: 0;
 	right: 0;
 }
-header{
+.title{
+	position: absolute;
+	width: 100%;
+	text-align: center;
 	background-color: black;
-
-	border-bottom-left-radius: 100%;
-    width: 60%;
-    height: 15em;
-    /* right: 0; */
-    margin-left: auto;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s ease;
-    --device:pc;
+	height: 6rem;
+	font-family: 'Lobster', cursive;
+	line-height: 3rem;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+}
+.title p{
+	margin: 0;
+	height: 50%;
+	
+}
+p.h{ background-color: pink; }
+header{
+	background-color: #302433;
+	border-bottom-right-radius: 100%;
+	width: 6rem;
+	height: 6rem;
+	left: 0;
+	margin-right: auto;
+	position: fixed;
+	overflow: hidden;
+	transition: all 0.5s ease;
+	--device:pc;
+	z-index: 100;
 }
 nav{
 	display: flex;
@@ -52,6 +75,27 @@ nav{
 	width: 100%;
 	height: 100%;
 }
+#menu>div{
+	width: 4em;
+	height: 4em;
+	background-image: url('../img/menu.png');
+	background-size: 100% 100%;
+	margin-left: 0.4rem;
+	margin-top: 0.4em;
+}
+#menu{
+	position: absolute;
+	width: 6em;
+	height: 6em;
+	margin-left: auto;
+	top: 0;
+	z-index: 150;
+	background-color: #5d838c;
+	border-bottom-right-radius: 100%;
+	left: 0;
+	margin-right: auto;
+}
+#menu:hover{ background: #7f7c7f; }
 a{
 	text-decoration: none;
 	color: inherit;
@@ -61,8 +105,6 @@ a img{
 	height: 100%;
 }
 ul{
-	/*display: flex;
-	flex-direction: row;*/
 	justify-content: space-around;
 	margin: 0;
 	width: 100%;
@@ -73,61 +115,40 @@ li a{
 	display: block;
 	width: 100%;
 	height: 100%;
-}
-li:first-child{
-	background-image: url('../img/home.png');
-}
-li:first-child{
-	width: 4em;
-	min-width: 4em;
-	max-width: 4em;
-	left: 10%;
-    top: 5%;
-    background-position: center center;
-    background-size: 100% 100%;
-
-}
-#menu>div{
-	width: 4em;
-	height: 4em;
-	right: 5%;
-	left: auto;
-	background-image: url('../img/menu.png');
-	background-size: 100% 100%;
-	    margin-left: auto;
-    margin-right: 0.4em;
-    margin-top: 0.4em;
-}
-#menu{
 	position: absolute;
-	width: 6em;
-	height: 6em;
-	right: 0;
-	margin-left: auto;
+	margin: auto;
+	line-height: 6rem;
+	text-align: center;
 	top: 0;
-	z-index: 100;
-
-	background-color: red;
-	border-bottom-left-radius: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-family: 'Sriracha', cursive;
 }
 li{
-	width: min-content;
-	height: min-content;
 	position: absolute;
-	height: 4em;
-	width: 20%;
-    min-width: 8em;
+	height: 6rem;
+	width: 13rem;
+	min-width: 8em;
+	background-size: 100% auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transition: all 0.5s ease;
+	background-size: auto 100%;
 }
-li.b{
-	    right: 47%;
-    background-color: white;
-    top: 21%;
+li.h{
+	background-image: url('../img/home.png');
+	min-width: 6rem;
+	background-position: center right;
+	background-size: 100% 100%;
+	background-size: auto 100%;
 }
-li.wb{
-	background-color: red;
-    right: 12%;
-    top: 47%;
-}
+li.h:hover{ background-image: url('../img/home_hover.png'); }
+li.b{ background-image: url('../img/lime.png');}
+li.b:hover{ background-image: url('../img/lime_hover.png'); }
+li.wb{ background-image: url('../img/pink.png');}
+li.wb:hover{ background-image: url('../img/pink_hover.png'); }
+
 
 /*********************************************/
 footer{
@@ -140,7 +161,7 @@ footer{
     box-sizing: border-box;
     background-color: black;
     color: white;
-    position: absolute;
+    position: fixed;
     padding: 0.3em;
     bottom: 0;
     width: 100%;
@@ -161,4 +182,4 @@ footer a{
     background-size: contain;
     margin-right: 0.2em;
     margin-left: 0.2em;
-}
+} 

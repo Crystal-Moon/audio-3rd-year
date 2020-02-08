@@ -1,0 +1,20 @@
+html,body{
+	background-color: #171758;
+}
+p.h{
+	background-color: red;
+}
+
+.song{
+	    background-color: skyblue;
+}
+.page{
+background-color: white;
+}
+.btns{
+	
+background-color: white;
+}
+#play{
+	border-color: #17a0d8;
+}

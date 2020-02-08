@@ -1,29 +1,39 @@
 
-header{
-    --device:tablet;
-}
-nav{
-    overflow: hidden;
-    height: 1px;
-}
-#loader img{
-    width: 60%;
-    height: auto;
-}
-
 
 @media screen and (max-width:1050px), screen and (max-device-width:1050px){
-
+    header{
+        --device:tablet;
+    }
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
+    header{
+        --device:tablet;
+    }
+    #loader img{
+        width: 60%;
+        height: auto;
+    }
 
 }
 
-@media screen and (max-width:877px) {
-
+@media screen and (max-width:767px) {
+    .title{
+        font-size: 1.3em;
+    }
+    header{
+        --device:cel;
+    }
+    li{
+        height: 4rem;
+    }
+    li a{
+        line-height: 4rem;
+    }
     footer{
-    font-size: 1em;
+        font-size: 0.7em;
+        height: 15em;
+        padding-bottom: 12em;
     }
     footer *{
         font-size: 1em;
@@ -32,6 +42,15 @@ nav{
     #logo{
         height: 1.5em;
         width: 1.5em;
+    }
+    #list{
+        margin-bottom: 11em;
+    }
+    .song{
+            line-height: 2.2em;
+    }
+    .song div, .song a {
+        padding: 0.2em;
     }
 
 }

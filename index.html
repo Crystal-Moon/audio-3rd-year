@@ -5,21 +5,25 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Audio English 3rd Year - Cambridge</title>
-	<link rel="shortcut icon" href="imgs/favicon.png">
+	<link rel="shortcut icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/gral.css">
+	<link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
 <div id="loader">
 	<img src="img/loading.gif" alt="loading.gif">
 	<p>...</p>
 </div>
-<header>
-  <nav data-state="hidden">
-    <ul>
-      <li><a href="#"></a></li>
-      <li class="b"><a href="pages/book.html">Book</a></li>
-      <li class="wb"><a href="pages/w_book.html">WorkBook</a></li>
-      <li><a href="#"></a></li>
+<div class="title">
+  	<p>English 3rd Year</p>
+  	<p class="h">Welcome!</p>
+  </div>
+<header data-state="hidden">
+  <nav >
+    <ul id="ul">
+      <li data-deg="8" data-far="9" class="h"><a href="#"></a></li>
+      <li data-deg="47" data-far="12" class="b"><a href="pages/book.html">Book</a></li>
+      <li data-deg="90" data-far="18" class="wb"><a href="pages/w_book.html">WorkBook</a></li>
     </ul>
   </nav>
   <div id="menu" onclick="showMenu(this)"><div></div></div>
