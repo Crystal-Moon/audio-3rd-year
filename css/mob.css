@@ -1,0 +1,80 @@
+#chriss{
+	position: fixed;
+	z-index: 20;
+	padding-bottom: 3em; /* altura del footer*/
+	bottom: 0;
+	right: 2.5em;
+	width: min-content;
+	height: min-content;
+}
+#chriss img{
+/*	background-image: url('../img/chriss_tip.png');*/
+/*	background-size: 100% 100%; */
+	width: 475px;
+	height: auto;
+}
+#chriss>span{
+	font-size: 0.7em;
+    font-weight: bold;
+    right: 0;
+    top: 0;
+    display: block;
+    height: min-content;
+    width: max-content;
+    margin-left: auto;
+    color: white;
+    background-color: black;
+    padding: 0.3em;
+}
+#chriss p{
+	white-space: normal;
+	margin-left: auto;
+	margin-right: 28px;
+	margin-top: 87px;
+	/*border: 2px solid red;*/
+	width: 208px;
+	position: absolute;
+	right: 0;
+	top: 0;
+    font-size: 1.5em;
+    height: max-content;
+}
+
+@media screen and (max-width:1050px), screen and (max-device-width:1050px){
+   
+}
+
+
+/*ipad portrait*/
+@media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
+   
+}
+
+@media screen and (max-width:767px) {
+	#chriss{
+		right: 4px;
+		width: 100%;
+		max-width: 530px;
+	}
+	#chriss img{
+		width: 97%;
+		height: auto;
+		max-width: 530px;
+	}
+	#chriss p{
+		margin-right: 54px;
+    	margin-top: 83px;
+    /*	min-width: 217px; */
+    	width: 43%;
+    	margin-right: 8%;
+    	margin-top: 18%;
+    	max-width: 43%;
+	}
+
+}
+
+@media screen and (max-width:767px) {
+	#chriss p{
+		font-size: 1.2em;
+	}
+}
