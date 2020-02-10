@@ -12,8 +12,15 @@ html, body{
 	width: 100%;
 	height: 100%;
 	position: relative;
-	background-color: pink;
+	background-color: #4c443a;
 }
+body{
+	background: url('../img/big_ben.jpg');
+	background-repeat: no-repeat;
+	background-size: 110% auto;
+}
+
+body {}
 #loader{
 	display: none;
 	position: fixed;
@@ -54,7 +61,7 @@ html, body{
 	height: 50%;
 	
 }
-p.h{ background-color: pink; }
+p.h{background-color: #6b356d;}
 header{
 	background-color: #302433;
 	border-bottom-right-radius: 100%;
@@ -67,6 +74,11 @@ header{
 	transition: all 0.5s ease;
 	--device:pc;
 	z-index: 100;
+
+	border-right: 3px solid #cf8927;
+    border-bottom: 2px solid #cf8927;
+    border-top: none;
+    border-left: none;
 }
 nav{
 	display: flex;
@@ -78,10 +90,10 @@ nav{
 #menu>div{
 	width: 4em;
 	height: 4em;
-	background-image: url('../img/menu.png');
 	background-size: 100% 100%;
 	margin-left: 0.4rem;
 	margin-top: 0.4em;
+	transition: all 0.8s ease;
 }
 #menu{
 	position: absolute;
@@ -95,7 +107,9 @@ nav{
 	left: 0;
 	margin-right: auto;
 }
-#menu:hover{ background: #7f7c7f; }
+#menu:hover{background: #83b4bf;}
+.menu{background-image: url('../img/menu.png');}
+.close{background-image: url('../img/close.png');transform: rotate(180deg);}
 a{
 	text-decoration: none;
 	color: inherit;

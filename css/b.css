@@ -1,12 +1,16 @@
 html,body{
-	background-color: #171758;
+	background-color: #0029a3;
+	background-image: none;
+}
+header{
+	border-color: #188f87;
 }
 p.h{
-	background-color: red;
+	background-color: #188f87;
 }
 
 .song{
-	    background-color: skyblue;
+	    background-color: #4baaea;
 }
 .page{
 background-color: white;
@@ -16,5 +20,5 @@ background-color: white;
 background-color: white;
 }
 #play{
-	border-color: #17a0d8;
+	border-color: #188f87;
 }

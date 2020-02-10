@@ -11,9 +11,9 @@
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	/* margin-top: 1em; */
+	margin-top: 1em;
 	overflow: auto;
-	margin-bottom: 3em;
+	margin-bottom: 13em;
 }
 .song{
 	margin: 0.3em;
@@ -31,7 +31,7 @@
 }
 .page{
 	border-bottom-left-radius: 1em;
-	width: 2em;
+	width: 4em;
 	text-align: center;
 }
 .songName{
@@ -94,4 +94,14 @@
 	bottom: 0;
 	position: absolute;
 	/* margin-bottom: 0.3em; */
+}
+
+@media screen and (max-width:767px) {
+    main{
+        margin-top: 6em;
+    }
+    footer{
+    	height: 15em;
+    	padding-bottom: 12em;
+    }
 }

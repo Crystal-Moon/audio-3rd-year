@@ -26,7 +26,7 @@
       <li data-deg="90" data-far="18" class="wb"><a href="pages/w_book.html">WorkBook</a></li>
     </ul>
   </nav>
-  <div id="menu" onclick="showMenu(this)"><div></div></div>
+  <div id="menu" onclick="showMenu(this)"><div class="menu"></div></div>
 </header>
 <main>
 
@@ -37,6 +37,18 @@
 <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 <script>
 // NOTA: Los audios no se precargan con la página para evitar el uso innecesario de datos. El audio se busca y carga al momento del ‘play’, por lo que puede tardar un par de segundos en comenzar.
+
+ window.onload = function() {
+  document.onmousemove = function(e) {
+    var x = -(e.clientX/10);
+    // lo mismo para Y
+    var y = -(e.clientY/10);
+    // backgroundPosition son las coordenadas del fondo
+    this.body.style.backgroundPosition = x + 'px ' + y + 'px';
+  };
+};
+
+
 </script>
 </body>
 </html>

@@ -10,11 +10,13 @@ function showMenu(btn){
 		header.dataset.state='show';
 		header.style.height = device!='cel'?'30rem':'20rem';
 		header.style.width = device!='cel'?'30rem':'20rem';
+		btn.childNodes[0].classList.add('close');
 		desplegarCircular(ul,device,true);
 	}else{
 		header.dataset.state='hidden';
 		header.style.height = '6rem';
 		header.style.width = '6rem';
+		btn.childNodes[0].classList.remove('close');
 		desplegarCircular(ul);
 	}
 }
@@ -56,13 +58,13 @@ var x=0;
 
 function createSong(obj){
   if(x<ARRAY_SONG.length){
-	let name=' '+obj.seccion+'_'+obj.point
+	let name=' '+obj.seccion+' - '+obj.point
 	let div=document.createElement('div');
 	div.className='song';
 	div.dataset.link=obj.link;
 	div.innerHTML=`
-	<div class="page">${obj.page}</div>
-	<div class="songName">${name}</div>
+	<div class="page">pag.${obj.page}</div>
+	<div class="songName">Chapter ${obj.seccion} - Ex. ${obj.point}</div>
 	<div class="btns">
 	  <div class="play" onclick="playAudio(this,'${name}')" data-state="pause"></div>
 	  <a href="${obj.downloadLink}" target="_blank" class="download"></a>
