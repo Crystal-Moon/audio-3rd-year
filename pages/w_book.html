@@ -4,23 +4,27 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Audio English 3rd Year - Cambridge</title>
+	<title>Audio 3rd Year - WorkBook</title>
 	<link rel="shortcut icon" href="../img/favicon.png">
 	<link rel="stylesheet" href="../css/gral.css">
   <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/wb.css">
-	<link rel="stylesheet" href="../css/mobile.css">
+  <link rel="stylesheet" href="../css/mobile.css">
+  <style>
+    html,body{ background-color: #404040; }
+    header{ border-color: #808080; }
+    p.h{ background-color: grey; }
+    .song{ background-color: #b7b7b7; }
+    #play{ border-color: #808080; }
+  </style>
 </head>
 <body>
-<script>const RUTA_JSON='/js/w_book.json'</script>
-<div id="loader">
-	<img src="../img/loading.gif" alt="loading.gif">
-	<p>...</p>
-</div>
+<script>const RUTA_JSON='/db/w_book.json'</script>
+<div id="miniLoader" style="display: none;"><img src="../img/loading.gif" alt="loading.gif"></div>
+<div id="loader"><img src="../img/loading.gif" alt="loading.gif"><p>0.0%</p></div>
 <div class="title">
   	<p>English 3rd Year</p>
   	<p class="h">WorkBook</p>
-  </div>
+</div>
 <header data-state="hidden">
   <nav >
     <ul id="ul">
@@ -32,46 +36,39 @@
   <div id="menu" onclick="showMenu(this)"><div class="menu"></div></div>
 </header>
 <main>
-
-<div id="list">
+  <div id="list"><!--
     <div class="song" data-link="https://www.dropbox.com/s/g8nwp5xsyotlgl3/Track%2015.mp3?dl=1">
       <div class="page">pag.234</div>
-      <div class="songName">Lesson 4A - Ex. 4a</div>
+      <div>Lesson 4A - Ex. 4a</div>
       <div class="btns">
-        <div class="play" onclick="playAudio(this,'5C_4b')" data-state="pause"></div>
-        <!-- divMge.onclick=this.getTalk.bind(this,arrayLastMges[i].id_talk); -->
-        <a  class="down" href="https://www.dropbox.com/home/audio_english?preview=Track+15.mp3" target="_blank" class="download"></a>
+        <div class="play" onclick="playAudio(this,' 5A - 4c')" data-state="pause"></div>
+        <a  class="down" href="https://www.dropbox.com/home/audio_english?preview=Track+15.mp3" target="_blank"></a>
       </div>
     </div>
     <div class="song" data-link="https://www.dropbox.com/s/g8nwp5xsyotlgl3/Track%2015.mp3?dl=1">
       <div class="page">34</div>
-      <div class="songName">5C_4b</div>
+      <div>5C_4b</div>
       <div class="btns">
-        <div class="play" onclick="playAudio(this,'5C_4b')" data-state="pause"></div>
-        <!-- divMge.onclick=this.getTalk.bind(this,arrayLastMges[i].id_talk); -->
-        <a  class="down" href="https://www.dropbox.com/home/audio_english?preview=Track+15.mp3" target="_blank" class="download"></a>
+        <div class="play" onclick="playAudio(this,' 5A - 4c')" data-state="pause"></div>
+        <a  class="down" href="https://www.dropbox.com/home/audio_english?preview=Track+15.mp3" target="_blank"></a>
       </div>
     </div>
-   
+ luego borrar todo -->
 <!--  https://www.dropbox.com/s/g8nwp5xsyotlgl3/Track%2015.mp3?dl=1 -->
-</div>
-
-
+  </div>
 <div id="play">
     <div id="controls"><span id="playName">Play now: nothing....</span></div>
     <audio id="audio" src=" " type="audio/mpeg" controls></audio>
-  </div>
-
-
+</div>
 <footer>
-  <p>&copy; Developed by </p><div id="logo"></div><a href="https://www.linkedin.com/in/perla-smaniotto-082537165/" target="_blank">CrystalMoon</a>
+  <p>&copy; Developed by </p><div id="logo"></div><a href="https://www.linkedin.com/in/perla-stto/" target="_blank">CrystalMoon</a>
 </footer>
 </main>
 
 <script src="../js/script.js" type="text/javascript" charset="utf-8"></script>
 <script>
-// NOTA: Los audios no se precargan con la página para evitar el uso innecesario de datos. El audio se busca y carga al momento del ‘play’, por lo que puede tardar un par de segundos en comenzar.
-hiddenAudio();
+  //getAudios();
+  hiddenAudio();
 </script>
 </body>
 </html>

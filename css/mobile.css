@@ -1,5 +1,4 @@
 
-
 @media screen and (max-width:1050px), screen and (max-device-width:1050px){
     body{
         background-size: auto 120%;
@@ -21,37 +20,19 @@
 }
 
 @media screen and (max-width:767px) {
-    body{
-        background-size: auto 130%;
+    body{ background-size: auto 130%; }
+    #loader img{
+        width: 60%;
+        height: auto;
     }
-    .title{
-        font-size: 1.3em;
-    }
-    header{
-        --device:cel;
-    }
-    li{
-        height: 4rem;
-    }
-    li a{
-        line-height: 4rem;
-    }
-    footer{
-        font-size: 0.7em;
-        /* height: 15em; */
-        /* padding-bottom: 12em; */
-    }
-    footer *{
-        font-size: 1em;
-    }
-
-    #logo{
-        height: 1.5em;
-        width: 1.5em;
-    }
-    #list{
-        margin-bottom: 11em;
-    }
+    .title{ font-size: 1.3em; }
+    header{ --device:cel; }
+    li{ height: 4rem; }
+    li a{ line-height: 4rem; }
+    footer{ font-size: 0.7em; }
+    footer *{ font-size: 1em; }
+    #logo{ height: 1.5em; width: 1.5em; }
+    #list{ margin-bottom: 11em; }
     .song{
         line-height: 2.2em;
         font-size: 1.1em;
@@ -64,4 +45,32 @@
         height: 1.6em;
     }
 
-}}
+    #chriss{
+        right: 4px;
+        width: 100%;
+        max-width: 530px;
+        padding-bottom: 2.3em;
+    }
+    #chriss img{
+        width: 97%;
+        height: auto;
+        max-width: 530px;
+    }
+    #chriss p{
+        margin-right: 54px;
+        margin-top: 83px;
+        width: 43%;
+        margin-right: 8%;
+        margin-top: 18%;
+        max-width: 43%;
+    }
+    #chriss p{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:380px) {
+    #chriss p{
+        font-size: 1em;
+    }
+}

@@ -1,11 +1,12 @@
 
+html,body{
+	background-image: none;
+}
 main{
 	position: absolute;
 	width: 100%;
 	margin-top: 7em;
-	/* overflow: auto; */
 	height: max-content;
-	/* margin-bottom: 8em; */
 }
 #list{
 	width: 95%;
@@ -33,9 +34,7 @@
 	border-bottom-left-radius: 1em;
 	width: 4em;
 	text-align: center;
-}
-.songName{
-
+	background-color: white;
 }
 .btns{
 	right: 0;
@@ -43,6 +42,7 @@
 	border-top-right-radius: 1em;
 	display: flex;
 	flex-direction: row;
+	background-color: white;
 }
 .btns a, .btns div {
     width: 2em;
@@ -65,35 +65,32 @@
 	height: 12em;
 	padding-bottom: 9em;
 }
-
-
 #play{
-position: fixed;
-bottom: 0;
-width: 100%;
-height: 8em;
-background-color: black;
-border-top-left-radius: 2.2em;
-border-top-right-radius: 2.2em;
-border: 9px double;
-z-index: 200;
-box-sizing: border-box;
-border-bottom-right-radius: 2.2em;
-border-bottom-left-radius: 2.2em;
-transition: all 0.5s ease;
-overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 8em;
+	background-color: black;
+	border-top-left-radius: 2.2em;
+	border-top-right-radius: 2.2em;
+	border: 9px double;
+	z-index: 200;
+	box-sizing: border-box;
+	border-bottom-right-radius: 2.2em;
+	border-bottom-left-radius: 2.2em;
+	transition: all 0.5s ease;
+	overflow: hidden;
 }
 #controls{
-position: absolute;
-margin-left: 2em;
-color: white;
-margin-top: 1em;
+	position: absolute;
+	margin-left: 2em;
+	color: white;
+	margin-top: 1em;
 }
 #audio{
 	width: 100%;
 	bottom: 0;
 	position: absolute;
-	/* margin-bottom: 0.3em; */
 }
 
 @media screen and (max-width:767px) {

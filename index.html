@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="css/mob.css">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +10,7 @@
 	<link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
-<div id="loader">
-	<img src="img/loading.gif" alt="loading.gif">
-	<p>...</p>
-</div>
+<div id="loader"><img src="img/loading.gif" alt="loading.gif"><p>0.0%</p></div>
 <div class="title">
   	<p>English 3rd Year</p>
   	<p class="h">Welcome!</p>
@@ -30,30 +26,24 @@
   <div id="menu" onclick="showMenu(this)"><div class="menu"></div></div>
 </header>
 <main>
-
+	<div id="chriss"><span onclick="javascript:this.parentNode.style.display='none'">X</span><img src="img/chriss_tip.png" alt="Click on the menu"><p>Click on the menu <span class="menu"></span> for different sections!</p></div>
 </main>
 <footer>
-	<p>&copy; Developed by </p><div id="logo"></div><a href="https://www.linkedin.com/in/perla-smaniotto-082537165/" target="_blank">CrystalMoon</a>
+	<p>&copy; Developed by </p><div id="logo"></div><a href="https://www.linkedin.com/in/perla-stto/" target="_blank">CrystalMoon</a>
 </footer>
 <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 <script>
-// NOTA: Los audios no se precargan con la página para evitar el uso innecesario de datos. El audio se busca y carga al momento del ‘play’, por lo que puede tardar un par de segundos en comenzar.
 
- window.onload = function() {
+window.onload = function() {
   document.onmousemove = function(e) {
     var x = -(e.clientX/10);
-    // lo mismo para Y
     var y = -(e.clientY/10);
-    // backgroundPosition son las coordenadas del fondo
     this.body.style.backgroundPosition = x + 'px ' + y + 'px';
   };
 };
 
+LOADER.style.display = 'none';
 
 </script>
 </body>
 </html>
-
-
-
-<div id="chriss"><span onclick="javascript:this.parentNode.style.display='none'">X</span><img src="img/chriss_tip.png" alt="Click on the menu"><p>Click on the menu for different sections!</p></div>
