@@ -3,11 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>index</title>
 	<link rel="stylesheet" href="gral.css">
+	<link rel="stylesheet" href="gral_mobile_desktop.css">
+	<link rel="stylesheet" href="gral_mobile_smart.css">
 </head>
 <body>
-	<div id="body"></div>
+	<div id="body">
+		
+	</div>
+<!-- **************************************************************************************************************************** -->
 	<div id="Menu">
 		<h1><div class="icon CM_logo"></div><span class="label_menu">3rd Year</span></h1>
 		<ul>
@@ -17,6 +23,37 @@
 		</ul>
 
 	</div>
-	<div id="player"></div>
+<!-- **************************************************************************************************************************** -->
+	<div id="player" class="up">
+		<div class="label up">
+			<div class="img_cd up"></div>
+			<div>
+				<span class="title_song up">Lesson 7a</span>
+				<span class="album_cd up">Workbok</span>
+			</div>
+		</div>
+		<div class="player_control up">
+			<div class="control up">
+				<div id="prev" class="prev"></div>
+				<div id="play" class="play"></div>
+				<div id="sig" class="sig"></div>
+			</div>
+			<div class="track_control up" style="flex-direction: row;">
+				<span id="current_time up">2:33</span>
+				<div class="track up">
+					<div class="track_play up" id="track_play" style="width: 50%;"></div>
+					<div class="point_song up" id="point_song" style="margin-left: 50%;"></div>
+				</div>
+				<span class="total_time up">4:55</span>
+			</div>
+		</div>
+		<div class="volume_div up">
+			<div class="icon volume up"></div>
+			<div class="track track_volume up">
+				<div class="track_play up" id="track_vol" style="width: 50%;"></div>
+				<div class="point_song up" id="point_vol" style="margin-left: 50%;"></div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
