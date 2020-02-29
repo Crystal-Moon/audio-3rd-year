@@ -1,55 +1,61 @@
 /* Large desktop */
-@media (min-width: 1200px) {
-ul{}
-/*****************************************/
-#body{}
-/*************************************/
-#Menu{}
-#Menu li,h1{}
-#Menu li>div, h1>div{}
-#Menu li:hover{}
-#Menu li.active{}
-h1{}
-/*************************************/
-#player{}
-#player>div>div{}
-.label{}
-.img_cd{}
-.title_song{}
-.album_cd{}
-.player_control{}
-.track_control>span{}
-.control{}
-.track_control{}
-.track{}
-.track_play{}
-.point_song{}
-.volume_div{}
-.volume{}
-.track_volume{}
+@media (min-width: 1200px) { 
+#Menu{max-width: 300px;}
 
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+
+
+html, body{}
 ul{}
+
 /*****************************************/
-#body{}
+#body{
+    width: 70%;
+}
+#body .sec{
+    margin-left: 7%;
+}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
 /*************************************/
 #Menu{}
 #Menu li,h1{}
 #Menu li>div, h1>div{}
 #Menu li:hover{}
+#Menu li:hover .icon{}
 #Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
 h1{}
+
 /*************************************/
 #player{}
-#player>div>div{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
 .label{}
 .img_cd{}
 .title_song{}
 .album_cd{}
 .player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
 .track_control>span{}
 .control{}
 .track_control{}
@@ -59,288 +65,427 @@ h1{}
 .volume_div{}
 .volume{}
 .track_volume{}
+
+
+.col{}
+.row{}
+
+
+
+
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-ul{}
-/*****************************************/
-#body{}
-/*************************************/
-#Menu{}
-#Menu li,h1{}
-#Menu li>div, h1>div{}
-#Menu li:hover{}
-#Menu li.active{}
-h1{
-    margin-top: 1em;
-    font-size: 1.2em;
+
+html, body{}
+ul{
+    flex-direction: row;
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    /* margin-top: 0.9em; */
 }
+
+/*****************************************/
+#body{
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+}
+#body .sec{
+    margin-left: 1em;
+}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    bottom: 0;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 5em;
+    padding: 0;
+}
+#Menu li,h1{
+    /* display: flex; */
+    flex-direction: column;
+    width: min-content;
+    height: max-content;
+}
+#Menu li>div, h1>div{
+    margin-left: auto;
+    margin-right: auto;
+}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{
+    /* width: 2em; */
+    /* height: 2em; */
+    /* display: block; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{
+    margin-left: auto;
+    /* margin-bottom: auto; */
+    margin-right: auto;
+}
+span.cm_pc{display: none;}
+span.cm_cel{display: block;text-align: center;}
+h1{
+    font-size: 1em;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8em;
+}
+
 /*************************************/
 #player{
-    min-height: 4em;
-    height: 4em;
-    max-height: 6em;
+    margin-bottom: 5em;
 }
-#player>div>div{
-    /* position: absolute; */
-    /* margin: 0; */
-    /* width: 100%; */
-}
-#player.up>div>div{}
 #player.up{
-height: 100%;
-max-height: 100%;
-flex-direction: column;
+    /* height: 100%; */
+    /* max-height: 90%; */
+    /* flex-direction: column; */
 }
+.gradiant{
+    /* display: none; */
+}
+.gradiant.up{}
 .label{
-    margin-left: 0.2em;
-    font-size: 0.9em;
+    /* margin: 0.4em; */
 }
-.label.up{
-    width: 100%;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    flex-direction: column;
-}
-.img_cd{
-    width: 3.5em;
-    height: 3.5em;
-}
-.img.up{}
+.img_cd{}
 .title_song{}
-.title_song.up{}
 .album_cd{}
-.album_cd.up{}
 .player_control{
-    left: 0;
-    margin: 0;
-    width: 100%;
     position: absolute;
+    width: 100%;
     max-width: 100%;
 }
-.player_control.up{
-    position: relative;
-    width: 90%;
-    max-width: 90%;
-    min-width: 100%;
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{
+    margin-right: 1em;
+    background-image: url('./img/play.png');
+    height: 2.5em;
+    width: 2.5em;
+}
+.pause{}
+.sig{
+    display: none;
+}
+.prev{
+    display: none;
 }
 .track_control>span{
     display: none;
 }
 .control{
-    /* position: absolute; */
-    /* bottom: 0; */
-    height: 4em;
-    /* bottom: 0; */
     /* margin-top: auto; */
-}
-.control.up{}
-.play{
-    position: absolute;
+    /* margin-bottom: auto; */
+    /* height: max-content; */
+    /* bottom: 0; */
+    /* position: absolute; */
+    margin-top: 1.7em;
+    width: min-content;
     right: 0;
-    top: 0;
-    bottom: 0;
     margin-left: auto;
-    margin-right: 0.2em;
-    height: 3em;
-    width: 3em;
-    margin-top: auto;
-    margin-bottom: auto;
 }
-.sig{}
-.prev{}
 .track_control{
     position: absolute;
     width: 100%;
 }
-.track_control.up{}
 .track{
     margin: 0;
+    width: 100%;
 }
-.track.up{}
 .track_play{}
-.track_play.up{}
-.point_song{}
-.point_song.up{}
+.point_song{
+    display: none;
+}
 .volume_div{
     display: none;
 }
 .volume{}
 .track_volume{}
 
+
+/*****************************************************************/
+
+
+/*************************************************************/
+
+
+
+.col{}
+.row{}
+
+
+
 }
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
-ul{
-    display: flex;
-    flex-direction: row;
-    height: inherit;
-    margin: 0;
-    width: 75%;
-}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+html, body{}
+ul{}
+
 /*****************************************/
 #body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
 /*************************************/
-#Menu{
-    bottom: 0;
-    width: 100%;
-    height: 4em;
-    max-height: max-content;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: auto;
-}
-#Menu li,h1{
-    height: 2.7em;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-#Menu li>div, h1>div{
-    margin: auto;
-    height: 2.7em;
-    width: 2.7em;
-}
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
 #Menu li:hover{}
+#Menu li:hover .icon{}
 #Menu li.active{}
-.label_menu{/* display: none; */font-size: 0.8em;text-align: center;height: min-content;line-height: 0.8em;}
-.icon{
-    height: 2.7em;
-    width: 2.7em;
-    margin: auto;
-}
-h1{
-    /* display: none; */
-    /* margin: 0; */
-    /* padding: 0; */
-    width: 25%;
-    font-size: 1em;
-    /* height: inherit; */
-}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
 /*************************************/
-#player{
-    margin-bottom: 4em;
-    height: 4em;
-    min-height: 4em;
-    max-height: 6em;
-}
+#player{}
 #player.up{}
-#player>div>div{
-    /* height: 100%; */
-    /* width: max-content; */
-    /* position: absolute; */
-    font-size: 0.9em;
-}
-#player.up>div>div{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    /* height: 100%; */
-    /* position: relative; */
-}
-.label{margin-left: 0.2em;}
-.label.up{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.img_cd{
-    width: 3em;
-    height: 3em;
-}
-.img_cd.up{
-    height: 10em;
-    top: 0;
-    margin-bottom: auto;
-}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
 .title_song{}
-.title_song.up{
-    font-size: 2em;
-}
 .album_cd{}
-.album_cd.up{
-    /* font-size: 1em; */
-    margin-left: 1em;
-}
-.player_control{
-    /* height: 1em; */
-}
-.player_control.up{
-}
-.track_control>span{
-    display: none;
-}
-.track_control.up>span{
-    display: block;
-    font-size: 0.9em;
-}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
 .control{}
-.control.up{}
-.play{
-    height: 3em;
-    width: 3em;
-    right: 0;
-    position: absolute;
-    margin-top: auto;
-    margin-bottom: auto;
-    top: 0;
-    bottom: 0;
-}
-.prev{
-    display: none;
-}
-.sig{
-    display: none;
-}
 .track_control{}
-.track_control.up{
-    position: relative;
-    width: 90%;
-    margin: 0;
-    max-width: 77%;
-}
-.track{
-    height: 0.2em;
-    margin: 0;
-}
-.track.up{}
+.track{}
 .track_play{}
-.track_play.up{}
-.point_song{
-    /* height: 0.8em; */
-    /* width: 0.85em; */
-    display: none;
-}
-.volume_div{
-    display: none;
-}
+.point_song{}
+.volume_div{}
 .volume{}
 .track_volume{}
+
+
+.col{}
+.row{}
+
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
 
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
+
+
+html, body{}
 ul{}
+
 /*****************************************/
-#body{}
+#body{
+    width: 77%;
+}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
 /*************************************/
 #Menu{}
 #Menu li,h1{}
 #Menu li>div, h1>div{}
 #Menu li:hover{}
+#Menu li:hover .icon{}
 #Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
 h1{}
+
 /*************************************/
 #player{}
-#player>div>div{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
 .label{}
 .img_cd{}
 .title_song{}
 .album_cd{}
 .player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
 .track_control>span{}
 .control{}
 .track_control{}
@@ -350,29 +495,62 @@ h1{}
 .volume_div{}
 .volume{}
 .track_volume{}
+
+
+.col{}
+.row{}
+
 
 }
 
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
+
+
+html, body{}
 ul{}
+
 /*****************************************/
 #body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
 /*************************************/
 #Menu{}
 #Menu li,h1{}
 #Menu li>div, h1>div{}
 #Menu li:hover{}
+#Menu li:hover .icon{}
 #Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
 h1{}
+
 /*************************************/
 #player{}
-#player>div>div{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
 .label{}
 .img_cd{}
 .title_song{}
 .album_cd{}
 .player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
 .track_control>span{}
 .control{}
 .track_control{}
@@ -383,8 +561,76 @@ h1{}
 .volume{}
 .track_volume{}
 
-}
+
+.col{}
+.row{}
 
 
 }
 
+/* iPhone 4 and high pixel ratio devices ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
+}
