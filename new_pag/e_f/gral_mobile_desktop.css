@@ -93,20 +93,34 @@ ul{
     width: 100%;
     margin: 0;
     max-width: 100%;
-    /* padding: 0; */
+    padding: 0;
     overflow: hidden;
     padding-bottom: 8em;
 }
 #body .sec{
     margin-left: 1em;
-    width: max-content;
+    width: 95%;
 }
-#body .sec>div{}
-.placa{}
-.placa img{}
+#body .sec>div{
+    /* width: max-content; */
+    width: 100%;
+    height: 16em;
+}
+.placa{
+    background-color: inherit;
+    margin: 0;
+}
+.placa img{
+    border-radius: 50%;
+    border-radius: 5em;
+}
 .placa .play{}
 .placa .play:hover{}
-.placa p{}
+.placa p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*************************************/
 #Menu{

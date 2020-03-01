@@ -7,52 +7,98 @@
 	<title>index</title>
 	<link rel="stylesheet" href="gral.css">
 	<link rel="stylesheet" href="gral_mobile_desktop.css">
-	<link rel="stylesheet" href="gral_mobile_smart.css">
+	<link rel="stylesheet" href="gral_mobile_smart.css"> 
  <link rel="stylesheet" href="player_up.css">
 </head>
 <body>
 	<div id="body">
 	  <div class="sec">
 		<h2>Recently heard</h2>
-		<div>
+		<div class="row">
+		<div class="row">
 		  <div class="placa">
-			<img src="">
+			<img src="./img/random/random.png">
 			<p>Lesson 7A</p>
 			<div class="play"></div>
 		  </div>
 		  <div class="placa">
-			<img src="">
+			<img src="./img/random/random.png">
 			<p>Lesson 7A</p>
 			<div class="play"></div>
 		  </div>
 		  <div class="placa">
-			<img src="">
+			<img src="./img/random/random.png">
 			<p>Lesson 7A</p>
 			<div class="play"></div>
 		  </div>
+		  <div class="placa">
+			<img src="./img/random/random.png">
+			<p>Lesson 7A</p>
+			<div class="play"></div>
+		  </div>
+		  <div class="placa">
+			<img src="./img/random/random.png">
+			<p>Lesson 7A</p>
+			<div class="play"></div>
+		  </div>
+		  <div class="placa">
+			<img src="./img/random/random.png">
+			<p>Lesson 7A</p>
+			<div class="play"></div>
+		  </div>
+		  <div class="placa">
+			<img src="./img/random/random.png">
+			<p>Lesson 7A</p>
+			<div class="play"></div>
+		  </div>
+		</div>
 		</div>
 	  </div>
 
+	 
 	  <div class="sec">
 		<h2>Recently heard</h2>
-		<div>
+		<div class="row">
+		<div class="row">
 		  <div class="placa">
-			<img src="">
+			<img src="./img/random/random.png">
 			<p>Lesson 7A</p>
 			<div class="play"></div>
 		  </div>
 		  <div class="placa">
-			<img src="">
+			<img src="./img/random/random.png">
 			<p>Lesson 7A</p>
 			<div class="play"></div>
 		  </div>
 		  <div class="placa">
-			<img src="">
+			<img src="./img/random/random.png">
+			<p>Lesson 7A</p>
+			<div class="play"></div>
+		  </div>
+		  <div class="placa">
+			<img src="./img/random/random.png">
+			<p>Lesson 7A</p>
+			<div class="play"></div>
+		  </div>
+		  <div class="placa">
+			<img src="./img/random/random.png">
+			<p>Lesson 7A</p>
+			<div class="play"></div>
+		  </div>
+		  <div class="placa">
+			<img src="./img/random/random.png">
+			<p>Lesson 7A</p>
+			<div class="play"></div>
+		  </div>
+		  <div class="placa">
+			<img src="./img/random/random.png">
 			<p>Lesson 7A</p>
 			<div class="play"></div>
 		  </div>
 		</div>
+		</div>
 	  </div>
+	  
 
 	</div>
 <!-- **************************************************************************************************************************** -->
@@ -66,7 +112,7 @@
 
 	</div>
 <!-- **************************************************************************************************************************** -->
-	<div id="player" class="up">
+	<div id="player" class="">
 	<div class="gradiant"></div>
 		<div class="label">
 			<div class="img_cd" style="background-image: url('./img/random/random.png');"></div>
@@ -101,9 +147,20 @@
 <!--	<div>Iconos diseñados por <a href="https://www.flaticon.es/autores/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div> -->
 
 	<script type="text/javascript">
-		function upp(){
+const G=id=>document.getElementById(id);
+
+
+		function upp(yes){
+
 			let arr=document.querySelectorAll('#player *');
+			if(yes){
+			G('player').classList.add('up')
 			arr.forEach(x=>{x.classList.add('up')});
+			}else{
+				G('player').classList.remove('up')
+			arr.forEach(x=>{x.classList.remove('up')});
+
+			}
 		}
 	</script>
 </body>
