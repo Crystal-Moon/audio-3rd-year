@@ -82,7 +82,8 @@ html, body{}
 ul{
     flex-direction: row;
     display: flex;
-    width: 75%;
+    width: 74%;
+    margin: 0;
     justify-content: space-around;
     /* margin-top: 0.9em; */
 }
@@ -92,9 +93,13 @@ ul{
     width: 100%;
     margin: 0;
     max-width: 100%;
+    /* padding: 0; */
+    overflow: hidden;
+    padding-bottom: 8em;
 }
 #body .sec{
     margin-left: 1em;
+    width: max-content;
 }
 #body .sec>div{}
 .placa{}
@@ -148,10 +153,10 @@ span.cm_pc{display: none;}
 span.cm_cel{display: block;text-align: center;}
 h1{
     font-size: 1em;
-    width: 25%;
+    width: 24%;
     display: flex;
     flex-direction: column;
-    margin-top: 0.8em;
+    margin-top: 0.5em;
 }
 
 /*************************************/

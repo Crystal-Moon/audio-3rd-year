@@ -162,6 +162,7 @@ h1{}
     /* margin-left: 58%; */
     /* float: right; */
     position: relative;
+    width: 100%;
 }
 .track_control{}
 .track{}
