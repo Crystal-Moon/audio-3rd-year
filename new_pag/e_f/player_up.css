@@ -2,6 +2,7 @@
 @media (min-width: 1200px) {
 
 #player.up{--device: pc;}
+.arrow.up{}
 .gradiant.up{}
 .label.up{}
 .img_cd.up{}
@@ -30,6 +31,7 @@
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 #player.up{--device:pc;}
+.arrow.up
 .gradiant.up{}
 .label.up{}
 .img_cd.up{}
@@ -60,6 +62,18 @@
 @media (max-width: 767px) {
 
 #player.up{--device:pc;height: 100%;max-height: 100%;margin-bottom: 0;padding-bottom: 4em;z-index: 10;/* flex: auto; */flex-direction: column;}
+.arrow.up{
+    display: block;
+    height: 1.5em;
+    width: 1.5em;
+    background-position: center center;
+    background-size: 100% auto;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.down{
+    background-image: url('./img/arrow_down.png');
+}
 .gradiant.up{height: 70%;
     width: 100%;
     position: absolute;
@@ -77,7 +91,7 @@
     height: 60%;
     top: 0;
     margin-bottom: 3em;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 .img_cd.up{
     width: inherit;
@@ -141,6 +155,10 @@
 @media (max-width: 480px) {
 
 #player.up{--device:pc;}
+.arrow.up{
+    margin-left: 5%;
+    margin-top: 5%;
+}
 .gradiant.up{}
 .label.up{}
 .img_cd.up{}
@@ -173,6 +191,7 @@
 
 #player.up{--device:pc;padding-bottom: 5em;}
 .gradiant.up{}
+.arrow.up{}
 .label.up{
     width: 70%;
     max-width: 77%;
@@ -215,6 +234,7 @@
 @media only screen and (min-width : 321px) {
 
 #player.up{--device:pc;}
+.arrow.up{}
 .gradiant.up{}
 .label.up{}
 .img_cd.up{}
@@ -244,6 +264,7 @@
 @media only screen and (max-width : 320px) {
 
 #player.up{--device:pc;}
+.arrow.up{}
 .gradiant.up{}
 .label.up{}
 .img_cd.up{}
@@ -273,6 +294,7 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
 #player.up{--device:pc;}
+.arrow.up{}
 .gradiant.up{}
 .label.up{}
 .img_cd.up{}
@@ -301,6 +323,7 @@
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 #player.up{--device:pc;}
+.arrow.up{}
 .gradiant.up{}
 .label.up{}
 .img_cd.up{}
@@ -331,6 +354,7 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 
 #player.up{--device:pc;}
+.arrow.up{}
 .gradiant.up{}
 .label.up{}
 .img_cd.up{}
@@ -360,6 +384,7 @@
 @media only screen and (min-width : 1224px) {
 
 #player.up{--device:pc;}
+.arrow.up{}
 .gradiant.up{}
 .label.up{}
 .img_cd.up{}
@@ -389,6 +414,7 @@
 @media only screen and (min-width : 1824px) {
 
 #player.up{--device:pc;}
+.arrow.up{}
 .gradiant.up{}
 .label.up{}
 .img_cd.up{}
@@ -420,6 +446,7 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 
 #player.up{--device:pc;}
+.arrow.up{}
 .gradiant.up{}
 .label.up{}
 .img_cd.up{}

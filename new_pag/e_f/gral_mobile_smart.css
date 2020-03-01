@@ -52,6 +52,7 @@ h1{}
     margin-bottom: 5em;
 }
 #player.up{}
+.arrow{display: none;}
 .gradiant{}
 .gradiant.up{}
 .label{
@@ -137,6 +138,7 @@ h1{}
     width: 100%;
 }
 #player.up{}
+.arrow{display: none;}
 .gradiant{}
 .gradiant.up{}
 .label{}
@@ -146,7 +148,9 @@ h1{}
 .player_control{}
 .ctrl-btn{}
 .ctrl-btn:active{}
-.play{}
+.play{
+    margin-left: auto;
+}
 .pause{}
 .sig{}
 .prev{}

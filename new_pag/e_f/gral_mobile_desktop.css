@@ -79,168 +79,55 @@ h1{}
 @media (max-width: 767px) {
 
 html, body{}
-ul{
-    flex-direction: row;
-    display: flex;
-    width: 74%;
-    margin: 0;
-    justify-content: space-around;
-    /* margin-top: 0.9em; */
-}
+ul{flex-direction: row;display: flex;width: 74%;margin: 0;justify-content: space-around;}
 
 /*****************************************/
-#body{
-    width: 100%;
-    margin: 0;
-    max-width: 100%;
-    padding: 0;
-    overflow: hidden;
-    padding-bottom: 8em;
-}
-#body .sec{
-    margin-left: 1em;
-    width: 95%;
-}
-#body .sec>div{
-    /* width: max-content; */
-    width: 100%;
-    height: 16em;
-}
-.placa{
-    background-color: inherit;
-    margin: 0;
-}
-.placa img{
-    border-radius: 50%;
-    border-radius: 5em;
-}
+#body{width: 100%;margin: 0;max-width: 100%;padding: 0;overflow: hidden;padding-bottom: 8em;}
+#body .sec{margin-left: 1em;width: 95%;}
+#body .sec>div{width: 100%;height: 16em;}
+.placa{background-color: inherit;margin: 0;}
+.placa img{border-radius: 50%;border-radius: 5em;}
 .placa .play{}
 .placa .play:hover{}
-.placa p{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
+.placa p{text-align: center;margin-left: auto;margin-right: auto;}
 
 /*************************************/
-#Menu{
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    bottom: 0;
-    margin-top: auto;
-    display: flex;
-    flex-direction: row-reverse;
-    height: 5em;
-    padding: 0;
-}
-#Menu li,h1{
-    /* display: flex; */
-    flex-direction: column;
-    width: min-content;
-    height: max-content;
-}
-#Menu li>div, h1>div{
-    margin-left: auto;
-    margin-right: auto;
-}
+#Menu{width: 100%;max-width: 100%;min-width: 100%;bottom: 0;margin-top: auto;display: flex;flex-direction: row-reverse;height: 5em;padding: 0;}
+#Menu li,h1{flex-direction: column;width: min-content;height: max-content;}
+#Menu li>div, h1>div{margin-left: auto;margin-right: auto;}
 #Menu li:hover{}
 #Menu li:hover .icon{}
 #Menu li.active{}
-.icon{
-    /* width: 2em; */
-    /* height: 2em; */
-    /* display: block; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-}
+.icon{}
 #Menu li.active .icon{}
 .home{}
 .pdf{}
 .library{}
-.CM_logo{
-    margin-left: auto;
-    /* margin-bottom: auto; */
-    margin-right: auto;
-}
+.CM_logo{margin-left: auto;margin-right: auto;}
 span.cm_pc{display: none;}
 span.cm_cel{display: block;text-align: center;}
-h1{
-    font-size: 1em;
-    width: 24%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.5em;
-}
+h1{font-size: 1em;width: 24%;display: flex;flex-direction: column;margin-top: 0.5em;}
 
 /*************************************/
-#player{
-    margin-bottom: 5em;
-}
-#player.up{
-    /* height: 100%; */
-    /* max-height: 90%; */
-    /* flex-direction: column; */
-}
-.gradiant{
-    /* display: none; */
-}
+#player{margin-bottom: 5em;}
+#player.up{}
+.arrow{display: none;}
+.gradiant{}
 .gradiant.up{}
-.label{
-    /* margin: 0.4em; */
-}
+.label{}
 .img_cd{}
 .title_song{}
 .album_cd{}
-.player_control{
-    position: absolute;
-    width: 100%;
-    max-width: 100%;
-}
+.player_control{position: absolute;width: 100%;max-width: 100%;}
 .ctrl-btn{}
 .ctrl-btn:active{}
-.play{
-    margin-right: 1em;
-    background-image: url('./img/play.png');
-    height: 2.5em;
-    width: 2.5em;
-}
+.play{margin-right: 1em;background-image: url('./img/play.png');height: 2.5em;width: 2.5em;}
 .pause{}
-.sig{
-    display: none;
-}
-.prev{
-    display: none;
-}
-.track_control>span{
-    display: none;
-}
-.control{
-    /* margin-top: auto; */
-    /* margin-bottom: auto; */
-    /* height: max-content; */
-    /* bottom: 0; */
-    /* position: absolute; */
-    margin-top: 1.7em;
-    width: min-content;
-    right: 0;
-    margin-left: auto;
-}
-.track_control{
-    position: absolute;
-    width: 100%;
-}
-.track{
-    margin: 0;
-    width: 100%;
-}
+.sig,.prev,.track_control>span,.point_song,.volume_div{display: none;}
+.control{margin-top: 1.7em;width: min-content;right: 0;margin-left: auto;}
+.track_control{position: absolute;width: 100%;}
+.track{margin: 0;width: 100%;}
 .track_play{}
-.point_song{
-    display: none;
-}
-.volume_div{
-    display: none;
-}
 .volume{}
 .track_volume{}
 

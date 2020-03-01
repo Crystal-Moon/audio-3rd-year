@@ -52,7 +52,7 @@ h2{margin: 0;margin-top: 0.7em;width: max-content;}
 #Menu li>div, h1>div{height: 2em;width: 2em;margin-right: 0.5em;}
 #Menu li:hover{color: white;}
 #Menu li:hover .icon{background-position: bottom;}
-#Menu li.active{background-color: #282828;}
+#Menu li.active{/* background-color: #282828; */font-weight: bold;color: white;}
 .icon{ background-size: 100% auto;background-repeat: no-repeat;background-position: top;}
 #Menu li.active .icon{background-position: bottom;}
 .home{background-image: url('./img/home.png');}
@@ -60,15 +60,17 @@ h2{margin: 0;margin-top: 0.7em;width: max-content;}
 .library{background-image: url('./img/library.png');}
 .CM_logo{background-image: url('./img/logo_CM.png');}
 span.cm_cel{display: none;}
-h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;}
+h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 
 
 /*************************************/
 #player{transition:all 0.3s ease;--device:pc;position: fixed;bottom: 0;height: max-content;max-height: 11em;min-height: 6em;width: 100%;z-index: 2000;background-color: #282828;display: flex;flex-direction: row;font-size: 1em;box-sizing: border-box;font-family: 'Roboto Slab', sans-serif;}
-.gradiant{position: absolute;height: 80%;width: 100%;bottom: 0;}
+.arrow{display: none;z-index: 500;}
+.gradiant{position: absolute;height: 80%;width: 100%;bottom: 0;background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 30%);}
+#player .gradiant{visibility: hidden;}
 .gradiant.up{display: none;}
 .label{width: 20%;height: max-content;margin-top: auto;margin-bottom: auto;margin-left: 1em;display: flex;flex-direction: row;min-width: max-content;max-width: 500px;}
-.img_cd{width: 4em;height: 4em;background-position: center center;background-repeat: no-repeat;background-size: 100% auto;}
+.img_cd{width: 4em;height: 4em;background-position: center center;background-repeat: no-repeat;background-size: 100% auto;z-index: 5;}
 .title_song{margin-left: 0.5em;margin-top: auto;margin-right: 0.5em;}
 .album_cd{margin-left: 0.6em;margin-bottom: auto;margin-right: 0.4em;font-size: 0.8em;}
 .player_control{width: 50%;min-width: 500px;max-width: 720px;display: flex;flex-direction: column;}
@@ -100,3 +102,40 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;}
 
 .col{flex-direction: column;display: flex;}
 .row{flex-direction: row;display: flex;}
+
+
+
+/******************************************/
+/* artist */
+
+
+.back{/* left: 0; */position: absolute;width: 10em;height: 10em;margin-left: 5em;margin-right: auto;background-position: top center;/* margin: 0; */padding: 0;/* right: 0; */background-size: 100% auto;}
+.head{
+    top: 0;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+.sticky{
+    position: sticky;
+}
+.w25{width: 25%;}
+.w65{width: 65%;}
+.w10{width: 10%;}
+.menu_pointer{background-image: url('./img/menu_pointer.png');}
+.artist{text-align: center;}
+.artist.gradiant{height: 80%;}
+.artist span{display: block;}
+.artist ul{}
+.btn{
+    border-radius: 2em;
+    width: max-content;
+    box-sizing: border-box;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+.green{background-color: green;}
+.w_b{background-color: black;}
