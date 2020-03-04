@@ -35,7 +35,7 @@ ul{list-style: none;padding: 0;margin: 0.3em;}
 .placa{margin: 1em;width: 12em;height: 15em;position: relative;cursor: pointer;background-color: #282828;border-radius: 0.8em;}
 .placa img{width: 10em;height: 10em;display: inline-block;margin: 1em;}
 .placa .play{position: absolute;right: 0;margin-left: auto;height: 2em;bottom: 0;margin-bottom: 0.5em;width: 70%;margin-right: 0.5em;/* background-image: url('./img/play_circle_green.png'); */background-position: center right;background-size: auto 100%;background-repeat: no-repeat;z-index: 100;background-image: none;}
-.placa .play:hover{background-image: url(./img/play_circle_green.png);}
+.placa .play:hover{background-image: url('./img/play_circle_green.png');}
 .placa p{
     margin: 1em;
     height: 1em;
@@ -109,33 +109,102 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 /* artist */
 
 
-.back{/* left: 0; */position: absolute;width: 10em;height: 10em;margin-left: 5em;margin-right: auto;background-position: top center;/* margin: 0; */padding: 0;/* right: 0; */background-size: 100% auto;}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-position: center center;
+    margin: 0;
+    margin-top: -1em;
+    padding: 0;
+    opacity: 0.5;
+    background-size: 100% auto;
+    /*background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 72%),url('./img/random/random.png');*/
+    /* background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 72%);
+    background-image: url('./img/random/random.png');*/
+    }
 .head{
     top: 0;
-    padding: 0.5em;
+    padding: 0;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
     box-sizing: border-box;
+    background-color: transparent;
+    transition: all 0.32s ease;
+    position:  sticky;
+    text-align: center;
+    z-index: 100;
 }
-.sticky{
-    position: sticky;
+.head-lbl{font-family: monospace;margin-top: 0.7em;margin-bottom: 0.8em;}
+.head-top{
+    background-color: black;
 }
+/*.sticky{
+     position: sticky; 
+}*/
 .w25{width: 25%;}
 .w65{width: 65%;}
 .w10{width: 10%;}
-.menu_pointer{background-image: url('./img/menu_pointer.png');}
+.menu_point{position:relative;background-image: url('./img/menu_point.png');height: 0.9em;width: 0.9em;background-size: 100% auto;background-position: center center;background-repeat: no-repeat;margin:auto;}
+/*.menu_point:after{content: 'Download';height: 1.5em;width: max-content;line-height: 1.5em;color:white;position: absolute;right: 0;}
+.menu_poniter:after:after{content: '*';color:black;height: 1em;width: 1em;background-image: url('./img/download.png');}*/
 .artist{text-align: center;}
-.artist.gradiant{height: 80%;}
+.artist.gradiant{height: 90%;}
 .artist span{display: block;}
-.artist ul{}
+.artist ul{background: inherit;margin: 0;padding: 0;}
+.artist ul li{border-radius: 0.3em;padding: 0.5em;margin: 0.1em;}
+.artist ul li:hover{background-color: #353535;transition: all 0.2s ease;}
+.artist h2{margin: 0.7em;margin-left: 10%;font-size: 2.2em;}
 .btn{
     border-radius: 2em;
+    border: none;
     width: max-content;
     box-sizing: border-box;
     padding: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
     font-family: 'Fira Sans', sans-serif;
-    margin-left: auto;
+    margin: 0.6em;
+    margin-left: 10%;
     margin-right: auto;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 .green{background-color: green;}
 .w_b{background-color: black;}
+
+
+
+/******************************************************/
+a.desplegable, a.desplegable:hover,a.desplegable:visited{
+    text-decoration: none;
+    color: inherit;
+}
+.desplegable{
+    position: absolute;
+    height: 1em;
+    width: max-content;
+    padding: 0.5em;
+    right: 40px;
+    background-color: #424141;
+    line-height: 1em;
+    border-radius: 0.2em;
+    transition: all 0.2s ease;
+}
+.desplegable.hidden{
+    overflow: hidden;
+    height: 0px;
+    padding: 0;
+    margin: 0;
+}
+.desplegable>span{
+    background-image: url('./img/download.png');
+    background-position: center center;
+    height: 1em;
+    width: 1em;
+    margin: 0;
+    margin-right: 0.5em;
+    padding: 0;
+    background-size: 100% auto;
+    display: inline-block;
+}
