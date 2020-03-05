@@ -1,6 +1,6 @@
 /* Large desktop */
 @media (min-width: 1200px) { 
-#Menu{max-width: 300px;}
+#Menu{/* max-width: 300px; */}
 
 }
 
@@ -26,7 +26,10 @@ ul{}
 .placa p{}
 
 /*************************************/
-#Menu{}
+#Menu{
+    width: 30%;
+    /* min-width: 30%; */
+}
 #Menu li,h1{}
 #Menu li>div, h1>div{}
 #Menu li:hover{}
@@ -82,7 +85,7 @@ html, body{}
 ul{flex-direction: row;display: flex;width: 74%;margin: 0;justify-content: space-around;}
 
 /*****************************************/
-#body{width: 100%;margin: 0;max-width: 100%;padding: 0;overflow: hidden;padding-bottom: 8em;}
+#body{width: 100%;margin: 0;max-width: 100%;padding: 0;/* overflow: scroll; */padding-bottom: 8em;/* height: 100%; *//* max-height: max-content; *//* overflow-x: hidden; */}
 #body .sec{margin-left: 1em;width: 95%;}
 #body .sec>div{width: 100%;height: 16em;}
 .placa{background-color: inherit;margin: 0;}
@@ -134,6 +137,81 @@ h1{font-size: 1em;width: 24%;display: flex;flex-direction: column;margin-top: 0.
 
 /*****************************************************************/
 
+
+
+.back{}
+.head{}
+.head-lbl{}
+.head-top{}
+.w25{}
+.w65{}
+.w10{}
+.menu_point{}
+.artist{}
+.artist.gradiant > *:last-child{margin-bottom: 10em;font-size:;}
+.artist span{}
+.artist ul{
+    flex-direction: column;
+    /* overflow: scroll; */
+    width: 100%;
+    /* padding-bottom: 8em; */
+}
+.artist ul li{}
+.artist ul li:hover{}
+.artist h2{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    display: block;
+}
+.green{}
+.w_b{
+    border: 7px double white;
+    /* border-color: white; */
+    /* border: 7px; */
+    /* border-style: double; */
+}
+.btn, .read{width: 50%;}
+
+
+/******************************************************/
+a.desplegable, a.desplegable:hover,a.desplegable:visited{}
+.desplegable{}
+.desplegable.hidden{}
+.desplegable>span{}
+
+/*
+
+.back{}
+.head{}
+.head-lbl{}
+.head-top{}
+.w25{}
+.w65{}
+.w10{}
+.menu_point{}
+.artist{}
+.artist.gradiant{}
+.artist span{}
+.artist ul{}
+.artist ul li{}
+.artist ul li:hover{}
+.artist h2{}
+.btn{}
+.green{}
+.w_b{}
+
+a.desplegable, a.desplegable:hover,a.desplegable:visited{}
+.desplegable{}
+.desplegable.hidden{}
+.desplegable>span{}
+*/
 
 /*************************************************************/
 
@@ -351,7 +429,7 @@ ul{}
 
 /*****************************************/
 #body{
-    width: 77%;
+    width: 80%;
 }
 #body .sec{}
 #body .sec>div{}

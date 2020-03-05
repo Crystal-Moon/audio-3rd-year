@@ -19,6 +19,7 @@ ul{}
     /* padding-right: 0.5em; */
     /* margin-right: 0.5em; */
 }
+#body.body_home>*:last-child{margin-bottom: 10em;}
 .placa{}
 .placa img{}
 .placa .play{}
@@ -97,6 +98,10 @@ h1{}
 .col{}
 .row{}
 
+/****************************************************/
+
+
+.btn, .read{width: 70%;}
 
 
 }

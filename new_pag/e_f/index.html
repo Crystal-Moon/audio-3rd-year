@@ -11,59 +11,45 @@
  <link rel="stylesheet" href="player_up.css">
 </head>
 <body>
-	<div id="body">
-	  <div class="back" style="background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%),url('./img/random/random.png');"></div>
-	  <div class="artist gradiant">
-	  	<h2>Lesson 7A</h2>
-	  	<div class="head sticky" id="head_sticky">
-	  		<button type="button" class="btn green">PDF</button>
-	  		<div class="row">
-	  			<span class="w25 head-lbl">Pag.</span>
-	  			<span class="w65 head-lbl">Exercise</span>
-	  			<span class="w10 head-lbl"></span>
-	  		</div>
-	  	</div> 
-	  		<ul>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="www.google.com" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="#" class="desplegable"><span></span>Descargar</a></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span></li>
-	  		</ul>
-	  		<div class="btn w_b">Read Dialoge</div>
+	<div id="body" class="body_library">
+		<div class="col lib_head">
+			<div class="row">
+				<div class="tab" onclick="changeSubTab(0)" title="Audios">Audios</div>
+				<div class="tab" onclick="changeSubTab(1)" title="PDF">PDF</div>
+			</div>
+			<div class="selector_tab" id="selector_tab"></div>
+		</div>
+		<div class="lib_bdy">
+			<div class="library_sec">
+			  <ul>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			
+	  		  </ul>
+			</div>
+			<div class=" library_sec">
+				<ul>
+				<li class="row"><span class="w25">Pag.</span><span class="w65">Excercise</span><span class="w10"></span></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row"><span class="w25">33</span><span class="w65">4_4b</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			
+	  		  </ul>
+			</div>
+		</div>
 
-	  </div>
-	</div>
+	</div><!-- final del body -->
 <!-- ***************************************************************************************************************** -->
 	<div id="Menu">
 		<h1 onclick="window.open('https://www.linkedin.com/in/perla-stto/', '_blank');"><div class="icon CM_logo"></div><span href="www.google.com" target="_blank" class="label_menu cm_pc">3rd Year</span><span class="cm_cel">Developer</span></h1>
@@ -136,16 +122,22 @@ function changeTab(tab){
 }
 
 document.onclick=showDownload;
+const BODY=G('body')
+//BODY.onscroll = function() {myFunction()};
 window.onscroll = function() {myFunction()};
 
-// Get the navbar
-var navbar = document.getElementById("head_sticky");
 
-// Get the offset position of the navbar
+
+function myFunction() {
+	var navbar = document.getElementById("head_sticky");
+
+
 var sticky = navbar.parentNode.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+
+	console.log('wind',window.pageYOffset)
+	console.log('s',sticky)
+
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("head-top")
   } else {
@@ -165,6 +157,10 @@ document.querySelectorAll('.desplegable').forEach(z=>{
 	z.addEventListener('onclick', showDownload, false);
 });
 
+function changeSubTab(inxTab){
+	let margin=inxTab * 5.5;
+	G('selector_tab').style.marginLeft= margin+'em'
+}
 
 	</script>
 </body>
