@@ -2,6 +2,7 @@ const G=id=>document.getElementById(id);
 const BODY=G('body');
 let cleck=null;
 document.onclick=function(eve) {
+ document.querySelectorAll('.desplegable').forEach(z=>{z.classList.add('hidden')});
 	cleck=eve.target;
 	if(/.*(menu_point).*/.test(eve.target.className)) showDownload(eve)
 	else if (/.*(arrow_izq).*/.test(eve.target.className)) back(eve)
@@ -25,7 +26,7 @@ function upp(yes){
 
 function changeTab(tab,subTarea,...params){
 	//console.log(tab)
-//	console.log('arguments en change Tab',params)
+	console.log('la subtarea en changeTab',subTarea)
 	let arr=document.querySelectorAll('#ul li');
 	arr.forEach(li=>{
 		li.className='';
@@ -64,7 +65,7 @@ function loadHtml(name,action,subTarea,...params) {
 		BODY.classList.add('body_'+name);
 		if(action) history.replaceState({page:name},'',name+'.html')
 		else history.pushState({page:name},'',name+'.html')
-		
+	console.log('la subTrea :/',subTarea)
 		if(subTarea) subTarea(...params);
 	})
 }
