@@ -102,7 +102,10 @@ h1{}
 
 
 .btn, .read{width: 70%;}
+/*********************************************************/
 
+#pdf_aqui>iframe{}
+#pdf_aqui{margin-bottom: 10.5em;/* padding-bottom: 10.5em; */}
 
 }
 

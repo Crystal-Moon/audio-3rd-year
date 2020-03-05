@@ -7,6 +7,7 @@ font-family: 'Fira Sans', ;
 
 html, body{margin: 0;padding: 0;height: 100%;width: 100%;color: white;background-color: #121212;position: relative;}
 ul{list-style: none;padding: 0;margin: 0.3em;}
+li{cursor: pointer;}
 
 /*****************************************/
 #body{
@@ -76,7 +77,7 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 #player .gradiant{visibility: hidden;}
 .gradiant.up{display: none;}
 .label{width: 20%;height: max-content;margin-top: auto;margin-bottom: auto;margin-left: 1em;display: flex;flex-direction: row;min-width: max-content;max-width: 500px;}
-.img_cd{width: 4em;height: 4em;background-position: center center;background-repeat: no-repeat;background-size: 100% auto;z-index: 5;}
+.img_cd{width: 4em;height: 4em;background-position: center center;background-repeat: no-repeat;background-size: 100% auto;z-index: 2001;}
 .title_song{margin-left: 0.5em;margin-top: auto;margin-right: 0.5em;}
 .album_cd{margin-left: 0.6em;margin-bottom: auto;margin-right: 0.4em;font-size: 0.8em;}
 .player_control{width: 50%;min-width: 500px;max-width: 720px;display: flex;flex-direction: column;}
@@ -166,6 +167,7 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 .btn{
     border-radius: 2em;
     border: none;
+    height: max-content;
     width: max-content;
     box-sizing: border-box;
     padding: 0.5em;
@@ -240,8 +242,6 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
 	margin-left: 0px;
 	height: 0.2em;
 	background-color: lime;
-	/* display: block; */
-	/* z-index: 200; */
 	transition: all 0.4s ease;
 }
 .library_sec ul{
@@ -252,10 +252,7 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
 }
 .library_sec ul li{border-radius: 0.5em;padding: 0.5em;margin: 0.1em;}
 .library_sec ul li:hover{background-color: #353535;transition: all 0.2s ease;}
-.library_sec ul li:first-child{
-	position: sticky;
-	top: 0;
-}
+/*.library_sec ul li:first-child{position: sticky;top: 0;}*/
 .lib_bdy{
 	position: relative;
 	width: 100%;
@@ -267,4 +264,43 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
     width: inherit;
     height: inherit;
     text-align: center;
+}
+.library_sec .music{background-image: url('./img/music.png');background-size: auto 100%;}
+.library_sec .pdf{background-size: auto 200%;}
+
+
+
+/*****************************************************************************/
+/* PDF preview */
+#body.body_pdf_view .head{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 2em;
+    background-color: #121212;
+    top: 0;
+    position: sticky;
+    box-sizing: content-box;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #4a4848;
+}
+#body.body_pdf_view .head .icon{
+    margin: 1em;
+    height: 1em;
+    width: 1em;
+}
+#body.body_pdf_view .head .icon:first-child{margin-left: 1.5em;}
+#body.body_pdf_view .head .icon:last-child{margin-right: 1.5em;}
+.arrow_izq{background-image: url('./img/arrow_izq.png');}
+#pdf_aqui{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    margin-bottom: 7em;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+#pdf_aqui>iframe{
+    width: 98%;
+    height: calc(100% - 6em - 3em);
 }

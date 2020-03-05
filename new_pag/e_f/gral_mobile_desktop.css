@@ -134,6 +134,8 @@ h1{font-size: 1em;width: 24%;display: flex;flex-direction: column;margin-top: 0.
 .volume{}
 .track_volume{}
 
+.col{}
+.row{}
 
 /*****************************************************************/
 
@@ -214,13 +216,40 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{}
 */
 
 /*************************************************************/
+#body.body_library{}
+.lib_head{}
+.lib_head .tab{}
+.selector_tab{}
+.library_sec ul{
+    flex-direction: column;
+    width: 100%;
+}
+.library_sec ul li{}
+.library_sec ul li:hover{}
+.lib_bdy{}
+.library_sec{}
+.library_sec .music{}
+.library_sec .pdf{}
+
+/*
+#body.body_library{}
+.lib_head{}
+.lib_head .tab{}
+.selector_tab{}
+.library_sec ul{}
+.library_sec ul li{}
+.library_sec ul li:hover{}
+.lib_bdy{}
+.library_sec{}
+.library_sec .music{}
+.library_sec .pdf{}
+*/
+/*********************************************************************/
 
 
 
-.col{}
-.row{}
-
-
+#pdf_aqui>iframe{height: calc(100% - 3.5em - 3em);}
+#pdf_aqui{margin-bottom: 11.5em;/* position: absolute; */bottom: 0;}
 
 }
 
