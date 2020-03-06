@@ -93,7 +93,7 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 }
 .ctrl-btn:active{mix-blend-mode: soft-light;}
 .play{background-image: url('./img/play_circle.png');height: 3em;width: 3em;}
-.pause{background-image: url('./img/pause_circle.png');}
+.pause{background-image: url('./img/pause_circle.png');height: 3em;width: 3em;}
 .sig{background-image: url('./img/sig.png');margin-left: 0.9em;margin-right: auto;}
 .prev{background-image: url('./img/prev.png');margin-left: auto;margin-right: 0.8em;}
 .track_control>span{height: max-content;margin-right: 0.3em;margin-left: 0.3em;margin-top: auto;margin-bottom: auto;}
@@ -101,7 +101,7 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 .track_control{width: 100%;height: 30%;position: relative;flex-direction: row;font-size: 0.8em;}
 .track{width: inherit;height: 0.3em;margin-top: auto;margin-bottom: auto;background-color: #969696;cursor: pointer;}
 .track_play{position: absolute;background-color: lime;height: inherit;}
-.point_song{position: absolute;height: 1em;width: 1em;background-color: lime;margin-top: -0.3em;border-radius: 50%;}
+.point_song{position: absolute;height: 1em;width: 1em;background-color: lime;margin-top: -0.3em;border-radius: 50%;margin-left: 0;}
 .volume_div{width: 20%;min-width: 10em;max-width: 20em;display: flex;flex-direction: row;height: max-content;margin-top: auto;margin-bottom: auto;margin-left: auto;margin-right: 2em;}
 .volume{width: 2em;height: 2em;max-width: 30px;max-height: 30px;margin: auto;background-image: url('./img/volume.png');}
 .track_volume{height: 0.3em;margin: auto;min-width: 8em;width: 80%;position: relative;font-size: 0.8em;}
@@ -152,6 +152,7 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 }*/
 .w25{width: 25%;}
 .w65{width: 65%;}
+.w50{width: 50%;}
 .w10{width: 10%;}
 .menu_point{position:relative;background-image: url('./img/menu_point.png');height: 0.9em;width: 0.9em;background-size: 100% auto;background-position: center center;background-repeat: no-repeat;margin:auto;}
 /*.menu_point:after{content: 'Download';height: 1.5em;width: max-content;line-height: 1.5em;color:white;position: absolute;right: 0;}
@@ -249,6 +250,7 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
     overflow: auto;
     margin: 0;
     padding: 0;
+    margin-bottom: 6.5em;
 }
 .library_sec ul li{border-radius: 0.5em;padding: 0.5em;margin: 0.1em;}
 .library_sec ul li:hover{background-color: #353535;transition: all 0.2s ease;}

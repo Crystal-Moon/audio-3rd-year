@@ -25,15 +25,16 @@ function upp(yes){
 
 
 function changeTab(tab,subTarea,...params){
-	//console.log(tab)
-	console.log('la subtarea en changeTab',subTarea)
+	console.log(tab)
+	//console.log('la subtarea en changeTab',subTarea)
 	let arr=document.querySelectorAll('#ul li');
+	console.log('el arr',arr)
 	arr.forEach(li=>{
 		li.className='';
 		if(li.title==tab.title) li.className='active';
 	})
 
-	loadHtml(tab.title,null,subTarea,...params);
+	loadHtml(tab.dataset.tab,null,subTarea,...params);
 }
 
 
@@ -60,12 +61,13 @@ function loadHtml(name,action,subTarea,...params) {
 	.then(r=>r.text())
 	.then(d=>{
 	//	console.log(d)
+	//aqui un fetch para traer los json y setear en el 'body' de la plantilla, luego el innerhtml
 		BODY.innerHTML=d;
 		BODY.className='';
 		BODY.classList.add('body_'+name);
 		if(action) history.replaceState({page:name},'',name+'.html')
 		else history.pushState({page:name},'',name+'.html')
-	console.log('la subTrea :/',subTarea)
+	//console.log('la subTrea :/',subTarea)
 		if(subTarea) subTarea(...params);
 	})
 }

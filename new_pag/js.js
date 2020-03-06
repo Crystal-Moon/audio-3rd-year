@@ -1,5 +1,6 @@
 var holding = false;
 var track = document.getElementById('track');
+var handler = document.getElementById('handler');
 var progress = document.getElementById('progress');
 var play = document.getElementById('play');
 var next = document.getElementById('next');

@@ -81,7 +81,7 @@ h1{}
     /* margin-left: 55%; */
     margin-right: 1em;
 }
-.pause{}
+.pause{ margin-right: 1em;}
 .sig{}
 .prev{}
 .track_control>span{}
@@ -159,7 +159,7 @@ h1{}
 .play{
     margin-left: auto;
 }
-.pause{}
+.pause{margin-left: auto;}
 .sig{}
 .prev{}
 .track_control>span{}

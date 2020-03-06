@@ -125,6 +125,7 @@ h1{font-size: 1em;width: 24%;display: flex;flex-direction: column;margin-top: 0.
 .ctrl-btn{}
 .ctrl-btn:active{}
 .play{margin-right: 1em;background-image: url('./img/play.png');height: 2.5em;width: 2.5em;}
+.pause{margin-right: 1em;background-image: url('./img/pause.png');height: 2.5em;width: 2.5em;}
 .pause{}
 .sig,.prev,.track_control>span,.point_song,.volume_div{display: none;}
 .control{margin-top: 1.7em;width: min-content;right: 0;margin-left: auto;}
@@ -223,11 +224,12 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{}
 .library_sec ul{
     flex-direction: column;
     width: 100%;
+    margin-bottom: 7em;
 }
 .library_sec ul li{}
 .library_sec ul li:hover{}
 .lib_bdy{}
-.library_sec{}
+.library_sec{overflow: auto;}
 .library_sec .music{}
 .library_sec .pdf{}
 
