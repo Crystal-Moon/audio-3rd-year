@@ -41,12 +41,15 @@ function changeTab(tab,subTarea,...params){
 function changeSubTab(...args){
 //	console.log('los arguments en subTab',args)
 	let params=[...args]
-	let inxTab=params[0], name=params[1]
+	let inxTab=params[0], name=params[1], dos=params[2] || '';
+	console.log('inx',inxTab, 'name', name, 'dos',dos);
 	//console.log('inxTab en cahgeSub',inxTab);
 	//console.log('name en changeSub',name);
 	let margin=inxTab * 5.5;
-	G('selector_tab').style.marginLeft= margin+'em';
-	let tabSelected=G('tab'+name);
+	console.log('el id de selec','selector_tab'+dos);
+	console.log('span',G('selector_tab'+dos));
+	G('selector_tab'+dos).style.marginLeft= margin+'rem';
+	let tabSelected=G('tab'+name+dos);
 	//console.log('tabSelected',tabSelected)
 	let sib=tabSelected.parentNode.childNodes;
 	sib.forEach(z=>{ if(z.hasChildNodes()) z.style.zIndex = '5'; });

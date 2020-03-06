@@ -1,20 +1,21 @@
-var holding = false;
-var track = G('track');
-var player = G('player');
-var handler = G('point_song');
-var progress = G('track_play');
-var play = G('play');
-var next = G('sig');
-var prev = G('prev');
-var title = G('title_song');
-var artist = G('album_cd');
-var art = G('img_cd');
-var timeActual = G('current_time');
-var totalTime = G('total_time');
-var current_track = 0;
-var song, audio, duration;
-var playing = false;
-var songs = [{
+let holding = false;
+const track = G('track');
+const player = G('player');
+const handler = G('point_song');
+const progress = G('track_play');
+const play = G('play');
+const next = G('sig');
+const prev = G('prev');
+const title = G('title_song');
+const artist = G('album_cd');
+const art = G('img_cd');
+const timeActual = G('current_time');
+const totalTime = G('total_time');
+let current_track = 0;
+let song, audio, duration;
+let playing = false;
+
+let songs = [{
     title: 'Mother\'s Day',
     artist: 'Offspring Fling',
     url: 'http://abarcarodriguez.com/365/files/offspring.mp3',
@@ -43,9 +44,8 @@ function init() {
     audio.src = song.url;
     title.textContent = song.title;
     artist.textContent = song.artist;
-    art.src = song.art;
+    art.src = song.art;    // revisar si usar una clase cpara book y wb o si poner numero o imagen en style inline
 }
-
 
 audio.addEventListener('timeupdate', updateTrack, false);
 audio.addEventListener('loadedmetadata', function () {
@@ -68,21 +68,18 @@ play.onclick = function () {
     playing ? audio.pause() : audio.play();
 }
 audio.addEventListener("pause", function () {
-    //play.innerHTML = '<img class="pad" src="http://abarcarodriguez.com/lab/play.png" />';
     play.classList.add('play');
     play.classList.remove('pause');
     playing = false;
 }, false);
 
 audio.addEventListener("playing", function () {
-    //play.innerHTML = '<img src="http://abarcarodriguez.com/lab/pause.png" />';
     play.classList.add('pause');
     play.classList.remove('play');
     playing = true;
 }, false);
 next.addEventListener("click", nextTrack, false);
 prev.addEventListener("click", prevTrack, false);
-
 
 function updateTrack() {
     curtime = audio.currentTime;
@@ -94,7 +91,7 @@ function updateTrack() {
 
 function seekTrack(e) {
     event = e || window.event;
-    var x = e.pageX - track.offsetParent.offsetLeft - track.offsetLeft;
+    let x = e.pageX - track.offsetParent.offsetLeft - track.offsetLeft;
     percent = Math.round((x * 100) / track.offsetParent.offsetWidth);
     if (percent > 100) percent = 100;
     if (percent < 0) percent = 0;
@@ -134,9 +131,38 @@ function updateInfo() {
 }
 
 function msToMin(seconds) {
-  var minute = Math.floor((seconds / 60) % 60);
+  let minute = Math.floor((seconds / 60) % 60);
   minute = (minute < 10)? '0' + minute : minute;
-  var second = Math.trunc(seconds) % 60;
+  let second = Math.trunc(seconds) % 60;
   second = (second < 10)? '0' + second : second;
   return '' + minute + ':' + second;
+}
+
+/************* VOLUME ***********************/
+
+const volumeTrack = G('track_volume');
+const progressVolume = G('progress_vol');
+const handlerVolume = G('point_vol');
+
+window.onmousemove = function (e) {
+    e.preventDefault();
+    if (holding) seekVolume(e);
+}
+window.onmouseup = function (e) {
+    holding = false;;
+}
+volumeTrack.onmousedown = function (e) {
+    holding = true;
+    seekVolume(e);
+}
+
+function seekVolume(e) {
+    event = e || window.event;
+    let x = e.pageX - volumeTrack.offsetLeft;
+    let percent = Math.round((x * 100) / volumeTrack.offsetWidth);
+    if (percent > 100) percent = 100;
+    if (percent < 0) percent = 0;
+    progressVolume.style.width = percent + '%';
+    handlerVolume.style.marginLeft = percent + '%';
+    audio.volume = (percent * 1) / 100;
 }

@@ -112,6 +112,7 @@
 }
 .ctrl-btn.up{
     margin: auto;
+    /* margin: 0.5em; */
 }
 .ctrl-btn:active.up{}
 .play.up{
@@ -243,7 +244,10 @@
 .player_control.up{}
 .ctrl-btn.up{}
 .ctrl-btn:active.up{}
-.play.up{}
+.play.up{
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+}
 .pause.up{}
 .sig.up{}
 .prev.up{}
