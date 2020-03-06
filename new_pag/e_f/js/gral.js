@@ -28,7 +28,7 @@ function changeTab(tab,subTarea,...params){
 	console.log(tab)
 	//console.log('la subtarea en changeTab',subTarea)
 	let arr=document.querySelectorAll('#ul li');
-	console.log('el arr',arr)
+	//console.log('el arr',arr)
 	arr.forEach(li=>{
 		li.className='';
 		if(li.title==tab.title) li.className='active';

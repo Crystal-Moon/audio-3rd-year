@@ -1,14 +1,16 @@
 var holding = false;
-var track = document.getElementById('track');
-var player = document.getElementById('player');
-var handler = document.getElementById('point_song');
-var progress = document.getElementById('track_play');
-var play = document.getElementById('play');
-var next = document.getElementById('sig');
-var prev = document.getElementById('prev');
-var title = document.getElementById('title_song');
-var artist = document.getElementById('album_cd');
-var art = document.getElementById('img_cd');
+var track = G('track');
+var player = G('player');
+var handler = G('point_song');
+var progress = G('track_play');
+var play = G('play');
+var next = G('sig');
+var prev = G('prev');
+var title = G('title_song');
+var artist = G('album_cd');
+var art = G('img_cd');
+var timeActual = G('current_time');
+var totalTime = G('total_time');
 var current_track = 0;
 var song, audio, duration;
 var playing = false;
@@ -48,6 +50,7 @@ function init() {
 audio.addEventListener('timeupdate', updateTrack, false);
 audio.addEventListener('loadedmetadata', function () {
     duration = this.duration;
+    totalTime.innerText = msToMin(this.duration);
 }, false);
 
 window.onmousemove = function (e) {
@@ -55,13 +58,11 @@ window.onmousemove = function (e) {
     if (holding) seekTrack(e);
 }
 window.onmouseup = function (e) {
-    holding = false;
-    console.log(holding);
+    holding = false;;
 }
 track.onmousedown = function (e) {
     holding = true;
     seekTrack(e);
-    console.log(holding);
 }
 play.onclick = function () {
     playing ? audio.pause() : audio.play();
@@ -88,20 +89,20 @@ function updateTrack() {
     percent = Math.round((curtime * 100) / duration);
     progress.style.width = percent + '%';
     handler.style.marginLeft = percent + '%';
+    timeActual.innerText = msToMin(audio.currentTime);
 }
 
 function seekTrack(e) {
     event = e || window.event;
-    console.dir(event)
-    var x = e.pageX - track.offsetLeft// - track.offsetLeft;
-    console.log(e.pageX , track.offsetLeft , track.offsetLeft);
-    percent = Math.round((x * 100) / track.offsetWidth);
+    var x = e.pageX - track.offsetParent.offsetLeft - track.offsetLeft;
+    percent = Math.round((x * 100) / track.offsetParent.offsetWidth);
     if (percent > 100) percent = 100;
     if (percent < 0) percent = 0;
     progress.style.width = percent + '%';
     handler.style.marginLeft = percent + '%';
     audio.play();
-    audio.currentTime = (percent * duration) / 100
+    audio.currentTime = (percent * duration) / 100;
+    timeActual.innerText = msToMin(audio.currentTime);
 }
 function nextTrack() {
     current_track++;
@@ -130,4 +131,12 @@ function updateInfo() {
     art.onload = function() {
         audio.play();
     }
+}
+
+function msToMin(seconds) {
+  var minute = Math.floor((seconds / 60) % 60);
+  minute = (minute < 10)? '0' + minute : minute;
+  var second = Math.trunc(seconds) % 60;
+  second = (second < 10)? '0' + second : second;
+  return '' + minute + ':' + second;
 }
