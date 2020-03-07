@@ -1,6 +1,6 @@
 ## Audio Bank ~ English
 
-![status](https://img.shields.io/badge/status-OK-green) ![YEAR](https://img.shields.io/badge/year-2020-blue) ![version](https://img.shields.io/badge/version-v0.1.0-blue) ![techs](https://img.shields.io/badge/techs-HTML5-orange)
+![status](https://img.shields.io/badge/status-building-red) ![YEAR](https://img.shields.io/badge/year-2020-blue) ![version](https://img.shields.io/badge/version-v1.1.0-blue) ![techs](https://img.shields.io/badge/techs-SPA-orange)
 
 ---
 
