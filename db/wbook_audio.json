@@ -1,12 +1,695 @@
 [
-
-	{
-		"type": "", 
-		"link": "",
-		"exc": "",
-		"num": "",
-		"sound_n": 0,
-		"lesson": "",
-		"pag": 0
-	}
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 1,
+        "lesson": "1A",
+        "pag": 4
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3d",
+        "num": "1",
+        "sound_n": 2,
+        "lesson": "1A",
+        "pag": 4
+    },
+    {
+        "type": "Spelling and Numbers",
+        "link": "",
+        "exc": "4b",
+        "num": "1",
+        "sound_n": 3,
+        "lesson": "1A",
+        "pag": 5
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 4,
+        "lesson": "1A",
+        "pag": 5
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 5,
+        "lesson": "1B",
+        "pag": 7
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3d",
+        "num": "1",
+        "sound_n": 6,
+        "lesson": "1B",
+        "pag": 7
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 7,
+        "lesson": "1B",
+        "pag": 7
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 8,
+        "lesson": "1C",
+        "pag": 9
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 9,
+        "lesson": "1C",
+        "pag": 9
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 10,
+        "lesson": "2A",
+        "pag": 12
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 11,
+        "lesson": "2A",
+        "pag": 12
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 12,
+        "lesson": "2B",
+        "pag": 14
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 13,
+        "lesson": "2B",
+        "pag": 14
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 14,
+        "lesson": "2C",
+        "pag": 16
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 15,
+        "lesson": "2C",
+        "pag": 16
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 16,
+        "lesson": "3A",
+        "pag": 18
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 17,
+        "lesson": "3A",
+        "pag": 18
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 18,
+        "lesson": "3B",
+        "pag": 19
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 19,
+        "lesson": "3B",
+        "pag": 20
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 20,
+        "lesson": "3C",
+        "pag": 21
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 21,
+        "lesson": "3C",
+        "pag": 22
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 22,
+        "lesson": "4A",
+        "pag": 24
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 23,
+        "lesson": "4A",
+        "pag": 25
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 24,
+        "lesson": "4B",
+        "pag": 27
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 25,
+        "lesson": "4B",
+        "pag": 27
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 26,
+        "lesson": "4C",
+        "pag": 28
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 27,
+        "lesson": "4C",
+        "pag": 29
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3c",
+        "num": "1",
+        "sound_n": 28,
+        "lesson": "5A",
+        "pag": 30
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 29,
+        "lesson": "5A",
+        "pag": 31
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 30,
+        "lesson": "5B",
+        "pag": 33
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 31,
+        "lesson": "5B",
+        "pag": 33
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 32,
+        "lesson": "5C",
+        "pag": 34
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 33,
+        "lesson": "5C",
+        "pag": 35
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 34,
+        "lesson": "6A",
+        "pag": 37
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 35,
+        "lesson": "6A",
+        "pag": 38
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 36,
+        "lesson": "6B",
+        "pag": 39
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 37,
+        "lesson": "6B",
+        "pag": 40
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 38,
+        "lesson": "6C",
+        "pag": 42
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 39,
+        "lesson": "6C",
+        "pag": 42
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 40,
+        "lesson": "7A",
+        "pag": 44
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 41,
+        "lesson": "7A",
+        "pag": 44
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 42,
+        "lesson": "7B",
+        "pag": 46
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 43,
+        "lesson": "7B",
+        "pag": 46
+    },
+    {
+        "type": "",
+        "link": "",
+        "exc": "",
+        "num": "1",
+        "sound_n": 44,
+        "lesson": "7C",
+        "pag": 0
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 45,
+        "lesson": "7C",
+        "pag": 47
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 46,
+        "lesson": "7C",
+        "pag": 48
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 47,
+        "lesson": "8A",
+        "pag": 51
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 48,
+        "lesson": "8A",
+        "pag": 51
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 49,
+        "lesson": "8B",
+        "pag": 53
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 50,
+        "lesson": "8B",
+        "pag": 53
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 51,
+        "lesson": "8C",
+        "pag": 54
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 52,
+        "lesson": "8C",
+        "pag": 55
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 53,
+        "lesson": "9A",
+        "pag": 57
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 54,
+        "lesson": "9A",
+        "pag": 57
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 55,
+        "lesson": "9B",
+        "pag": 59
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 56,
+        "lesson": "9B",
+        "pag": 59
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 57,
+        "lesson": "9C",
+        "pag": 60
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 58,
+        "lesson": "9C",
+        "pag": 61
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 59,
+        "lesson": "10A",
+        "pag": 64
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 60,
+        "lesson": "10A",
+        "pag": 64
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 61,
+        "lesson": "10B",
+        "pag": 65
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 62,
+        "lesson": "10B",
+        "pag": 66
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 63,
+        "lesson": "10C",
+        "pag": 68
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 64,
+        "lesson": "10C",
+        "pag": 68
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 65,
+        "lesson": "11A",
+        "pag": 70
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 66,
+        "lesson": "11A",
+        "pag": 70
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 67,
+        "lesson": "11B",
+        "pag": 71
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 68,
+        "lesson": "11B",
+        "pag": 72
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3a",
+        "num": "1",
+        "sound_n": 69,
+        "lesson": "11C",
+        "pag": 73
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3c",
+        "num": "1",
+        "sound_n": 70,
+        "lesson": "11C",
+        "pag": 73
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 71,
+        "lesson": "11C",
+        "pag": 74
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "2b",
+        "num": "1",
+        "sound_n": 72,
+        "lesson": "12A",
+        "pag": 77
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 73,
+        "lesson": "12A",
+        "pag": 77
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 74,
+        "lesson": "12B",
+        "pag": 79
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "4a",
+        "num": "1",
+        "sound_n": 75,
+        "lesson": "12B",
+        "pag": 79
+    },
+    {
+        "type": "Pronunciation",
+        "link": "",
+        "exc": "3b",
+        "num": "1",
+        "sound_n": 76,
+        "lesson": "12C",
+        "pag": 81
+    },
+    {
+        "type": "Listening",
+        "link": "",
+        "exc": "5a",
+        "num": "1",
+        "sound_n": 77,
+        "lesson": "12C",
+        "pag": 81
+    }
 ]
