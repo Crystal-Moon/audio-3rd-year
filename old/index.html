@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="Audio Bank ~ 3rd year"/>
+    <meta property="og:image" content="https://crystal-moon.github.io/audio-3rd-year/img/cover.jpg"/>
+    <meta property="og:type" content="audio_bank"/>
+	<title>Audio English 3rd Year - Cambridge</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/gral.css">
+	<link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+<div id="loader"><img src="img/loading.gif" alt="loading.gif"><p>0.0%</p></div>
+<div class="title">
+  	<p>English 3rd Year</p>
+  	<p class="h">Welcome!</p>
+  </div>
+<header data-state="hidden">
+  <nav >
+    <ul id="ul">
+      <li data-deg="8" data-far="9" class="h"><a href="#"></a></li>
+      <li data-deg="47" data-far="12" class="b"><a href="pages/book.html">Book</a></li>
+      <li data-deg="90" data-far="18" class="wb"><a href="pages/w_book.html">WorkBook</a></li>
+    </ul>
+  </nav>
+  <div id="menu" onclick="showMenu(this)"><div class="menu"></div></div>
+</header>
+<main>
+	<div id="chriss"><span onclick="javascript:this.parentNode.style.display='none'">X</span><img src="img/chriss_tip.png" alt="Click on the menu"><p>Click on the menu <span class="menu"></span> for different sections!</p></div>
+</main>
+<footer>
+	<p>&copy; Developed by </p><div id="logo"></div><a href="https://www.linkedin.com/in/perla-stto/" target="_blank">CrystalMoon</a>
+</footer>
+<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+<script>
+
+window.onload = function() {
+  document.onmousemove = function(e) {
+    var x = -(e.clientX/10);
+    var y = -(e.clientY/10);
+    this.body.style.backgroundPosition = x + 'px ' + y + 'px';
+  };
+};
+
+LOADER.style.display = 'none';
+
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+		<div class="sec">
+		<h2>Recently heard</h2>
+	    {{#if recently}}
+		<div class="row">
+		<div class="row">
+			{{#each recently}}
+		  	<div class="placa">
+				<div class="img b"></div>
+				<p>Lesson 7A</p>
+				<div class="play" onclick="loadHbs(this)" data-hbs="artist" data-type="{{type}}"></div>
+		  	</div>
+		    <div class="placa">
+				<div class="img wb"></div>
+				<p>Default DIV</p>
+				<div class="play" onclick="loadHbs(this)" data-hbs="artist" data-type="{{type}}"></div>
+		    </div>
+			{{/each}}
+		{{else}}
+		<div class="row" style="height: max-content;">
+		<div class="row">
+			<p class="nada">Nothing. Visit the library &#128515;</p>
+		{{/ if}}
+		</div>
+		</div>
+	 </div>
+
+	  <div class="sec">
+		<h2>Books</h2>
+		<div class="row">
+		<div class="row" id="recently">
+		   <div class="placa">
+			<div class="img b"></div>
+			<p>Student Book</p>
+			<div class="play" onclick="loadHbs(this)"></div>
+		  </div>
+		   <div class="placa">
+			<div class="img wb"></div>
+			<p>WorkBook</p>
+			<div class="play" onclick="loadHbs(this)"></div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+<script type="text/javascript"> window.location='/'; </script>

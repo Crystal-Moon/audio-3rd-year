@@ -1,0 +1,651 @@
+/* Large desktop */
+@media (min-width: 1200px) { 
+#Menu{/* max-width: 300px; */}
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{
+    width: 70%;
+}
+#body .sec{
+    margin-left: 7%;
+}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{
+    width: 30%;
+    /* min-width: 30%; */
+}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+html, body{}
+ul{flex-direction: row;display: flex;width: 74%;margin: 0;justify-content: space-around;}
+
+/*****************************************/
+#body{width: 100%;margin: 0;max-width: 100%;padding: 0;/* overflow: scroll; */padding-bottom: 8em;/* height: 100%; *//* max-height: max-content; *//* overflow-x: hidden; */}
+#body .sec{margin-left: 1em;width: 95%;}
+#body .sec>div{width: 100%;height: 16em;}
+.placa{background-color: inherit;margin: 0;}
+.placa div.img{border-radius: 50%;border-radius: 5em;}
+.placa .play{}
+.placa .play:hover{}
+.placa p{text-align: center;margin-left: auto;margin-right: auto;}
+
+/*************************************/
+#Menu{width: 100%;max-width: 100%;min-width: 100%;bottom: 0;margin-top: auto;display: flex;flex-direction: row-reverse;height: 5em;padding: 0;}
+#Menu li,h1{flex-direction: column;width: min-content;height: max-content;}
+#Menu li>div, h1>div{margin-left: auto;margin-right: auto;}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{margin-left: auto;margin-right: auto;}
+span.cm_pc{display: none;}
+span.cm_cel{display: block;text-align: center;}
+h1{font-size: 1em;width: 24%;display: flex;flex-direction: column;margin-top: 0.5em;}
+
+/*************************************/
+#player{margin-bottom: 5em;}
+#player.up{}
+.arrow{display: none;}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{position: absolute;width: 100%;max-width: 100%;}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{margin-right: 1em;background-image: url('../img/play.png');height: 2.5em;width: 2.5em;}
+.pause{margin-right: 1em;background-image: url('../img/pause.png');height: 2.5em;width: 2.5em;}
+.pause{}
+.sig,.prev,.track_control>span,.point_song,.volume_div{display: none;}
+.control{margin-top: 1.7em;width: min-content;right: 0;margin-left: auto;}
+.track_control{position: absolute;width: 100%;}
+.track{margin: 0;width: 100%;}
+.track_play{}
+.volume{}
+.track_volume{}
+
+.col{}
+.row{}
+
+/*****************************************************************/
+
+
+
+.back{}
+.head{}
+.head-lbl{}
+.head-top{}
+.w25{}
+.w65{}
+.w10{}
+.menu_point{}
+.artist{}
+.artist.gradiant > *:last-child{margin-bottom: 10em;font-size:;}
+.artist span{}
+.artist ul{
+    flex-direction: column;
+    /* overflow: scroll; */
+    width: 100%;
+    /* padding-bottom: 8em; */
+}
+.artist ul li{}
+.artist ul li:hover{}
+.artist h2{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    display: block;
+}
+.green{}
+.w_b{
+    border: 7px double white;
+    /* border-color: white; */
+    /* border: 7px; */
+    /* border-style: double; */
+}
+.btn, .read{width: 50%;}
+
+
+/******************************************************/
+a.desplegable, a.desplegable:hover,a.desplegable:visited{}
+.desplegable{}
+.desplegable.hidden{}
+.desplegable>span{}
+
+/*
+
+.back{}
+.head{}
+.head-lbl{}
+.head-top{}
+.w25{}
+.w65{}
+.w10{}
+.menu_point{}
+.artist{}
+.artist.gradiant{}
+.artist span{}
+.artist ul{}
+.artist ul li{}
+.artist ul li:hover{}
+.artist h2{}
+.btn{}
+.green{}
+.w_b{}
+
+a.desplegable, a.desplegable:hover,a.desplegable:visited{}
+.desplegable{}
+.desplegable.hidden{}
+.desplegable>span{}
+*/
+
+/*************************************************************/
+#body.body_library{}
+.lib_head{}
+.lib_head .tab{}
+.selector_tab{}
+.library_sec ul{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 7em;
+}
+.library_sec ul li{}
+.library_sec ul li:hover{}
+.lib_bdy{}
+.library_sec{overflow: auto;}
+.library_sec .music{}
+.library_sec .pdf{}
+
+/*
+#body.body_library{}
+.lib_head{}
+.lib_head .tab{}
+.selector_tab{}
+.library_sec ul{}
+.library_sec ul li{}
+.library_sec ul li:hover{}
+.lib_bdy{}
+.library_sec{}
+.library_sec .music{}
+.library_sec .pdf{}
+*/
+/*********************************************************************/
+
+
+
+#pdf_aqui>iframe{height: calc(100% - 3.5em - 3em);}
+#pdf_aqui{margin-bottom: 11.5em;/* position: absolute; */bottom: 0;}
+
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{
+    width: 80%;
+}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
+}
+
+/* iPhone 4 and high pixel ratio devices ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
+}
