@@ -1,16 +1,5 @@
 const G=id=>document.getElementById(id);
 const BODY=G('body');
-let cleck=null;
-document.onclick=function(eve) {
- document.querySelectorAll('.desplegable').forEach(z=>{z.classList.add('hidden')});
-	cleck=eve.target;
-	if(/.*(menu_point).*/.test(eve.target.className)) showDownload(eve)
-	else if (/.*(arrow_izq).*/.test(eve.target.className)) back(eve)
-
-	
-
-	
-};
 
 function upp(yes){
 	let arr=document.querySelectorAll('#player *');
@@ -34,7 +23,9 @@ function changeTab(tab,subTarea,...params){
 		if(li.title==tab.title) li.className='active';
 	})
 
-	loadHtml(tab.dataset.tab,null,subTarea,...params);
+	//loadHtml(tab.dataset.tab,null,subTarea,...params);
+	//loadHbs(tab)
+	changePage(tab)
 }
 
 
@@ -121,28 +112,53 @@ let reciente=[
 
 localStorage.setItem('recently', JSON.stringify(reciente));
 
-function changePage(vista){
-	switch(vista){
+function changePage(elem,tarea){
+	console.log('elem en changePage',elem)
+	let datos={};
+	switch(elem.dataset.vista){
+		case 'home':
+			datos.recently= JSON.parse(localStorage.getItem('recently'));
 		case 'artista':
-
+			datos.album_cover=elem.dataset.album;
+			datos.name='Lesson '+elem.dataset.lesson;
+			datos.book_audio=Json.BOOK_AUDIO.filter(x=>x.lesson==elem.dataset.lesson).sort((a,b)=>a.sound_n-b.sound_n)
+			datos.pdf=Json.BOOK_PDF.find(x=>x.lesson==elem.dataset.lesson)
 
 		case 'library':
+			datos.book_audio=[...new Set(Json.BOOK_AUDIO.sort((a,b)=>a.pag-b.pag)
+				.map(x=>({name:(x.type=='exercise'?'Lesson':x.type)+' '+x.lesson, lesson:x.lesson}))
+				.map(JSON.stringify))].map(JSON.parse)
+			
+			
+			datos.book_pdf=Json.BOOK_AUDIO.sort((a,b)=>a.pag-b.pag);
+		
 
+			datos.wbook_audio=[...new Set(Json.WORKBOOK_AUDIO.sort((a,b)=>a.pag-b.pag)
+				.map(x=>({name:(x.type=='exercise'?'Lesson':x.type)+' '+x.lesson, lesson:x.lesson}))
+				.map(JSON.stringify))].map(JSON.parse)
+
+
+			datos.wbook_pdf=Json.WORKBOOK_PDF.sort((a,b)=>a.order-b.order)
+			//datos.wbook_pdf=datos.wbook_audio.forEach(x=>{x.name:x.type+' '+x.lesson})
+			//datos.wbook_pdf=[...new Set(datos.book_audio.map(JSON.stringify))].map(JSON.parse)
 
 		case 'pdf_view':
-
+			datos.link=elem.dataset.link;
+			datos.linkDownload=elem.dataset.downlad;
 	}
+	console.log('datos en changePage: ',datos)
+	loadHbs(elem.dataset.vista, datos,tarea);
 }
 
 
-function loadHbs(hbs, action, tarea) {
+function loadHbs(hbs, datos, tarea) {
 //	console.log('params en loadHtml: ',params)
 //	console.log('params en loadHtml CON PUNTOS: ',...params)
-let datos={
+/*let datos={
 	recently: JSON.parse(localStorage.getItem('recently'))
-}
+}*/
 
-console.log('data',datos)
+//console.log('data',datos)
 	fetch('./pages/'+hbs+'.hbs')
 	.then(res=>{
 		if(res.status==200) return res.text()
@@ -156,12 +172,12 @@ console.log('data',datos)
       //  console.log(a)
        // SECCION_ARTICLES.append(a)
      	//cargarSeccion(RutasAPI[countP])
-     //	console.log(BODY);
+     	console.log(BODY);
 
-     	if(action) history.replaceState({page:name},'', './pages/'+hbs+'.hbs')
-		else history.pushState({page:name},'', './pages/'+hbs+'.hbs')
+    // 	if(action) history.replaceState({page:name},'', './pages/'+hbs+'.hbs')
+	//	else history.pushState({page:name},'', './pages/'+hbs+'.hbs')
 	//console.log('la subTrea :/',tarea)
-		if(tarea) tarea(...params);
+	//	if(tarea) tarea(...params);
       }
 	})
 }
@@ -178,12 +194,14 @@ window.onscroll = function() {myFunction()};
 
 
 function myFunction() {
-	var navbar = document.getElementById("head_sticky");
+	if(G('head_sticky')){
+	var navbar = G("head_sticky");
 	var sticky = navbar.parentNode.offsetTop;
 //	console.log('wind',window.pageYOffset)
 //	console.log('s',sticky)
   if (window.pageYOffset >= sticky) navbar.classList.add("head-top")
   else navbar.classList.remove("head-top");
+}
 }
 
 let el_point=null;

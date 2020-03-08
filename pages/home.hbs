@@ -5,15 +5,10 @@
 		<div class="row">
 			{{#each recently}}
 		  	<div class="placa">
-				<div class="img b"></div>
+				<div class="img {{classbook}}"></div>
 				<p>Lesson 7A</p>
 				<div class="play" onclick="loadHbs(this)" data-hbs="artist" data-type="{{type}}"></div>
 		  	</div>
-		    <div class="placa">
-				<div class="img wb"></div>
-				<p>Default DIV</p>
-				<div class="play" onclick="loadHbs(this)" data-hbs="artist" data-type="{{type}}"></div>
-		    </div>
 			{{/each}}
 		{{else}}
 		<div class="row" style="height: max-content;">

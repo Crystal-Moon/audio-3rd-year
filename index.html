@@ -23,9 +23,9 @@
 	<div id="Menu">
 		<h1><div class="icon CM_logo" onclick="window.open('https://www.linkedin.com/in/perla-stto/', '_blank');"></div><span href="www.google.com" target="_blank" class="label_menu cm_pc">3rd Year</span><span class="cm_cel">Developer</span></h1>
 		<ul id="ul">
-			<li class="active" onclick="changeTab(this)" title="home" data-tab="home"><div class="icon home"></div><span class="label_menu">Home</span></li>
-			<li class="" onclick="changeTab(this,changeSubTab,1,'pdf')" title="pdf" data-tab="library"><div class="icon pdf"></div><span class="label_menu">PDF</span></li>
-			<li class="" onclick="changeTab(this)" title="library" data-tab="library"><div class="icon library"></div><span class="label_menu">Library</span></li>
+			<li class="active" onclick="changeTab(this)" title="home" data-vista="home"><div class="icon home"></div><span class="label_menu">Home</span></li>
+			<li class="" onclick="changeTab(this,changeSubTab,1,'pdf')" title="pdf" data-vista="library"><div class="icon pdf"></div><span class="label_menu">PDF</span></li>
+			<li class="" onclick="changeTab(this)" title="library" data-vista="library"><div class="icon library"></div><span class="label_menu">Library</span></li>
 		</ul>
 	</div>
 <!-- ***************************************************************************************************************** -->
@@ -78,6 +78,7 @@
 <script>
 const Json={};
   
+  initJson();
 
 /*
   // compile the template
