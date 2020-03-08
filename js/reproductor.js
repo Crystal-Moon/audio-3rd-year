@@ -125,6 +125,7 @@ function updateInfo() {
     title.textContent = song.title;
     artist.textContent = song.artist;
     art.src = song.art;
+    //aqui agregar a recently
     art.onload = function() {
         audio.play();
     }

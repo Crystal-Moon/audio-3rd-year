@@ -76,7 +76,95 @@ function loadHtml(name,action,subTarea,...params) {
 }
 
 
+let reciente=[
+{
+		type: "exercise", 
+		link: "https://www.dropbox.com/s/h1wjl70ah1zhm8j/ef3e_p-int_01a_1-02.mp3?dl=0",
+		exc: "1b",
+		num: "1",
+		sound_n: 2,
+		lesson: "1A",
+		pag: 4
+	},
+	{
+		type: "Grammar Bank", 
+		link: "https://www.dropbox.com/s/vtfp1klh2kd1i8x/ef3e_p-int_01a_1-03.mp3?dl=0",
+		exc: "1A",
+		num: "1",
+		sound_n: 3,
+		lesson: "1A",
+		pag: 126
+	},
+	{
+		type: "Grammar Bank", 
+		link: "https://www.dropbox.com/s/oa961xi5d0dt7ze/ef3e_p-int_01a_1-04.mp3?dl=0",
+		exc: "1A",
+		num: "1",
+		sound_n: 4,
+		lesson: "1A",
+		pag: 126
+	},
+	{
+		type: "exercise", 
+		link: "https://www.dropbox.com/s/qlofo0wjnmnadt3/ef3e_p-int_01a_1-05.mp3?dl=0",
+		exc: "3a",
+		num: "1",
+		sound_n: 5,
+		lesson: "1A",
+		pag: 5
+	}
+]
 
+
+
+
+
+localStorage.setItem('recently', JSON.stringify(reciente));
+
+function changePage(vista){
+	switch(vista){
+		case 'artista':
+
+
+		case 'library':
+
+
+		case 'pdf_view':
+
+	}
+}
+
+
+function loadHbs(hbs, action, tarea) {
+//	console.log('params en loadHtml: ',params)
+//	console.log('params en loadHtml CON PUNTOS: ',...params)
+let datos={
+	recently: JSON.parse(localStorage.getItem('recently'))
+}
+
+console.log('data',datos)
+	fetch('./pages/'+hbs+'.hbs')
+	.then(res=>{
+		if(res.status==200) return res.text()
+		else loadHbs(hbs);
+	})
+    .then(data=>{
+	  if(data){
+    	let template = Handlebars.compile(data);
+      //  let a=document.createElement('div')
+        BODY.innerHTML=template(datos)//aqui el json
+      //  console.log(a)
+       // SECCION_ARTICLES.append(a)
+     	//cargarSeccion(RutasAPI[countP])
+     //	console.log(BODY);
+
+     	if(action) history.replaceState({page:name},'', './pages/'+hbs+'.hbs')
+		else history.pushState({page:name},'', './pages/'+hbs+'.hbs')
+	//console.log('la subTrea :/',tarea)
+		if(tarea) tarea(...params);
+      }
+	})
+}
 
 
 
