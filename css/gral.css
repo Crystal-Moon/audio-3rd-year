@@ -265,6 +265,7 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
     margin: 0;
     padding: 0;
     margin-bottom: 6.5em;
+    background-color: #121212;
 }
 .library_sec ul li{border-radius: 0.5em;padding: 0.5em;margin: 0.1em;}
 .library_sec ul li:hover{background-color: #353535;transition: all 0.2s ease;}
@@ -288,6 +289,7 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
 
 /*****************************************************************************/
 /* PDF preview */
+#body.body_pdf_view{padding-top:0;}
 #body.body_pdf_view .head{
     padding: 0;
     display: flex;

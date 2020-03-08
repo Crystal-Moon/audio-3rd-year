@@ -16,11 +16,15 @@ document.onclick=function(eve) {
 };
 
 window.onpopstate = function(e) {
-//	console.dir(e)
+	console.log('evento popstate')
+	console.dir(e)
 //	console.log("location: " + document.location + ", state: " + e.state.page)
 //  alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
-	if(!e.state) loadHtml('home')
-	else loadHtml(e.state.page,'replace')
+	
+	//if(!e.state) loadHtml('home')
+	//else loadHtml(e.state.page,'replace')
+	if(!e.state) loadHbs('home')
+	else loadHbs(e.state.page,null,'replace')
 };
 
 function initJson(){
