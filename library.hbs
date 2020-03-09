@@ -9,7 +9,7 @@
 <div class="library_sec" id="tabaudios" style="z-index:99;">
 	<div class="col lib_head sub_head">
 	  <div class="row">
-		<div class="tab" onclick="changeSubTab(0,'audiobook','A')">Book</div>
+		<div class="tab" onclick="changeSubTab(0,'audiobook','A')">Student Book</div>
 		<div class="tab" onclick="changeSubTab(1,'audiowb','A')">WorkBook</div>
 	  </div>
 	  <div class="selector_tab" id="selector_tabA"></div>
@@ -18,14 +18,14 @@
 	<div class="library_sec" id="tabaudiobookA" style="z-index:90;">
 	  <ul>
 	  {{#each book_audio}}
-	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="album_book"><span class="w10 icon music to-artistspan"></span><span class="w65 to-artistspan">{{name}}</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="album_book"><span class="w10 icon music to-artistspan"></span><span class="w65 to-artistspan">{{type}} <b>{{lesson}}</b> (pags.{{pag}})</span><span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
 	  {{/each}}
 	  </ul>
 	</div>
 	<div class="library_sec" id="tabaudiowbA">
 	  <ul> <!-- aqui va book_pdf -->
 	  {{#each wbook_audio}}
-	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="album_workbook"><span class="w10 icon music to-artistspan"></span><span class="w65 to-artistspan">{{name}}</span><span class="menu_point"></span><a href="" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="album_workbook"><span class="w10 icon music to-artistspan"></span><span class="w65 to-artistspan">Lesson <b>{{lesson}}</b> (pags.{{pag}})</span><span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
 	  {{/each}}
 	  </ul>
 	</div>

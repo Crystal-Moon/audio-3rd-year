@@ -258,7 +258,10 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
 	background-color: lime;
 	transition: all 0.4s ease;
 }
-.sub_head .selector_tab{width: 5rem;}
+.lib_head.sub_head .tab{
+    width: 10em;
+}
+.sub_head .selector_tab{width: 8rem;}
 .library_sec ul{
     height: max-content;
     overflow: auto;

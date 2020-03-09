@@ -1,6 +1,6 @@
 [
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/h1wjl70ah1zhm8j/ef3e_p-int_01a_1-02.mp3?dl=1",
 		"exc": "1b",
 		"num": "1",
@@ -27,7 +27,7 @@
 		"pag": 126
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/qlofo0wjnmnadt3/ef3e_p-int_01a_1-05.mp3?dl=1",
 		"exc": "3a",
 		"num": "1",
@@ -36,7 +36,7 @@
 		"pag": 5
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/qgf3n6m3ch9j5vp/ef3e_p-int_01a_1-06.mp3?dl=1",
 		"exc": "3d",
 		"num": "1",
@@ -45,7 +45,7 @@
 		"pag": 5
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/jvef37o3xc0kp8d/ef3e_p-int_01a_1-07.mp3?dl=1",
 		"exc": "Exercise 4a",
 		"num": "1",
@@ -54,7 +54,7 @@
 		"pag": 5
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"linkk": "https://www.dropbox.com/s/ncpppgwggmczb8h/ef3e_p-int_01a_1-08.mp3?dl=1",
 		"exc": "4d",
 		"num": "1",
@@ -63,7 +63,7 @@
 		"pag": 5
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/ncpppgwggmczb8h/ef3e_p-int_01a_1-08.mp3?dl=1",
 		"exc": "1a",
 		"num": "1",
@@ -109,7 +109,7 @@
 	},
 
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/svv9s1wjw8kq3d6/ef3e_p-int_01b_1-14.mp3?dl=1",
 		"exc": "4a",
 		"num": "1",
@@ -118,7 +118,7 @@
 		"pag": 7
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/ejc8lehlpoto7e7/ef3e_p-int_01b_1-15.mp3?dl=1",
 		"exc": "4c",
 		"num": "1",
@@ -126,7 +126,7 @@
 		"lesson": "1B",
 		"pag": 7
 	},{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/93tn228814pplit/ef3e_p-int_01b_1-16.mp3?dl=1",
 		"exc": "5a",
 		"num": "1",
@@ -135,7 +135,7 @@
 		"pag": 7
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/4y6043jgl992upu/ef3e_p-int_01b_1-17.mp3?dl=1",
 		"exc": "5b",
 		"num": "1",
@@ -153,7 +153,7 @@
 		"pag": 151
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/003lhbpdocjwk64/ef3e_p-int_01c_1-20.mp3?dl=1",
 		"exc": "2a",
 		"num": "1",
@@ -163,7 +163,7 @@
 	},
 
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/ctehffbf1e1ildw/ef3e_p-int_01c_1-21.mp3?dl=1",
 		"exc": "2c",
 		"num": "1",
@@ -190,7 +190,7 @@
 		"pag": 126
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/swugmfa8xwfi1gk/ef3e_p-int_01c_1-24.mp3?dl=1",
 		"exc": "4a",
 		"num": "1",
@@ -199,7 +199,7 @@
 		"pag": 8
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/k19ss9nyuij5cmi/ef3e_p-int_01c_1-25.mp3?dl=1",
 		"exc": "5a",
 		"num": "1",
@@ -282,7 +282,7 @@
 		"pag": 152
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/a3nm6snjo0ushks/ef3e_p-int_02a_1-34.mp3?dl=1",
 		"exc": "3a",
 		"num": "1",
@@ -292,7 +292,7 @@
 	},
 
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/gu3ngs0gizy4kv5/ef3e_p-int_02a_1-35.mp3?dl=1",
 		"exc": "3c",
 		"num": "1",
@@ -309,7 +309,7 @@
 		"lesson": "2A",
 		"pag": 128
 	},{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/u0xl6bbd53ni5ev/ef3e_p-int_02a_1-37.mp3?dl=1",
 		"exc": "5a",
 		"num": "1",
@@ -318,7 +318,7 @@
 		"pag": 13
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/5oaxq2h459v9ttc/ef3e_p-int_02a_1-38.mp3?dl=1",
 		"exc": "5c",
 		"num": "1",
@@ -344,7 +344,7 @@
 		"pag": 128
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/nrvt9y2q2tsut6u/ef3e_p-int_02b_1-41.mp3?dl=1",
 		"exc": "2b",
 		"num": "1",
@@ -362,7 +362,7 @@
 		"pag": 153
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/wn4drdg5ad219dr/ef3e_p-int_02b_1-43.mp3?dl=1",
 		"exc": "4a",
 		"num": "1",
@@ -371,7 +371,7 @@
 		"pag": 15
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/f8142s414hsz8xx/ef3e_p-int_02b_1-44.mp3?dl=1",
 		"exc": "5c",
 		"num": "1",
@@ -380,7 +380,7 @@
 		"pag": 15
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/f8142s414hsz8xx/ef3e_p-int_02b_1-44.mp3?dl=1",
 		"exc": "1a",
 		"num": "1",
@@ -417,7 +417,7 @@
 	},
 
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/2oibb852bm1ralb/ef3e_p-int_02c_1-49.mp3?dl=1",
 		"exc": "2b",
 		"num": "1",
@@ -426,7 +426,7 @@
 		"pag": 17
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/92eqpycykf8jztt/ef3e_p-int_02c_1-50.mp3?dl=1",
 		"exc": "4d",
 		"num": "1",
@@ -435,7 +435,7 @@
 		"pag": 17
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/kl83kcyu17kfrzo/ef3e_p-int_02c_1-51.mp3?dl=1",
 		"exc": "4d",
 		"num": "1",
@@ -452,7 +452,7 @@
 		"lesson": "1&2",
 		"pag": 19
 	},{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/nnsnl5qb8mcr20n/ef3e_p-int_03a_1-54.mp3?dl=1",
 		"exc": "3c",
 		"num": "1",
@@ -461,7 +461,7 @@
 		"pag": 20
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/jfxthu3vfmuu6r3/ef3e_p-int_03a_1-55.mp3?dl=1",
 		"exc": "2b",
 		"num": "1",
@@ -470,7 +470,7 @@
 		"pag": 20
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/32ijxeexpctlh8i/ef3e_p-int_03a_1-56.mp3?dl=1",
 		"exc": "3a",
 		"num": "1",
@@ -488,7 +488,7 @@
 		"pag": 130
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/ymyi2cebo4a0mkl/ef3e_p-int_03a_1-58.mp3?dl=1",
 		"exc": "4a",
 		"num": "1",
@@ -497,7 +497,7 @@
 		"pag": 21
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/1h43g18infu3gn8/ef3e_p-int_03a_1-59.mp3?dl=1",
 		"exc": "4b",
 		"num": "1",
@@ -506,7 +506,7 @@
 		"pag": 21
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/n9ogpp4w7004dhy/ef3e_p-int_03b_1-61.mp3?dl=1",
 		"exc": "1a",
 		"num": "1",
@@ -515,7 +515,7 @@
 		"pag": 22
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/rj63frf0zkslt3t/ef3e_p-int_03b_1-62.mp3?dl=1",
 		"exc": "1e",
 		"num": "1",
@@ -524,7 +524,7 @@
 		"pag": 22
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/izq3pzye6wargzl/ef3e_p-int_03b_1-63.mp3?dl=1",
 		"exc": "2b",
 		"num": "1",
@@ -542,7 +542,7 @@
 		"pag": 130
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/o1s12yoz2wedfrh/ef3e_p-int_03b_1-65.mp3?dl=1",
 		"exc": "2d",
 		"num": "1",
@@ -551,7 +551,7 @@
 		"pag": 23
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/xpjuk9dnrtmhkmw/ef3e_p-int_03b_1-66.mp3?dl=1",
 		"exc": "2g",
 		"num": "1",
@@ -561,7 +561,7 @@
 	},
 
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/49cobxmr975bajf/ef3e_p-int_03b_1-67.mp3?dl=1",
 		"exc": "3a",
 		"num": "1",
@@ -577,7 +577,7 @@
 		"lesson": "3B",
 		"pag": 153
 	},{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/84tjd92137zphtg/ef3e_p-int_03c_2-02.mp3?dl=1",
 		"exc": "1b",
 		"num": "2",
@@ -586,7 +586,7 @@
 		"pag": 24
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/fsm6j06x3de2koh/ef3e_p-int_03c_2-03.mp3?dl=1",
 		"exc": "1c",
 		"num": "2",
@@ -595,7 +595,7 @@
 		"pag": 24
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/t8o79g13vszpmqx/ef3e_p-int_03c_2-04.mp3?dl=1",
 		"exc": "1d",
 		"num": "2",
@@ -613,7 +613,7 @@
 		"pag": 130
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/bmgfnrhqir4dzlt/ef3e_p-int_03c_2-06.mp3?dl=1",
 		"exc": "3b",
 		"num": "2",
@@ -622,7 +622,7 @@
 		"pag": 24
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/o1mzu1yo0vcsn6r/ef3e_p-int_03c_2-07.mp3?dl=1",
 		"exc": "6c",
 		"num": "2",
@@ -693,7 +693,7 @@
 		"pag": 154
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/xswsq20ck6u8893/ef3e_p-int_04a_2-15.mp3?dl=1",
 		"exc": "3a",
 		"num": "2",
@@ -720,7 +720,7 @@
 		"pag": 132
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/hjhrxil15p80rgl/ef3e_p-int_04a_2-18.mp3?dl=1",
 		"exc": "3f",
 		"num": "2",
@@ -729,7 +729,7 @@
 		"pag": 29
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/06p3jy9i47qvlep/ef3e_p-int_04a_2-19.mp3?dl=1",
 		"exc": "4a",
 		"num": "2",
@@ -738,7 +738,7 @@
 		"pag": 29
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/qjta3qc96eda4a4/ef3e_p-int_04a_2-20.mp3?dl=1",
 		"exc": "4b",
 		"num": "2",
@@ -748,7 +748,7 @@
 	},
 
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/fvii624iha8nwei/ef3e_p-int_04a_2-21.mp3?dl=1",
 		"exc": "4e",
 		"num": "2",
@@ -757,7 +757,7 @@
 		"pag": 29
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/o496lyglg1dwb5p/ef3e_p-int_04a_2-22.mp3?dl=1",
 		"exc": "5a",
 		"num": "2",
@@ -766,7 +766,7 @@
 		"pag": 29
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/gdi9r3ff0t9ipg8/ef3e_p-int_04a_2-23.mp3?dl=1",
 		"exc": "5b",
 		"num": "2",
@@ -791,7 +791,7 @@
 		"lesson": "4B",
 		"pag": 132
 	},{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/wt7nerpey47m74f/ef3e_p-int_04b_2-26.mp3?dl=1",
 		"exc": "3a",
 		"num": "2",
@@ -800,7 +800,7 @@
 		"pag": 31
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/29wo1cttdi8ikq2/ef3e_p-int_04b_2-27.mp3?dl=1",
 		"exc": "4a",
 		"num": "2",
@@ -828,7 +828,7 @@
 	},
 
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/9wq9abmdk5blu1t/ef3e_p-int_04b_2-30.mp3?dl=1",
 		"exc": "5a",
 		"num": "2",
@@ -837,7 +837,7 @@
 		"pag": 31
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/hh9b2ghsh2ba5ls/ef3e_p-int_04b_2-31.mp3?dl=1",
 		"exc": "5c",
 		"num": "2",
@@ -845,7 +845,7 @@
 		"lesson": "4B",
 		"pag": 31
 	},{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/djd5trxpyzp5dne/ef3e_p-int_04c_2-32.mp3?dl=1",
 		"exc": "1a",
 		"num": "2",
@@ -854,7 +854,7 @@
 		"pag": 32
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/pvcclq1vaiik49p/ef3e_p-int_04c_2-33.mp3?dl=1",
 		"exc": "2a",
 		"num": "2",
@@ -872,7 +872,7 @@
 		"pag": 132
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/s67ygt9llvjbrzp/ef3e_p-int_04c_2-35.mp3?dl=1",
 		"exc": "3b",
 		"num": "2",
@@ -881,7 +881,7 @@
 		"pag": 32
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/zkddgaxb9zppudi/ef3e_p-int_04c_2-36.mp3?dl=1",
 		"exc": "3c",
 		"num": "2",
@@ -890,7 +890,7 @@
 		"pag": 32
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/5w1tekz07glajoa/ef3e_p-int_04c_2-37.mp3?dl=1",
 		"exc": "6b",
 		"num": "2",
@@ -917,7 +917,7 @@
 		"pag": 134
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/1qjsyw4yny8mvku/ef3e_p-int_05a_2-41.mp3?dl=1",
 		"exc": "3a",
 		"num": "2",
@@ -926,7 +926,7 @@
 		"pag": 37
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/0079vqtdoi5tlnh/ef3e_p-int_05a_2-42.mp3?dl=1",
 		"exc": "5b",
 		"num": "2",
@@ -945,7 +945,7 @@
 		"pag": 134
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/nx7h5ih3rpgd4ir/ef3e_p-int_05b_2-44.mp3?dl=1",
 		"exc": "2b",
 		"num": "2",
@@ -954,7 +954,7 @@
 		"pag": 38
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/dz6012unhaxvlv9/ef3e_p-int_05b_2-45.mp3?dl=1",
 		"exc": "4a",
 		"num": "2",
@@ -990,7 +990,7 @@
 		"pag": 156
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/vn0h3giu4ypr1z0/ef3e_p-int_05c_2-50.mp3?dl=1",
 		"exc": "2c",
 		"num": "",
@@ -1000,7 +1000,7 @@
 	},
 
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/lx6487a0cr57dt7/ef3e_p-int_05c_2-51.mp3?dl=1",
 		"exc": "2e",
 		"num": "2",
@@ -1027,7 +1027,7 @@
 		"pag": 134
 	},
 	{
-		"type": "exercise", 
+		"type": "Exercise", 
 		"link": "https://www.dropbox.com/s/37pxbvrnapizx7t/ef3e_p-int_05c_2-54.mp3?dl=1",
 		"exc": "4b",
 		"num": "2",

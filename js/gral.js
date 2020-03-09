@@ -20,23 +20,25 @@ function changeTab(tab,subTarea,...params){
 	//console.log('el arr',arr)
 	arr.forEach(li=>{
 		li.className='';
-		if(li.title==tab.title) li.className='active';
+		//if(li.title==tab.title) li.className='active';
 	})
+	tab.className='active'
 
 	//loadHtml(tab.dataset.tab,null,subTarea,...params);
 	//loadHbs(tab)
-	changePage(tab)
+	changePage(tab,subTarea,...params)
 }
 
 
 function changeSubTab(...args){
-//	console.log('los arguments en subTab',args)
+	
 	let params=[...args]
+	console.log('los arguments en subTab',params)
 	let inxTab=params[0], name=params[1], dos=params[2] || '';
 	//console.log('inx',inxTab, 'name', name, 'dos',dos);
 	//console.log('inxTab en cahgeSub',inxTab);
 	//console.log('name en changeSub',name);
-	let margin=inxTab * 5.5;
+	let margin=inxTab * (!dos? 5.5 : 10.5);
 	//console.log('el id de selec','selector_tab'+dos);
 	//console.log('span',G('selector_tab'+dos));
 	G('selector_tab'+dos).style.marginLeft= margin+'rem';
@@ -47,6 +49,7 @@ function changeSubTab(...args){
 	tabSelected.style.zIndex = '100';
 }
 
+/*
 function loadHtml(name,action,subTarea,...params) {
 //	console.log('params en loadHtml: ',params)
 //	console.log('params en loadHtml CON PUNTOS: ',...params)
@@ -65,69 +68,35 @@ function loadHtml(name,action,subTarea,...params) {
 		if(subTarea) subTarea(...params);
 	})
 }
+*/
 
-
-let reciente=[
-{
-		type: "exercise", 
-		link: "https://www.dropbox.com/s/h1wjl70ah1zhm8j/ef3e_p-int_01a_1-02.mp3?dl=0",
-		exc: "1b",
-		num: "1",
-		sound_n: 2,
-		lesson: "1A",
-		pag: 4
-	},
-	{
-		type: "Grammar Bank", 
-		link: "https://www.dropbox.com/s/vtfp1klh2kd1i8x/ef3e_p-int_01a_1-03.mp3?dl=0",
-		exc: "1A",
-		num: "1",
-		sound_n: 3,
-		lesson: "1A",
-		pag: 126
-	},
-	{
-		type: "Grammar Bank", 
-		link: "https://www.dropbox.com/s/oa961xi5d0dt7ze/ef3e_p-int_01a_1-04.mp3?dl=0",
-		exc: "1A",
-		num: "1",
-		sound_n: 4,
-		lesson: "1A",
-		pag: 126
-	},
-	{
-		type: "exercise", 
-		link: "https://www.dropbox.com/s/qlofo0wjnmnadt3/ef3e_p-int_01a_1-05.mp3?dl=0",
-		exc: "3a",
-		num: "1",
-		sound_n: 5,
-		lesson: "1A",
-		pag: 5
-	}
-]
-
-
-
-
-
-localStorage.setItem('recently', JSON.stringify(reciente));
-
-function changePage(elem,tarea){
+function changePage(elem,tarea,...params){
 	console.log('elem en changePage',elem)
 	let datos={};
 	switch(elem.dataset.vista){
 		case 'home':
 			datos.recently= JSON.parse(localStorage.getItem('recently'));
 			break;
-		case 'artista':
+		case 'artist':
+		console.log('elem para artist',elem)
 			datos.album_cover=elem.dataset.album;
 			datos.name='Lesson '+elem.dataset.lesson;
-			datos.book_audio=Json.BOOK_AUDIO.filter(x=>x.lesson==elem.dataset.lesson).sort((a,b)=>a.sound_n-b.sound_n)
+			//datos.book_audio=Json.BOOK_AUDIO.filter(x=>x.lesson==elem.dataset.lesson).sort((a,b)=>a.pag-b.pag)
+			datos.audios=(elem.dataset.album=='album_book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO)
+				.filter(x=>x.lesson==elem.dataset.lesson)
+		//	console.log('audios sin filter',datos.audios)
+	//		datos.audios.filter(x=>x.lesson==elem.dataset.lesson)
+				.sort((a,b)=>a.pag-b.pag)
+			datos.audios.forEach(z=>{z.cover=elem.dataset.album});
+			console.log('audio con filtro',datos.audios)
 			datos.pdf=Json.BOOK_PDF.find(x=>x.lesson==elem.dataset.lesson)
 			break;
 		case 'library':
 			datos.book_audio=[...new Set(Json.BOOK_AUDIO.sort((a,b)=>a.pag-b.pag)
-				.map(x=>({name:(x.type=='exercise'?'Lesson':x.type)+' '+x.lesson, lesson:x.lesson}))
+				.map(x=>({
+					type:(x.type=='Exercise'?'Lesson':x.type), 
+					lesson:x.lesson, 
+					pag: Json.BOOK_PDF.find(z=>z.lesson==x.lesson).pag}))
 				.map(JSON.stringify))].map(JSON.parse)
 			
 			
@@ -135,7 +104,7 @@ function changePage(elem,tarea){
 		
 
 			datos.wbook_audio=[...new Set(Json.WORKBOOK_AUDIO.sort((a,b)=>a.pag-b.pag)
-				.map(x=>({name:(x.type=='exercise'?'Lesson':x.type)+' '+x.lesson, lesson:x.lesson}))
+				.map(x=>({lesson:x.lesson, pag: Json.WORKBOOK_PDF.find(z=>z.lesson==x.lesson).pag}))
 				.map(JSON.stringify))].map(JSON.parse)
 
 
@@ -148,12 +117,13 @@ function changePage(elem,tarea){
 			datos.linkDownload=elem.dataset.downlad;
 			break;
 	}
+	//if(tarea) tarea(...params);
 	console.log('datos en changePage: ',datos)
-	loadHbs(elem.dataset.vista, datos,null,tarea);
+	loadHbs(elem.dataset.vista, datos,null,tarea, ...params);
 }
 
 
-function loadHbs(hbs, datos, action, tarea) {
+function loadHbs(hbs, datos, action, tarea,...params) {
 //	console.log('params en loadHtml: ',params)
 //	console.log('params en loadHtml CON PUNTOS: ',...params)
 /*let datos={
@@ -182,7 +152,7 @@ function loadHbs(hbs, datos, action, tarea) {
      	if(action) history.replaceState({page:hbs},'', './'+hbs+'.hbs')
 		else history.pushState({page:hbs},'', './'+hbs+'.hbs')
 	//console.log('la subTrea :/',tarea)
-	//	if(tarea) tarea(...params);
+		if(tarea) tarea(...params);
       }
 	})
 }

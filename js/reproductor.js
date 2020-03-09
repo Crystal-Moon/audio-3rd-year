@@ -12,8 +12,24 @@ const art = G('img_cd');
 const timeActual = G('current_time');
 const totalTime = G('total_time');
 let current_track = 0;
-let song, audio, duration;
+let song, duration;
+let audio = new Audio();
 let playing = false;
+let cover='';
+
+function playSong(elem) {
+    console.log('elem en playSong',elem)
+    //song = songs[current_track];
+ //   audio = new Audio();
+    audio.src = elem.dataset.link;
+    title.textContent = 'Excercise '+elem.dataset.exc;
+    artist.textContent = 'Lesson '+elem.dataset.lesson;
+    art.style.backgroundImage = 'url("./img/'+elem.dataset.cover+'.jpg")' 
+
+
+
+}
+
 
 let songs = [{
     title: 'Mother\'s Day',
@@ -36,21 +52,22 @@ let songs = [{
     art: 'http://abarcarodriguez.com/365/files/rainbow.jpg'
 }];
 
-window.addEventListener('load', init(), false);
-
+//window.addEventListener('load', init(), false);
+/*
 function init() {
-    song = songs[current_track];
+    //song = songs[current_track];
     audio = new Audio();
-    audio.src = song.url;
-    title.textContent = song.title;
-    artist.textContent = song.artist;
-    art.src = song.art;    // revisar si usar una clase cpara book y wb o si poner numero o imagen en style inline
+   // audio.src = song.url;
+   // title.textContent = song.title;
+   // artist.textContent = song.artist;
+   // art.src = song.art;    // revisar si usar una clase cpara book y wb o si poner numero o imagen en style inline
 }
-
+*/
 audio.addEventListener('timeupdate', updateTrack, false);
 audio.addEventListener('loadedmetadata', function () {
     duration = this.duration;
     totalTime.innerText = msToMin(this.duration);
+    this.play();
 }, false);
 
 window.onmousemove = function (e) {
