@@ -46,10 +46,13 @@ function initJson(){
 
 function hacerJson(){
 //	Json.WORKBOOK_PDF.forEach(x=>{x.linkDownload=x.link.replace('/preview','&export=download').replace('file/d/','uc?id=')})
-Json.WORKBOOK_AUDIO.forEach((x,i)=>{x.sound_n=i+1})
+Json.WORKBOOK_PDF.forEach((x,i)=>{
+	x.order=i+1; 
+	//x.linkDownload=x.link.replace('/preview','&export=download').replace('file/d/','uc?id=')
+})
 
 //	"https://drive.google.com/file/d/1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y/preview",
 //	"https://drive.google.com/uc?id=1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y&export=download",
 		
-	console.log(JSON.stringify(Json.WORKBOOK_AUDIO,null,4))
+	console.log(JSON.stringify(Json.WORKBOOK_PDF,null,4))
 }
