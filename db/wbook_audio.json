@@ -6,6 +6,7 @@
         "num": "1",
         "sound_n": 1,
         "lesson": "1A",
+        "color": "grey",
         "pag": 4
     },
     {
@@ -15,6 +16,7 @@
         "num": "1",
         "sound_n": 2,
         "lesson": "1A",
+        "color": "grey",
         "pag": 4
     },
     {
@@ -24,6 +26,7 @@
         "num": "1",
         "sound_n": 3,
         "lesson": "1A",
+        "color": "grey",
         "pag": 5
     },
     {
@@ -33,6 +36,7 @@
         "num": "1",
         "sound_n": 4,
         "lesson": "1A",
+        "color": "grey",
         "pag": 5
     },
     {
@@ -42,6 +46,7 @@
         "num": "1",
         "sound_n": 5,
         "lesson": "1B",
+        "color": "grey",
         "pag": 7
     },
     {
@@ -51,6 +56,7 @@
         "num": "1",
         "sound_n": 6,
         "lesson": "1B",
+        "color": "grey",
         "pag": 7
     },
     {
@@ -60,6 +66,7 @@
         "num": "1",
         "sound_n": 7,
         "lesson": "1B",
+        "color": "grey",
         "pag": 7
     },
     {
@@ -69,6 +76,7 @@
         "num": "1",
         "sound_n": 8,
         "lesson": "1C",
+        "color": "grey",
         "pag": 9
     },
     {
@@ -78,6 +86,7 @@
         "num": "1",
         "sound_n": 9,
         "lesson": "1C",
+        "color": "grey",
         "pag": 9
     },
     {
@@ -87,6 +96,7 @@
         "num": "1",
         "sound_n": 10,
         "lesson": "2A",
+        "color": "grey",
         "pag": 12
     },
     {
@@ -96,6 +106,7 @@
         "num": "1",
         "sound_n": 11,
         "lesson": "2A",
+        "color": "grey",
         "pag": 12
     },
     {
@@ -105,6 +116,7 @@
         "num": "1",
         "sound_n": 12,
         "lesson": "2B",
+        "color": "grey",
         "pag": 14
     },
     {
@@ -114,6 +126,7 @@
         "num": "1",
         "sound_n": 13,
         "lesson": "2B",
+        "color": "grey",
         "pag": 14
     },
     {
@@ -123,6 +136,7 @@
         "num": "1",
         "sound_n": 14,
         "lesson": "2C",
+        "color": "grey",
         "pag": 16
     },
     {
@@ -132,6 +146,7 @@
         "num": "1",
         "sound_n": 15,
         "lesson": "2C",
+        "color": "grey",
         "pag": 16
     },
     {
@@ -141,6 +156,7 @@
         "num": "1",
         "sound_n": 16,
         "lesson": "3A",
+        "color": "grey",
         "pag": 18
     },
     {
@@ -150,6 +166,7 @@
         "num": "1",
         "sound_n": 17,
         "lesson": "3A",
+        "color": "grey",
         "pag": 18
     },
     {
@@ -159,6 +176,7 @@
         "num": "1",
         "sound_n": 18,
         "lesson": "3B",
+        "color": "grey",
         "pag": 19
     },
     {
@@ -168,6 +186,7 @@
         "num": "1",
         "sound_n": 19,
         "lesson": "3B",
+        "color": "grey",
         "pag": 20
     },
     {
@@ -177,6 +196,7 @@
         "num": "1",
         "sound_n": 20,
         "lesson": "3C",
+        "color": "grey",
         "pag": 21
     },
     {
@@ -186,6 +206,7 @@
         "num": "1",
         "sound_n": 21,
         "lesson": "3C",
+        "color": "grey",
         "pag": 22
     },
     {
@@ -195,6 +216,7 @@
         "num": "1",
         "sound_n": 22,
         "lesson": "4A",
+        "color": "grey",
         "pag": 24
     },
     {
@@ -204,6 +226,7 @@
         "num": "1",
         "sound_n": 23,
         "lesson": "4A",
+        "color": "grey",
         "pag": 25
     },
     {
@@ -213,6 +236,7 @@
         "num": "1",
         "sound_n": 24,
         "lesson": "4B",
+        "color": "grey",
         "pag": 27
     },
     {
@@ -222,6 +246,7 @@
         "num": "1",
         "sound_n": 25,
         "lesson": "4B",
+        "color": "grey",
         "pag": 27
     },
     {
@@ -231,6 +256,7 @@
         "num": "1",
         "sound_n": 26,
         "lesson": "4C",
+        "color": "grey",
         "pag": 28
     },
     {
@@ -240,6 +266,7 @@
         "num": "1",
         "sound_n": 27,
         "lesson": "4C",
+        "color": "grey",
         "pag": 29
     },
     {
@@ -249,6 +276,7 @@
         "num": "1",
         "sound_n": 28,
         "lesson": "5A",
+        "color": "grey",
         "pag": 30
     },
     {
@@ -258,6 +286,7 @@
         "num": "1",
         "sound_n": 29,
         "lesson": "5A",
+        "color": "grey",
         "pag": 31
     },
     {
@@ -267,6 +296,7 @@
         "num": "1",
         "sound_n": 30,
         "lesson": "5B",
+        "color": "grey",
         "pag": 33
     },
     {
@@ -276,6 +306,7 @@
         "num": "1",
         "sound_n": 31,
         "lesson": "5B",
+        "color": "grey",
         "pag": 33
     },
     {
@@ -285,6 +316,7 @@
         "num": "1",
         "sound_n": 32,
         "lesson": "5C",
+        "color": "grey",
         "pag": 34
     },
     {
@@ -294,6 +326,7 @@
         "num": "1",
         "sound_n": 33,
         "lesson": "5C",
+        "color": "grey",
         "pag": 35
     },
     {
@@ -303,6 +336,7 @@
         "num": "1",
         "sound_n": 34,
         "lesson": "6A",
+        "color": "grey",
         "pag": 37
     },
     {
@@ -312,6 +346,7 @@
         "num": "1",
         "sound_n": 35,
         "lesson": "6A",
+        "color": "grey",
         "pag": 38
     },
     {
@@ -321,6 +356,7 @@
         "num": "1",
         "sound_n": 36,
         "lesson": "6B",
+        "color": "grey",
         "pag": 39
     },
     {
@@ -330,6 +366,7 @@
         "num": "1",
         "sound_n": 37,
         "lesson": "6B",
+        "color": "grey",
         "pag": 40
     },
     {
@@ -339,6 +376,7 @@
         "num": "1",
         "sound_n": 38,
         "lesson": "6C",
+        "color": "grey",
         "pag": 42
     },
     {
@@ -348,6 +386,7 @@
         "num": "1",
         "sound_n": 39,
         "lesson": "6C",
+        "color": "grey",
         "pag": 42
     },
     {
@@ -357,6 +396,7 @@
         "num": "1",
         "sound_n": 40,
         "lesson": "7A",
+        "color": "grey",
         "pag": 44
     },
     {
@@ -366,6 +406,7 @@
         "num": "1",
         "sound_n": 41,
         "lesson": "7A",
+        "color": "grey",
         "pag": 44
     },
     {
@@ -375,6 +416,7 @@
         "num": "1",
         "sound_n": 42,
         "lesson": "7B",
+        "color": "grey",
         "pag": 46
     },
     {
@@ -384,6 +426,7 @@
         "num": "1",
         "sound_n": 43,
         "lesson": "7B",
+        "color": "grey",
         "pag": 46
     },
     {
@@ -393,6 +436,7 @@
         "num": "1",
         "sound_n": 45,
         "lesson": "7C",
+        "color": "grey",
         "pag": 47
     },
     {
@@ -402,6 +446,7 @@
         "num": "1",
         "sound_n": 46,
         "lesson": "7C",
+        "color": "grey",
         "pag": 48
     },
     {
@@ -411,6 +456,7 @@
         "num": "1",
         "sound_n": 47,
         "lesson": "8A",
+        "color": "grey",
         "pag": 51
     },
     {
@@ -420,6 +466,7 @@
         "num": "1",
         "sound_n": 48,
         "lesson": "8A",
+        "color": "grey",
         "pag": 51
     },
     {
@@ -429,6 +476,7 @@
         "num": "1",
         "sound_n": 49,
         "lesson": "8B",
+        "color": "grey",
         "pag": 53
     },
     {
@@ -438,6 +486,7 @@
         "num": "1",
         "sound_n": 50,
         "lesson": "8B",
+        "color": "grey",
         "pag": 53
     },
     {
@@ -447,6 +496,7 @@
         "num": "1",
         "sound_n": 51,
         "lesson": "8C",
+        "color": "grey",
         "pag": 54
     },
     {
@@ -456,6 +506,7 @@
         "num": "1",
         "sound_n": 52,
         "lesson": "8C",
+        "color": "grey",
         "pag": 55
     },
     {
@@ -465,6 +516,7 @@
         "num": "1",
         "sound_n": 53,
         "lesson": "9A",
+        "color": "grey",
         "pag": 57
     },
     {
@@ -474,6 +526,7 @@
         "num": "1",
         "sound_n": 54,
         "lesson": "9A",
+        "color": "grey",
         "pag": 57
     },
     {
@@ -483,6 +536,7 @@
         "num": "1",
         "sound_n": 55,
         "lesson": "9B",
+        "color": "grey",
         "pag": 59
     },
     {
@@ -492,6 +546,7 @@
         "num": "1",
         "sound_n": 56,
         "lesson": "9B",
+        "color": "grey",
         "pag": 59
     },
     {
@@ -501,6 +556,7 @@
         "num": "1",
         "sound_n": 57,
         "lesson": "9C",
+        "color": "grey",
         "pag": 60
     },
     {
@@ -510,6 +566,7 @@
         "num": "1",
         "sound_n": 58,
         "lesson": "9C",
+        "color": "grey",
         "pag": 61
     },
     {
@@ -519,6 +576,7 @@
         "num": "1",
         "sound_n": 59,
         "lesson": "10A",
+        "color": "grey",
         "pag": 64
     },
     {
@@ -528,6 +586,7 @@
         "num": "1",
         "sound_n": 60,
         "lesson": "10A",
+        "color": "grey",
         "pag": 64
     },
     {
@@ -537,6 +596,7 @@
         "num": "1",
         "sound_n": 61,
         "lesson": "10B",
+        "color": "grey",
         "pag": 65
     },
     {
@@ -546,6 +606,7 @@
         "num": "1",
         "sound_n": 62,
         "lesson": "10B",
+        "color": "grey",
         "pag": 66
     },
     {
@@ -555,6 +616,7 @@
         "num": "1",
         "sound_n": 63,
         "lesson": "10C",
+        "color": "grey",
         "pag": 68
     },
     {
@@ -564,6 +626,7 @@
         "num": "1",
         "sound_n": 64,
         "lesson": "10C",
+        "color": "grey",
         "pag": 68
     },
     {
@@ -573,6 +636,7 @@
         "num": "1",
         "sound_n": 65,
         "lesson": "11A",
+        "color": "grey",
         "pag": 70
     },
     {
@@ -582,6 +646,7 @@
         "num": "1",
         "sound_n": 66,
         "lesson": "11A",
+        "color": "grey",
         "pag": 70
     },
     {
@@ -591,6 +656,7 @@
         "num": "1",
         "sound_n": 67,
         "lesson": "11B",
+        "color": "grey",
         "pag": 71
     },
     {
@@ -600,6 +666,7 @@
         "num": "1",
         "sound_n": 68,
         "lesson": "11B",
+        "color": "grey",
         "pag": 72
     },
     {
@@ -609,6 +676,7 @@
         "num": "1",
         "sound_n": 69,
         "lesson": "11C",
+        "color": "grey",
         "pag": 73
     },
     {
@@ -618,6 +686,7 @@
         "num": "1",
         "sound_n": 70,
         "lesson": "11C",
+        "color": "grey",
         "pag": 73
     },
     {
@@ -627,6 +696,7 @@
         "num": "1",
         "sound_n": 71,
         "lesson": "11C",
+        "color": "grey",
         "pag": 74
     },
     {
@@ -636,6 +706,7 @@
         "num": "1",
         "sound_n": 72,
         "lesson": "12A",
+        "color": "grey",
         "pag": 77
     },
     {
@@ -645,6 +716,7 @@
         "num": "1",
         "sound_n": 73,
         "lesson": "12A",
+        "color": "grey",
         "pag": 77
     },
     {
@@ -654,6 +726,7 @@
         "num": "1",
         "sound_n": 74,
         "lesson": "12B",
+        "color": "grey",
         "pag": 79
     },
     {
@@ -663,6 +736,7 @@
         "num": "1",
         "sound_n": 75,
         "lesson": "12B",
+        "color": "grey",
         "pag": 79
     },
     {
@@ -672,6 +746,7 @@
         "num": "1",
         "sound_n": 76,
         "lesson": "12C",
+        "color": "grey",
         "pag": 81
     },
     {
@@ -681,6 +756,7 @@
         "num": "1",
         "sound_n": 77,
         "lesson": "12C",
+        "color": "grey",
         "pag": 81
     }
 ]

@@ -18,14 +18,21 @@
 	<div class="library_sec" id="tabaudiobookA" style="z-index:90;">
 	  <ul>
 	  {{#each book_audio}}
-	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="album_book"><span class="w10 icon music to-artistspan"></span><span class="w65 to-artistspan">{{type}} <b>{{lesson}}</b> (pags.{{pag}})</span><span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="album_book">
+	  		<span class="w10 icon cover {{color}} to-artistspan"></span>
+	  		<span class="w90 to-artistspan">{{type}} <b>{{lesson}}</b> (pags.{{pag}})</span>
+	  		<!-- <span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a>--></li>
 	  {{/each}}
 	  </ul>
 	</div>
 	<div class="library_sec" id="tabaudiowbA">
 	  <ul> <!-- aqui va book_pdf -->
 	  {{#each wbook_audio}}
-	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="album_workbook"><span class="w10 icon music to-artistspan"></span><span class="w65 to-artistspan">Lesson <b>{{lesson}}</b> (pags.{{pag}})</span><span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="album_workbook">
+	  		<span class="w10 icon cover {{color}} to-artistspan"></span>
+	  		<span class="w90 to-artistspan">Lesson <b>{{lesson}}</b> (pags.{{pag}})</span>
+	  		<!--<span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a>-->
+	  	</li>
 	  {{/each}}
 	  </ul>
 	</div>

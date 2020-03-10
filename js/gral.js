@@ -96,7 +96,8 @@ function changePage(elem,tarea,...params){
 				.map(x=>({
 					type:(x.type=='Exercise'?'Lesson':x.type), 
 					lesson:x.lesson, 
-					pag: Json.BOOK_PDF.find(z=>z.lesson==x.lesson).pag}))
+					pag: Json.BOOK_PDF.find(z=>z.lesson==x.lesson).pag,
+					color:x.color}))
 				.map(JSON.stringify))].map(JSON.parse)
 			
 			

@@ -23,8 +23,10 @@ window.onpopstate = function(e) {
 	
 	//if(!e.state) loadHtml('home')
 	//else loadHtml(e.state.page,'replace')
-	if(!e.state) loadHbs('home')
-	else loadHbs(e.state.page,null,'replace')
+
+	//al hacer para atras tmb necesito el elem o al pushar mandar el lesaon y album, y todo u,u
+	if(!e.state) changePage('home')
+	else changePage({dataset:{vista:e.state.page}},null,'replace')
 };
 
 function initJson(){
@@ -43,22 +45,31 @@ function initJson(){
 	})
 }
 
+let colorr=['blue','green','red','green','violet','red','blue','green','red','green','violet','red']
 
 function hacerJson(){
 //	Json.WORKBOOK_PDF.forEach(x=>{x.linkDownload=x.link.replace('/preview','&export=download').replace('file/d/','uc?id=')})
-Json.WORKBOOK_PDF.forEach((x,i)=>{
-	x.order=i+1; 
+
+Json.BOOK_AUDIO.forEach((x,i)=>{
+	let cor=x.lesson.split('').splice(0,x.lesson.length-1)
+	console.log(cor)
+	if(x.type=='Exercise') x.color=colorr[parseInt(cor.join(''))-1]; 
+	else if(x.type=='Grammar Bank') x.color='blue'
+	else if(x.type=='Vocabulary Bank') x.color='green'
+	//else if(x.type=='Revice and Check') x.color='yellow'
+	else if(x.type=='Practical English') x.color='yellow'
+	else x.color=''
 	//x.linkDownload=x.link.replace('/preview','&export=download').replace('file/d/','uc?id=')
 })
 
 //	"https://drive.google.com/file/d/1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y/preview",
 //	"https://drive.google.com/uc?id=1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y&export=download",
 		
-	console.log(JSON.stringify(Json.WORKBOOK_PDF,null,4))
+	console.log(JSON.stringify(Json.BOOK_AUDIO,null,4))
 }
 
 
-
+/*
 
 
 let reciente=[
@@ -105,3 +116,5 @@ let reciente=[
 
 
 localStorage.setItem('recently', JSON.stringify(reciente));
+
+*/
