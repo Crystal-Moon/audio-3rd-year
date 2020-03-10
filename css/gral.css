@@ -8,7 +8,50 @@ font-family: 'Fira Sans', ;
 html, body{margin: 0;padding: 0;height: 100%;width: 100%;color: white;background-color: #121212;position: relative;}
 ul{list-style: none;padding: 0;margin: 0.3em;}
 li{cursor: pointer;}
-
+/*******************************************/
+#miniLoader{
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(2, 2, 2, 0.8);
+    color: white;
+    z-index: 2000;
+}
+/*******************************************/
+#dialogs{
+    font-family: 'Roboto Slab', sans-serif;
+    position: fixed;
+    display: none;
+    width: 80%;
+    height: 74%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: white;
+    border-radius: 2em;
+    z-index: 5000;
+    overflow: hidden;
+}
+#dialogs .close{
+    width: max-content;
+    height: 1.5em;
+    margin: 2%;
+    margin-left: auto;
+    margin-right: 2em;
+}
+#dialogs h3{margin: 0.5em;
+    margin-left: 1.5em;}
+#dialogs>div:last-child{
+    overflow: scroll;
+    width: 90%;
+    margin: auto;
+    padding-top: 0.4em;
+    height: 80%;
+    overflow-x: hidden;
+}
 /*****************************************/
 #body{
 	position: relative;
@@ -162,11 +205,31 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 /*.sticky{
      position: sticky; 
 }*/
+.w10{width: 10%;}
 .w25{width: 25%;}
 .w65{width: 65%;}
 .w50{width: 50%;}
-.w10{width: 10%;}
+.w75{width: 75%;}
 .w90{width: 90%;}
+.num_cd{width: 1.5em;
+    text-align: center;
+    display: inline-block;
+    height: 1.5em;
+    border-radius: 50%;
+    color: black;
+    background: linear-gradient(309deg, rgba(255,255,255,1) 0%, rgba(119,119,119,1) 47%, rgba(255,255,255,1) 100%);
+    margin-left: 0.1em;
+    margin-right: 0.5em;}
+.sound_n{
+    display: inline-block;
+    background-image: url('../img/noise.png');
+    background-size: auto 100%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    width: 2em;
+    height: 1.5em;
+    text-align: left;
+}
 .menu_point{position:relative;background-image: url('../img/menu_point.png');height: 0.9em;width: 0.9em;background-size: 100% auto;background-position: center center;background-repeat: no-repeat;margin:auto;}
 /*.menu_point:after{content: 'Download';height: 1.5em;width: max-content;line-height: 1.5em;color:white;position: absolute;right: 0;}
 .menu_poniter:after:after{content: '*';color:black;height: 1em;width: 1em;background-image: url('../img/download.png');}*/
@@ -174,6 +237,7 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 .artist.gradiant{/* height: 70%; *//* padding-left: 1em; */box-sizing: border-box;/* height: inherit; */}
 .artist.gradiant > *:last-child{margin-bottom: 7em;}
 .artist span{display: block;}
+.artist span>span{display: inline-block;}
 .artist ul{background: inherit;margin: 0;padding: 0;text-align: center;}
 .artist ul li{border-radius: 0.5em;padding: 0.5em;margin: 0.1em;}
 .artist ul li:hover{background-color: #353535;transition: all 0.2s ease;}
@@ -329,7 +393,7 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
 }
 #body.body_pdf_view .head .icon:first-child{margin-left: 1.5em;}
 #body.body_pdf_view .head .icon:last-child{margin-right: 1.5em;}
-.arrow_izq{background-image: url('../img/arrow_izq.png');}
+.arrow_izq{background-image: url('../img/arrow_izq.png');cursor: pointer;}
 #pdf_aqui{
     margin: 0;
     padding: 0;

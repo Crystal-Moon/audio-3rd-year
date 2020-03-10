@@ -24,7 +24,7 @@ function playSong(elem) {
     audio.src = elem.dataset.link;
     title.textContent = 'Excercise '+elem.dataset.exc;
     artist.textContent = 'Lesson '+elem.dataset.lesson;
-    art.style.backgroundImage = 'url("./img/'+elem.dataset.cover+'.jpg")' 
+    art.style.backgroundImage = 'url("./img/album_'+elem.dataset.cover+'.jpg")' 
 
 
 

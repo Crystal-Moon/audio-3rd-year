@@ -26,7 +26,7 @@ function changeTab(tab,subTarea,...params){
 
 	//loadHtml(tab.dataset.tab,null,subTarea,...params);
 	//loadHbs(tab)
-	changePage(tab,subTarea,...params)
+	changePage(tab,subTarea,null,...params)
 }
 
 
@@ -70,8 +70,9 @@ function loadHtml(name,action,subTarea,...params) {
 }
 */
 
-function changePage(elem,tarea,...params){
+function changePage(elem,tarea,act,...params){
 	console.log('elem en changePage',elem)
+	console.log('la data de elem',elem.dataset)
 	let datos={};
 	switch(elem.dataset.vista){
 		case 'home':
@@ -80,9 +81,9 @@ function changePage(elem,tarea,...params){
 		case 'artist':
 		console.log('elem para artist',elem)
 			datos.album_cover=elem.dataset.album;
-			datos.name='Lesson '+elem.dataset.lesson;
+			datos.lesson=elem.dataset.lesson;
 			//datos.book_audio=Json.BOOK_AUDIO.filter(x=>x.lesson==elem.dataset.lesson).sort((a,b)=>a.pag-b.pag)
-			datos.audios=(elem.dataset.album=='album_book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO)
+			datos.audios=(elem.dataset.album=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO)
 				.filter(x=>x.lesson==elem.dataset.lesson)
 		//	console.log('audios sin filter',datos.audios)
 	//		datos.audios.filter(x=>x.lesson==elem.dataset.lesson)
@@ -96,7 +97,7 @@ function changePage(elem,tarea,...params){
 				.map(x=>({
 					type:(x.type=='Exercise'?'Lesson':x.type), 
 					lesson:x.lesson, 
-					pag: Json.BOOK_PDF.find(z=>z.lesson==x.lesson).pag,
+					pag: Json.BOOK_PDF.find(z=>z.type==x.type||(z.lesson==x.lesson&&x.type=='Exercise')).pag,
 					color:x.color}))
 				.map(JSON.stringify))].map(JSON.parse)
 			
@@ -115,16 +116,30 @@ function changePage(elem,tarea,...params){
 			break;
 		case 'pdf_view':
 			datos.link=elem.dataset.link;
-			datos.linkDownload=elem.dataset.downlad;
+			datos.linkDownload=elem.dataset.download;
 			break;
 	}
 	//if(tarea) tarea(...params);
+	if(act) history.replaceState({
+			page:elem.dataset.vista,
+			elem_data:JSON.parse(JSON.stringify(elem.dataset))
+		},'', './'+elem.dataset.vista+'.hbs')
+	else history.pushState({
+			page:elem.dataset.vista,
+			elem_data:JSON.parse(JSON.stringify(elem.dataset))
+		},'', './'+elem.dataset.vista+'.hbs')
+
+	/*	history.pushState({
+			page:elem.dataset.vista,
+			elem_data:JSON.parse(JSON.stringify(elem.dataset))
+		},'', './'+elem.dataset.vista+'.hbs')
+*/
 	console.log('datos en changePage: ',datos)
-	loadHbs(elem.dataset.vista, datos,null,tarea, ...params);
+	loadHbs(elem.dataset.vista, datos,tarea, ...params);
 }
 
 
-function loadHbs(hbs, datos, action, tarea,...params) {
+function loadHbs(hbs, datos, tarea,...params) {
 //	console.log('params en loadHtml: ',params)
 //	console.log('params en loadHtml CON PUNTOS: ',...params)
 /*let datos={
@@ -148,17 +163,26 @@ function loadHbs(hbs, datos, action, tarea,...params) {
       //  console.log(a)
        // SECCION_ARTICLES.append(a)
      	//cargarSeccion(RutasAPI[countP])
-     	console.log(BODY);
+     //	console.log(BODY);
 
-     	if(action) history.replaceState({page:hbs},'', './'+hbs+'.hbs')
-		else history.pushState({page:hbs},'', './'+hbs+'.hbs')
+    // 	if(action) history.replaceState({page:hbs},'', './'+hbs+'.hbs')
+	//	else history.pushState({page:hbs},'', './'+hbs+'.hbs')
 	//console.log('la subTrea :/',tarea)
 		if(tarea) tarea(...params);
       }
 	})
 }
 
+function readDialoges(book,lesson) {
+	/// lesson='1A' book='book'||'wbook'
+	fetch('./db/'+book+'_dialoge.json')
+	.then(r=>r.json())
+	.then(d=>{
 
+	})
+	
+	G('dialogs').style.display = 'block';
+}
 
 
 

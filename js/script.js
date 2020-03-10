@@ -16,7 +16,7 @@ document.onclick=function(eve) {
 };
 
 window.onpopstate = function(e) {
-	console.log('evento popstate')
+	console.log('=== evento popstate =======')
 	console.dir(e)
 //	console.log("location: " + document.location + ", state: " + e.state.page)
 //  alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
@@ -26,7 +26,7 @@ window.onpopstate = function(e) {
 
 	//al hacer para atras tmb necesito el elem o al pushar mandar el lesaon y album, y todo u,u
 	if(!e.state) changePage('home')
-	else changePage({dataset:{vista:e.state.page}},null,'replace')
+	else changePage({dataset:e.state.elem_data},null,'replace')
 };
 
 function initJson(){
