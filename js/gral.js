@@ -22,7 +22,7 @@ function changeTab(tab,subTarea,...params){
 		li.className='';
 		//if(li.title==tab.title) li.className='active';
 	})
-	tab.className='active'
+	tab.classList.add('active');
 
 	//loadHtml(tab.dataset.tab,null,subTarea,...params);
 	//loadHbs(tab)
@@ -147,6 +147,7 @@ function loadHbs(hbs, datos, tarea,...params) {
 }*/
 
 //console.log('data',datos)
+LOADER.style.display = 'block';
 	fetch('./'+hbs+'.hbs')
 	.then(res=>{
 		if(res.status==200) return res.text()
@@ -169,19 +170,27 @@ function loadHbs(hbs, datos, tarea,...params) {
 	//	else history.pushState({page:hbs},'', './'+hbs+'.hbs')
 	//console.log('la subTrea :/',tarea)
 		if(tarea) tarea(...params);
+		if(hbs!='pdf_view') LOADER.style.display='none';
+		setTimeout(()=>{ LOADER.style.display='none' }, 2500); //por las dudas q no funcione el iframe
       }
 	})
 }
 
 function readDialoges(book,lesson) {
 	/// lesson='1A' book='book'||'wbook'
-	fetch('./db/'+book+'_dialoge.json')
-	.then(r=>r.json())
-	.then(d=>{
-
-	})
+	LOADER.style.displat='block';
+	let hbs=new Promise(done=>{	fetch('./dialoge.hbs').then(r=>r.text()).then(d=>{ done(d) }) });
+	let json=new Promise(done=>{ fetch('./db/'+book+'_dialoge.json').then(r=>r.json()).then(d=>{ done(d[lesson]) }) });
 	
-	G('dialogs').style.display = 'block';
+	Promise.all([hbs,json])
+	.then(pp=>{
+	  let temp = Handlebars.compile(pp[0]);
+	//	DIALOGS.className='';
+	//	DIALOGS.classList.add('body_'+hbs);
+      DIALOGS.innerHTML=temp({dialogs:pp[1]})
+	  DIALOGS.style.display = 'block';
+	  LOADER.style.displat='none';
+	})
 }
 
 

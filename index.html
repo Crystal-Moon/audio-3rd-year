@@ -15,14 +15,14 @@
  	<link rel="stylesheet" href="css/player_up.css">
 </head>
 <body>
-	<div id=#miniLoader></div>
+	<div id="miniLoader" style="display: none;"><img src="./img/loading.gif" alt="loading.gif"></div>
 	<div id="dialogs" class="w_b"></div>
 	<div id="body" class=""></div><!-- final del body -->
 <!-- ***************************************************************************************************************** -->
 	<div id="Menu">
 		<h1><div class="icon CM_logo" onclick="window.open('https://www.linkedin.com/in/perla-stto/', '_blank');"></div><span href="www.google.com" target="_blank" class="label_menu cm_pc">3rd Year</span><span class="cm_cel">Developer</span></h1>
 		<ul id="ul">
-			<li class="active" onclick="changeTab(this)" title="home" data-vista="home"><div class="icon home"></div><span class="label_menu">Home</span></li>
+			<li class="active" onclick="changeTab(this)" title="home" data-vista="home" id="home"><div class="icon home"></div><span class="label_menu">Home</span></li>
 			<li class="" onclick="changeTab(this,changeSubTab,1,'pdf','')" title="pdf" data-vista="library"><div class="icon pdf"></div><span class="label_menu">PDF</span></li>
 			<li class="" onclick="changeTab(this)" title="library" data-vista="library"><div class="icon library"></div><span class="label_menu">Library</span></li>
 		</ul>
@@ -32,7 +32,7 @@
 		<div class="arrow down" onclick="upp()"></div>
 		<div class="gradiant"></div>
 		<div class="label"  onclick="upp(true)">
-			<div class="img_cd" id="img_cd" style="background-image: url('./img/random/random.png');"></div>
+			<div class="img_cd cover" id="img_cd"></div>
 			<div class="col">
 				<span class="title_song" id="title_song">Nothing</span>
 				<span class="album_cd" id="album_cd"></span>
@@ -61,7 +61,7 @@
 			</div>
 		</div>
 	</div>
-	<div style="color:white;">Iconos diseñados por <a href="https://www.flaticon.es/autores/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div>
+	<div style="color:white;display: none;">Iconos diseñados por <a href="https://www.flaticon.es/autores/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div>
 
 	<script src="js/gral.js"></script>
 	<script src="js/script.js"></script>
@@ -69,7 +69,9 @@
 
 	<script type="text/javascript">
 
-//changeTab({dataset:{tab:'home'}});
+localStorage.setItem('recently', null);	//luego borrar ...............
+const LOADER=G('miniLoader');
+const DIALOGS=G('dialogs');
 	</script>
 
 	<!-- Include Handlebars from a CDN -->
@@ -78,8 +80,8 @@
 const Json={};
   
   initJson();
-
-changeTab({title:'home',dataset:{vista:'home'}})
+G('home').click();
+//changeTab({title:'home',dataset:{vista:'home'}})
 /*
   // compile the template
   var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");

@@ -30,7 +30,7 @@ window.onpopstate = function(e) {
 };
 
 function initJson(){
-
+LOADER.style.display = 'block';
 	let b_audio=new Promise(done=>{ fetch('./db/book_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
 	let b_pdf=new Promise(done=>{ fetch('./db/book_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
 	let wb_audio=new Promise(done=>{ fetch('./db/wbook_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
@@ -42,6 +42,7 @@ function initJson(){
 		Json.BOOK_PDF=pp[1];
 		Json.WORKBOOK_AUDIO=pp[2];
 		Json.WORKBOOK_PDF=pp[3]; //listo json
+		LOADER.style.display = 'none';
 	})
 }
 
@@ -111,10 +112,20 @@ let reciente=[
 	}
 ]
 
-
-
-
-
 localStorage.setItem('recently', JSON.stringify(reciente));
-
 */
+
+function saveRecent(song) {
+
+console.log('escuchado  ',song)
+    let recent=JSON.parse(localStorage.getItem('recently'));
+console.log('recently de local antesde ṕpush', recent)
+    if(!recent) recent=[]
+    let exist=recent.find(x=>JSON.stringify(x)==JSON.stringify(song))
+console.log('ya existia song?? ',exist)
+    if(!exist) recent.push(song).reverse()
+localStorage.setItem('recently', JSON.stringify(recent))
+
+
+
+}

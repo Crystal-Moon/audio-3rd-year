@@ -4,10 +4,10 @@
 		<div class="row">
 		<div class="row">
 			{{#each recently}}
-		  	<div class="placa">
-				<div class="img {{classbook}}"></div>
-				<p>{{name}}</p>
-				<div class="play" onclick="loadHbs(this)" data-hbs="artist" data-type="{{type}}"></div>
+		  	<div class="placa to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="{{book}}">
+				<div class="img cover {{color}}"></div>
+				<p>{{lesson}} - exc.{{exc}}</p>
+				<div class="play to-play" data-exc="{{exc}}" data-lesson="{{lesson}}" data-link="{{link}}" data-color="{{color}}"></div>
 		  	</div>
 			{{/each}}
 		{{else}}
@@ -23,15 +23,15 @@
 		<h2>Books</h2>
 		<div class="row">
 		<div class="row" id="recently">
-		   <div class="placa">
+		   <div class="placa" onclick="changeTab(this,changeSubTab,0,'audiobook','A')" data-vista="library" title="library">
 			<div class="img b"></div>
 			<p>Student Book</p>
-			<div class="play" onclick="loadHbs(this)"></div>
+			<div class="play" onclick="changeTab(this,changeSubTab,0,'audiobook','A')" data-vista="library" title="library"></div>
 		  </div>
 		   <div class="placa">
 			<div class="img wb"></div>
 			<p>WorkBook</p>
-			<div class="play" onclick="loadHbs(this)"></div>
+			<div class="play" onclick="changeTab(this,changeSubTab,1,'audiowb','A')" data-vista="library" title="library"></div>
 		  </div>
 		</div>
 		</div>

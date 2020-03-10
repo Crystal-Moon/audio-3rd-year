@@ -18,15 +18,19 @@ let playing = false;
 let cover='';
 
 function playSong(elem) {
+    LOADER.style.display='block';
     console.log('elem en playSong',elem)
     //song = songs[current_track];
  //   audio = new Audio();
     audio.src = elem.dataset.link;
     title.textContent = 'Excercise '+elem.dataset.exc;
     artist.textContent = 'Lesson '+elem.dataset.lesson;
-    art.style.backgroundImage = 'url("./img/album_'+elem.dataset.cover+'.jpg")' 
-
-
+    art.style.backgroundImage = 'url("./img/album.jpeg")';
+    console.log('color en playSong',elem.dataset.color)
+    art.className='img_cd cover';
+    art.classList.add(elem.dataset.color)
+    
+    saveRecent(JSON.parse(JSON.stringify(elem.dataset)));
 
 }
 
@@ -68,6 +72,7 @@ audio.addEventListener('loadedmetadata', function () {
     duration = this.duration;
     totalTime.innerText = msToMin(this.duration);
     this.play();
+    LOADER.style.display='none';
 }, false);
 
 window.onmousemove = function (e) {
@@ -135,6 +140,7 @@ function prevTrack() {
     audio.src = song.url;
     audio.onloadeddata = function() {
       updateInfo();
+      LOADER.style.display='none';
     }
 }
 
