@@ -1,67 +1,6 @@
-/* Large desktop */
-@media (min-width: 1200px) {
-
-#player.up{--device: pc;}
-.arrow.up{}
-.gradiant.up{}
-.label.up{}
-.img_cd.up{}
-.title_song.up{}
-.album_cd.up{}
-.player_control.up{}
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up{}
-.pause.up{}
-.sig.up{}
-.prev.up{}
-.track_control>span.up{}
-.control.up{}
-.track_control.up{}
-.track.up{}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
-}
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-#player.up{--device:pc;}
-.arrow.up
-.gradiant.up{}
-.label.up{}
-.img_cd.up{}
-.title_song.up{}
-.album_cd.up{}
-.player_control.up{}
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up{}
-.pause.up{}
-.sig.up{}
-.prev.up{}
-.track_control>span.up{}
-.control.up{}
-.track_control.up{}
-.track.up{}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
-
-}
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-
-#player.up{--device:pc;height: 100%;max-height: 100%;margin-bottom: 0;padding-bottom: 4em;z-index: 10;/* flex: auto; */flex-direction: column;}
+#player.up{height: 100%;max-height: 100%;margin-bottom: 0;padding-bottom: 4em;z-index: 10;flex-direction: column;}
 .arrow.up{
     display: block;
     height: 1.5em;
@@ -71,9 +10,7 @@
     margin-top: 2%;
     margin-left: 2%;
 }
-.down{
-    background-image: url('../img/arrow_down.png');
-}
+.down{background-image: url('../img/arrow_down.png');}
 .gradiant.up{height: 70%;
     width: 100%;
     position: absolute;
@@ -93,9 +30,7 @@
     margin-bottom: 3em;
     margin-top: 1%;
 }
-#img_cd.cover.up{
-    width: inherit;
-}
+#img_cd.cover.up{width: inherit;}
 .cover.up:after{
     position: absolute;
     content: ' ';
@@ -108,7 +43,6 @@
 .img_cd.up{
     width: inherit;
     height: 40%;
-    /* height: 90%; */
     position: absolute;
 }
 .img_cd.cover.up{background-size: 100% 100%;}
@@ -117,17 +51,11 @@
 	margin-top: auto;
 	font-size: 1.9em;
 }
-.title_song.up{}
-.album_cd.up{}
 .player_control.up{
     position: relative;
     height: max-content;
 }
-.ctrl-btn.up{
-    margin: auto;
-    /* margin: 0.5em; */
-}
-.ctrl-btn:active.up{}
+.ctrl-btn.up{margin: auto;}
 .play.up{
     margin: 0;
     background-image: url('../img/play_circle.png');
@@ -140,19 +68,12 @@
     height: 3.5em;
     width: 3.5em;
 }
-.sig.up{
-    display: block;
-}
-.prev.up{
-    display: block;
-}
-.track_control>span.up{
-    display: block;
-}
-.control.up{
-    margin-right: auto;
-    margin-left: auto;
-}
+.sig.up{display: block;}
+.prev.up{display: block;}
+.track_control>span.up{display: block;}
+.track_control>span.up:first-child{margin-right: auto;}
+.track_control>span.up:last-child{margin-left: auto;}
+.control.up{margin-right: auto;margin-left: auto;}
 .track_control.up{
     width: 94%;
     margin-left: auto;
@@ -160,341 +81,34 @@
     right: 0;
     left: 0;
 }
-.track.up{
-    position: absolute;
+.track.up{position: absolute;}
 }
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
-}
-
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
-#player.up{--device:pc;}
-.arrow.up{
-    margin-left: 5%;
-    margin-top: 5%;
-}
-.gradiant.up{}
-.label.up{}
-.img_cd.up{}
-.title_song.up{}
-.album_cd.up{}
-.player_control.up{}
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up{}
-.pause.up{}
-.sig.up{}
-.prev.up{}
+.arrow.up{margin-left: 5%;margin-top: 5%;}
 .track_control>span.up:first-child{margin-right: auto;}
 .track_control>span.up:last-child{margin-left: auto;}
-.control.up{
-    margin-top: 4em;
+.control.up{margin-top: 4em;}
+.track.up{position: absolute;}
 }
-.track_control.up{}
-.track.up{
-    position: absolute;
-}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
-}
-
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-#player.up{--device:pc;padding-bottom: 5em;}
-.gradiant.up{}
-.arrow.up{}
+#player.up{padding-bottom: 5em;}
 .label.up{
     width: 70%;
     max-width: 77%;
     min-width: 70%;
 }
 #img_cd.cover.up{width: inherit;}
-.img_cd.up{
-    /* height: 40%; */
-    /* width: 40%; */
-    max-width: inherit;
-    width: inherit;
-}
-.title_song.up{}
-.album_cd.up{}
+.img_cd.up{max-width: inherit;width: inherit;}
 .player_control.up{
     width: -2%;
     min-width: 100%;
     max-width: 100%;
     width: 100%;
 }
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up{}
-.pause.up{}
-.sig.up{}
-.prev.up{}
-.track_control>span.up{}
-.control.up{}
-.track_control.up{}
-.track.up{}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
 }
-
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
-
-#player.up{--device:pc;}
-.arrow.up{}
-.gradiant.up{}
-.label.up{}
-.img_cd.up{}
-.title_song.up{}
-.album_cd.up{}
-.player_control.up{}
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up, .pause.up{
-    margin-left: 1.3em;
-    margin-right: 1.3em;
-}
-.sig.up{}
-.prev.up{}
-.track_control>span.up{}
-.control.up{}
-.track_control.up{}
-.track.up{}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-
-#player.up{--device:pc;}
-.arrow.up{}
-.gradiant.up{}
-.label.up{}
-.img_cd.up{}
-.title_song.up{}
-.album_cd.up{}
-.player_control.up{}
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up{}
-.pause.up{}
-.sig.up{}
-.prev.up{}
-.track_control>span.up{}
-.control.up{}
-.track_control.up{}
-.track.up{}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
-#player.up{--device:pc;}
-.arrow.up{}
-.gradiant.up{}
-.label.up{}
-.img_cd.up{}
-.title_song.up{}
-.album_cd.up{}
-.player_control.up{}
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up{}
-.pause.up{}
-.sig.up{}
-.prev.up{}
-.track_control>span.up{}
-.control.up{}
-.track_control.up{}
-.track.up{}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-#player.up{--device:pc;}
-.arrow.up{}
-.gradiant.up{}
-.label.up{}
-.img_cd.up{}
-.title_song.up{}
-.album_cd.up{}
-.player_control.up{}
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up{}
-.pause.up{}
-.sig.up{}
-.prev.up{}
-.track_control>span.up{}
-.control.up{}
-.track_control.up{}
-.track.up{}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
-
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-
-#player.up{--device:pc;}
-.arrow.up{}
-.gradiant.up{}
-.label.up{}
-.img_cd.up{}
-.title_song.up{}
-.album_cd.up{}
-.player_control.up{}
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up{}
-.pause.up{}
-.sig.up{}
-.prev.up{}
-.track_control>span.up{}
-.control.up{}
-.track_control.up{}
-.track.up{}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-
-#player.up{--device:pc;}
-.arrow.up{}
-.gradiant.up{}
-.label.up{}
-.img_cd.up{}
-.title_song.up{}
-.album_cd.up{}
-.player_control.up{}
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up{}
-.pause.up{}
-.sig.up{}
-.prev.up{}
-.track_control>span.up{}
-.control.up{}
-.track_control.up{}
-.track.up{}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
-
-#player.up{--device:pc;}
-.arrow.up{}
-.gradiant.up{}
-.label.up{}
-.img_cd.up{}
-.title_song.up{}
-.album_cd.up{}
-.player_control.up{}
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up{}
-.pause.up{}
-.sig.up{}
-.prev.up{}
-.track_control>span.up{}
-.control.up{}
-.track_control.up{}
-.track.up{}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
-}
-
-/* iPhone 4 and high pixel ratio devices ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-
-#player.up{--device:pc;}
-.arrow.up{}
-.gradiant.up{}
-.label.up{}
-.img_cd.up{}
-.title_song.up{}
-.album_cd.up{}
-.player_control.up{}
-.ctrl-btn.up{}
-.ctrl-btn:active.up{}
-.play.up{}
-.pause.up{}
-.sig.up{}
-.prev.up{}
-.track_control>span.up{}
-.control.up{}
-.track_control.up{}
-.track.up{}
-.track_play.up{}
-.point_song.up{}
-.volume_div.up{}
-.volume.up{}
-.track_volume.up{}
-
-
+.play.up, .pause.up{margin-left: 1.3em;margin-right: 1.3em;}
 }
