@@ -116,14 +116,24 @@ localStorage.setItem('recently', JSON.stringify(reciente));
 */
 
 function saveRecent(song) {
+let n=song.type.split(' ')
 
+song.name= (song.type=='Exercise'?'Lesson' : n[0][0]+n[1][0]) + song.lesson + ' - exc.'+song.exc;
+console.log('n',n)
 console.log('escuchado  ',song)
+//exc: "2C"
+//lesson: "2C"
+//link: "https://www.dropbox.com/s/7i3kepst5m1d9az/ef3e_p-int_02c_1-47.mp3?dl=1"
+//color: "blue"
+
     let recent=JSON.parse(localStorage.getItem('recently'));
 console.log('recently de local antesde ṕpush', recent)
     if(!recent) recent=[]
     let exist=recent.find(x=>JSON.stringify(x)==JSON.stringify(song))
 console.log('ya existia song?? ',exist)
-    if(!exist) recent.push(song).reverse()
+console.log(recent)
+    if(!exist) recent.unshift(song)
+    if(recent.length>=7) recent.splice(0,7)
 localStorage.setItem('recently', JSON.stringify(recent))
 
 

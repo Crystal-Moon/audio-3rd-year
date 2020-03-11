@@ -18,6 +18,7 @@ let playing = false;
 let cover='';
 
 function playSong(elem) {
+    G('player').style='';
     LOADER.style.display='block';
     console.log('elem en playSong',elem)
     //song = songs[current_track];
@@ -28,6 +29,7 @@ function playSong(elem) {
     art.style.backgroundImage = 'url("./img/album.jpeg")';
     console.log('color en playSong',elem.dataset.color)
     art.className='img_cd cover';
+    console.log(' el color q falla',elem.dataset.color)
     art.classList.add(elem.dataset.color)
     
     saveRecent(JSON.parse(JSON.stringify(elem.dataset)));

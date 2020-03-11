@@ -497,7 +497,7 @@
         "sound_n": 53,
         "lesson": "1&2",
         "pag": 19,
-        "color": ""
+        "color": "grey"
     },
     {
         "type": "Exercise",
@@ -1007,7 +1007,7 @@
         "sound_n": 39,
         "lesson": "3&4",
         "pag": 35,
-        "color": ""
+        "color": "grey"
     },
     {
         "type": "Grammar Bank",
@@ -1093,7 +1093,7 @@
         "type": "Vocabulary Bank",
         "link": "https://www.dropbox.com/s/tbzat6o1oys9xej/ef3e_p-int_05b_2-48.mp3?dl=1",
         "exc": "3b",
-        "num": "",
+        "num": "2",
         "sound_n": 48,
         "lesson": "5B",
         "pag": 156,
@@ -1103,7 +1103,7 @@
         "type": "Exercise",
         "link": "https://www.dropbox.com/s/vn0h3giu4ypr1z0/ef3e_p-int_05c_2-50.mp3?dl=1",
         "exc": "2c",
-        "num": "",
+        "num": "2",
         "sound_n": 50,
         "lesson": "5C",
         "pag": 41,

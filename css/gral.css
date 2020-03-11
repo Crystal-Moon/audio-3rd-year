@@ -93,7 +93,10 @@ li{cursor: pointer;}
 #body .sec{
     overflow: auto;
 }
-#body.body_home{}
+#body.body_home{
+    padding-bottom: 10em;
+    overflow: scroll;
+}
 #body .sec>div{
     height: 20em;
     display: flex;
@@ -146,7 +149,7 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 
 
 /*************************************/
-#player{transition:all 0.3s ease;--device:pc;position: fixed;bottom: 0;height: max-content;max-height: 11em;min-height: 6em;width: 100%;z-index: 2000;background-color: #282828;display: flex;flex-direction: row;font-size: 1em;box-sizing: border-box;font-family: 'Roboto Slab', sans-serif;}
+#player{transition:all 0.3s ease;--device:pc;position: fixed;bottom: 0;height: max-content;max-height: 11em;min-height: 6em;width: 100%;z-index: 300;background-color: #282828;display: flex;flex-direction: row;font-size: 1em;box-sizing: border-box;font-family: 'Roboto Slab', sans-serif;}
 .arrow{display: none;z-index: 500;}
 .gradiant{position: absolute;height: 80%;width: 100%;bottom: 0;background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgb(18, 18, 18) 30%);}
 #player .gradiant{visibility: hidden;}
@@ -385,7 +388,7 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
 .cover.green:after{ background-color: green;}
 .cover.violet:after{ background-color: violet;}
 .cover.yellow:after{ background-color: yellow;}
-/*.cover.grey:after{ background-color: transparent;}*/
+.cover.grey:after{ background-color: transparent;}
 #img_cd.cover{width: 4em;}
 .library_sec .pdf{background-size: auto 200%;}
 
