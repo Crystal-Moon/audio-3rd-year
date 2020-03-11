@@ -107,24 +107,24 @@ let reciente=[
 localStorage.setItem('recently', JSON.stringify(reciente));
 */
 
-function saveRecent(song) {
-let n=song.type.split(' ')
+function saveRecent(s) {
+let n=s.type.split(' ')
 
-song.name= (song.type=='Exercise'?'Lesson':(n[1]?n[0][0]+n[1][0]:song.type))+' '+song.lesson+' - exc.'+song.exc;
-console.log('n',n)
-console.log('escuchado  ',song)
+s.name= (s.type=='Exercise'?'Lesson':(n[1]?n[0][0]+n[1][0]:s.type))+' '+s.lesson+' - exc.'+s.exc;
+//console.log('n',n)
+//console.log('escuchado  ',s)
 //exc: "2C"
 //lesson: "2C"
 //link: "https://www.dropbox.com/s/7i3kepst5m1d9az/ef3e_p-int_02c_1-47.mp3?dl=1"
 //color: "blue"
 
     let recent=JSON.parse(localStorage.getItem('recently'));
-console.log('recently de local antesde ṕpush', recent)
+//console.log('recently de local antesde ṕpush', recent)
     if(!recent) recent=[]
-    let exist=recent.find(x=>JSON.stringify(x)==JSON.stringify(song))
-console.log('ya existia song?? ',exist)
-console.log(recent)
-    if(!exist) recent.unshift(song)
+    let exist=recent.find(x=>JSON.stringify(x)==JSON.stringify(s))
+//console.log('ya existia s?? ',exist)
+//console.log(recent)
+    if(!exist) recent.unshift(s)
     if(recent.length>=7) recent.splice(0,7)
 localStorage.setItem('recently', JSON.stringify(recent))
 

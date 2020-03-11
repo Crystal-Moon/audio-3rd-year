@@ -28,7 +28,7 @@ function playSong(elem) {
     artist.textContent = 'Lesson '+elem.dataset.lesson;
     art.style.backgroundImage = 'url("./img/album.jpeg")';
     console.log('color en playSong',elem.dataset.color)
-    art.className='img_cd cover';
+    art.className='img_cd cover'+(/.*(up).*/.test(art.className)?' up':'');
     console.log(' el color q falla',elem.dataset.color)
     art.classList.add(elem.dataset.color)
     song=JSON.parse(JSON.stringify(elem.dataset))
@@ -129,8 +129,8 @@ function seekTrack(e) {
 function nextTrack() {
     console.log('song al empezar nexttrack',song)
     let current_track=song.inx
-    let audios=song.album=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO
-    console.log('aupdios',audios)
+    let audios=song.book=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO
+    //console.log('aupdios',audios)
     console.log('current_track antes de +', current_track)
     current_track++;
     console.log('operacion match ',current_track % (audios.length))
@@ -138,25 +138,30 @@ function nextTrack() {
     console.log('current_track desp de op',current_track);
    // song = songs[current_track];
    console.log('song elejida',audios[current_track])
-    song=audios[current_track]
-    AUDIO.src = song.link;
-    AUDIO.onloadeddata = function() {
-      playSong({dataset:song});
-    }
+    let nsong=audios.find(z=>z.inx==current_track)
+    nsong.book=song.book
+    song=nsong;
+    //AUDIO.src = song.link;
+  //  AUDIO.onloadeddata = function() {
+      playSong({dataset:nsong});
+    //}
 }
 
 function prevTrack() {
+    let current_track=song.inx
     console.log('current_track antes de --', current_track)
+    let audios=song.book=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO
     current_track--;
-    console.log('operacion match ',current_track % (songs.length))
-    current_track = (current_track == -1 ? (songs.length - 1) : current_track);
+    console.log('operacion match ',current_track % (audios.length))
+    current_track = (current_track == -1 ? (audios.length - 1) : current_track);
     console.log('current_track desp de op',current_track);
-    song = songs[current_track];
-    AUDIO.src = song.link;
-    AUDIO.onloadeddata = function() {
-      playSong(song);
-      LOADER.style.display='none';
-    }
+   let nsong=audios.find(z=>z.inx==current_track)
+    nsong.book=song.book
+    song=nsong;
+    //AUDIO.src = song.link;
+  //  AUDIO.onloadeddata = function() {
+      playSong({dataset:nsong});
+    //}
 }
 /*
 function updateInfo() {
