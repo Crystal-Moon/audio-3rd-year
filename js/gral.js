@@ -184,7 +184,7 @@ function readDialoges(book,lesson) {
 	
 	Promise.all([hbs,json])
 	.then(pp=>{
-	  let temp = Handlebars.compile(pp[0]);
+	  let temp = Handlebars.compile(pp[0], {noEscape:true});
 	//	DIALOGS.className='';
 	//	DIALOGS.classList.add('body_'+hbs);
       DIALOGS.innerHTML=temp({dialogs:pp[1]})

@@ -3,24 +3,24 @@
 		{
 			"num": 1,
 			"sound_n": 2,
-			"txt": "<lore></lore>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nostrum excepturi. Impedit similique numquam iure et, itaque expedita ab reiciendis laborum incidunt assumenda exercitationem laboriosam qui adipisci consequuntur amet repellat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nemo quam soluta vitae perferendis quos, aspernatur reiciendis minima inventore deleniti, incidunt neque eum iusto. Velit tenetur qui soluta eum ex."
+			"txt": "Lorem ipsum dolor sit amet,<br> <b> negrita</b>  consectetur adipisicing elitENTER \n. Velit, nostrum excepturi. Impedit similique numquam iure et, itaque expedita ab reiciendis laborum incidunt assumenda exercitationem laboriosam qui adipisci consequuntur amet repellat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nemo quam soluta vitae perferendis quos, aspernatur reiciendis minima inventore deleniti, incidunt neque eum iusto. Velit tenetur qui soluta eum ex."
 		},
 		{
 			"num": 1,
 			"sound_n": 3,
-			"txt": "<lore></lore>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nostrum excepturi. Impedit similique numquam iure et, itaque expedita ab reiciendis laborum incidunt assumenda exercitationem laboriosam qui adipisci consequuntur amet repellat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nemo quam soluta vitae perferendis quos, aspernatur reiciendis minima inventore deleniti, incidunt neque eum iusto. Velit tenetur qui soluta eum ex."
+			"txt": "Lorem ipsum dolor sit amet,<br> <b> negrita</b>  consectetur adipisicing elitENTER \n. Velit, nostrum excepturi. Impedit similique numquam iure et, itaque expedita ab reiciendis laborum incidunt assumenda exercitationem laboriosam qui adipisci consequuntur amet repellat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nemo quam soluta vitae perferendis quos, aspernatur reiciendis minima inventore deleniti, incidunt neque eum iusto. Velit tenetur qui soluta eum ex."
 		}
 	],
 	"2A":[
 		{
 			"num": 1,
 			"sound_n": 4,
-			"txt": "<lore></lore>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nostrum excepturi. Impedit similique numquam iure et, itaque expedita ab reiciendis laborum incidunt assumenda exercitationem laboriosam qui adipisci consequuntur amet repellat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nemo quam soluta vitae perferendis quos, aspernatur reiciendis minima inventore deleniti, incidunt neque eum iusto. Velit tenetur qui soluta eum ex."
+			"txt": "Lorem ipsum dolor sit amet, <br> <b> negrita</b> consectetur adipisicing elit.ENTER \n Velit, nostrum excepturi. Impedit similique numquam iure et, itaque expedita ab reiciendis laborum incidunt assumenda exercitationem laboriosam qui adipisci consequuntur amet repellat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nemo quam soluta vitae perferendis quos, aspernatur reiciendis minima inventore deleniti, incidunt neque eum iusto. Velit tenetur qui soluta eum ex."
 		},
 		{
 			"num": 1,
 			"sound_n": 5,
-			"txt": "<lore></lore>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nostrum excepturi. Impedit similique numquam iure et, itaque expedita ab reiciendis laborum incidunt assumenda exercitationem laboriosam qui adipisci consequuntur amet repellat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nemo quam soluta vitae perferendis quos, aspernatur reiciendis minima inventore deleniti, incidunt neque eum iusto. Velit tenetur qui soluta eum ex."
+			"txt": "Lorem ipsum dolor sit amet,<br> <b> negrita</b> consectetur adipisicing elit.ENTER \n Velit, nostrum excepturi. Impedit similique numquam iure et, itaque expedita ab reiciendis laborum incidunt assumenda exercitationem laboriosam qui adipisci consequuntur amet repellat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nemo quam soluta vitae perferendis quos, aspernatur reiciendis minima inventore deleniti, incidunt neque eum iusto. Velit tenetur qui soluta eum ex."
 		}
 	]
 }
