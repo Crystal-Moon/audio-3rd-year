@@ -11,7 +11,7 @@
 	  	</div> 
 	  		<ul>
 	  		{{#each audios}}
-	  			<li class="row to-play" data-exc="{{exc}}" data-lesson="{{lesson}}" data-link="{{link}}" data-color="{{color}}" data-type="{{type}}"><span class="w10 to-playspan">{{pag}}</span><span class="w50 to-playspan">{{type}} - {{exc}}</span><span class="w25"><span class="num_cd">{{num}}</span><span class="sound_n">{{sound_n}}</span></span><span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  			<li class="row to-play" data-exc="{{exc}}" data-lesson="{{lesson}}" data-link="{{link}}" data-color="{{color}}" data-type="{{type}}" data-inx={{inx}}><span class="w10 to-playspan">{{pag}}</span><span class="w50 to-playspan">{{type}} - {{exc}}</span><span class="w25"><span class="num_cd">{{num}}</span><span class="sound_n">{{sound_n}}</span></span><span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
 			{{/each}}
 	  		</ul>
 	  		<div class="btn w_b read" onclick="readDialoges('{{album_cover}}','{{lesson}}')">Read Dialoges</div>

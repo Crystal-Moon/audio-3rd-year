@@ -11,9 +11,9 @@ const artist = G('album_cd');
 const art = G('img_cd');
 const timeActual = G('current_time');
 const totalTime = G('total_time');
-let current_track = 0;
-let song, duration;
-let audio = new Audio();
+//let current_track = 0;
+let song={}, duration=0;
+let AUDIO = new Audio();
 let playing = false;
 let cover='';
 
@@ -23,7 +23,7 @@ function playSong(elem) {
     console.log('elem en playSong',elem)
     //song = songs[current_track];
  //   audio = new Audio();
-    audio.src = elem.dataset.link;
+    AUDIO.src = elem.dataset.link;
     title.textContent = 'Excercise '+elem.dataset.exc;
     artist.textContent = 'Lesson '+elem.dataset.lesson;
     art.style.backgroundImage = 'url("./img/album.jpeg")';
@@ -31,7 +31,8 @@ function playSong(elem) {
     art.className='img_cd cover';
     console.log(' el color q falla',elem.dataset.color)
     art.classList.add(elem.dataset.color)
-    
+    song=JSON.parse(JSON.stringify(elem.dataset))
+  //  current_track=elem.dataset.inx;
     saveRecent(JSON.parse(JSON.stringify(elem.dataset)));
 
 }
@@ -69,8 +70,8 @@ function init() {
    // art.src = song.art;    // revisar si usar una clase cpara book y wb o si poner numero o imagen en style inline
 }
 */
-audio.addEventListener('timeupdate', updateTrack, false);
-audio.addEventListener('loadedmetadata', function () {
+AUDIO.addEventListener('timeupdate', updateTrack, false);
+AUDIO.addEventListener('loadedmetadata', function () {
     duration = this.duration;
     totalTime.innerText = msToMin(this.duration);
     this.play();
@@ -89,15 +90,15 @@ track.onmousedown = function (e) {
     seekTrack(e);
 }
 play.onclick = function () {
-    playing ? audio.pause() : audio.play();
+    playing ? AUDIO.pause() : AUDIO.play();
 }
-audio.addEventListener("pause", function () {
+AUDIO.addEventListener("pause", function () {
     play.classList.add('play');
     play.classList.remove('pause');
     playing = false;
 }, false);
 
-audio.addEventListener("playing", function () {
+AUDIO.addEventListener("playing", function () {
     play.classList.add('pause');
     play.classList.remove('play');
     playing = true;
@@ -106,11 +107,11 @@ next.addEventListener("click", nextTrack, false);
 prev.addEventListener("click", prevTrack, false);
 
 function updateTrack() {
-    curtime = audio.currentTime;
+    curtime = AUDIO.currentTime;
     percent = Math.round((curtime * 100) / duration);
     progress.style.width = percent + '%';
     handler.style.marginLeft = percent + '%';
-    timeActual.innerText = msToMin(audio.currentTime);
+    timeActual.innerText = msToMin(AUDIO.currentTime);
 }
 
 function seekTrack(e) {
@@ -121,41 +122,53 @@ function seekTrack(e) {
     if (percent < 0) percent = 0;
     progress.style.width = percent + '%';
     handler.style.marginLeft = percent + '%';
-    audio.play();
-    audio.currentTime = (percent * duration) / 100;
-    timeActual.innerText = msToMin(audio.currentTime);
+    AUDIO.play();
+    AUDIO.currentTime = (percent * duration) / 100;
+    timeActual.innerText = msToMin(AUDIO.currentTime);
 }
 function nextTrack() {
+    console.log('song al empezar nexttrack',song)
+    let current_track=song.inx
+    let audios=song.album=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO
+    console.log('aupdios',audios)
+    console.log('current_track antes de +', current_track)
     current_track++;
-    current_track = current_track % (songs.length);
-    song = songs[current_track];
-    audio.src = song.url;
-    audio.onloadeddata = function() {
-      updateInfo();
+    console.log('operacion match ',current_track % (audios.length))
+    current_track = current_track % (audios.length); //sirve para dar la vuelta
+    console.log('current_track desp de op',current_track);
+   // song = songs[current_track];
+   console.log('song elejida',audios[current_track])
+    song=audios[current_track]
+    AUDIO.src = song.link;
+    AUDIO.onloadeddata = function() {
+      playSong({dataset:song});
     }
 }
 
 function prevTrack() {
+    console.log('current_track antes de --', current_track)
     current_track--;
+    console.log('operacion match ',current_track % (songs.length))
     current_track = (current_track == -1 ? (songs.length - 1) : current_track);
+    console.log('current_track desp de op',current_track);
     song = songs[current_track];
-    audio.src = song.url;
-    audio.onloadeddata = function() {
-      updateInfo();
+    AUDIO.src = song.link;
+    AUDIO.onloadeddata = function() {
+      playSong(song);
       LOADER.style.display='none';
     }
 }
-
+/*
 function updateInfo() {
     title.textContent = song.title;
     artist.textContent = song.artist;
     art.src = song.art;
     //aqui agregar a recently
     art.onload = function() {
-        audio.play();
+        AUDIO.play();
     }
 }
-
+*/
 function msToMin(seconds) {
   let minute = Math.floor((seconds / 60) % 60);
   minute = (minute < 10)? '0' + minute : minute;
@@ -190,5 +203,5 @@ function seekVolume(e) {
     if (percent < 0) percent = 0;
     progressVolume.style.width = percent + '%';
     handlerVolume.style.marginLeft = percent + '%';
-    audio.volume = (percent * 1) / 100;
+    AUDIO.volume = (percent * 1) / 100;
 }

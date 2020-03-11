@@ -51,22 +51,14 @@ let colorr=['blue','green','red','green','violet','red','blue','green','red','gr
 function hacerJson(){
 //	Json.WORKBOOK_PDF.forEach(x=>{x.linkDownload=x.link.replace('/preview','&export=download').replace('file/d/','uc?id=')})
 
-Json.BOOK_AUDIO.forEach((x,i)=>{
-	let cor=x.lesson.split('').splice(0,x.lesson.length-1)
-	console.log(cor)
-	if(x.type=='Exercise') x.color=colorr[parseInt(cor.join(''))-1]; 
-	else if(x.type=='Grammar Bank') x.color='blue'
-	else if(x.type=='Vocabulary Bank') x.color='green'
-	//else if(x.type=='Revice and Check') x.color='yellow'
-	else if(x.type=='Practical English') x.color='yellow'
-	else x.color=''
-	//x.linkDownload=x.link.replace('/preview','&export=download').replace('file/d/','uc?id=')
+Json.WORKBOOK_AUDIO.forEach((x,i)=>{
+	x.inx=i;
 })
 
 //	"https://drive.google.com/file/d/1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y/preview",
 //	"https://drive.google.com/uc?id=1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y&export=download",
 		
-	console.log(JSON.stringify(Json.BOOK_AUDIO,null,4))
+	console.log(JSON.stringify(Json.WORKBOOK_AUDIO,null,4))
 }
 
 
@@ -118,7 +110,7 @@ localStorage.setItem('recently', JSON.stringify(reciente));
 function saveRecent(song) {
 let n=song.type.split(' ')
 
-song.name= (song.type=='Exercise'?'Lesson' : n[0][0]+n[1][0]) + song.lesson + ' - exc.'+song.exc;
+song.name= (song.type=='Exercise'?'Lesson':(n[1]?n[0][0]+n[1][0]:song.type))+' '+song.lesson+' - exc.'+song.exc;
 console.log('n',n)
 console.log('escuchado  ',song)
 //exc: "2C"
