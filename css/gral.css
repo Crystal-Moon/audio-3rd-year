@@ -36,43 +36,7 @@ li{cursor: pointer;}
     font-family: monospace;
 }
 /*******************************************/
-#dialogs{
-    font-family: 'Roboto Slab', sans-serif;
-    position: fixed;
-    display: none;
-    width: 80%;
-    height: 74%;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    color: white;
-    border-radius: 2em;
-    z-index: 4000;
-    overflow: hidden;
-}
-#dialogs .close{
-    width: max-content;
-    height: 1.5em;
-    margin: 2%;
-    margin-left: auto;
-    margin-right: 2em;
-    cursor: pointer;
-}
-#dialogs h3{margin: 0.5em;
-    margin-left: 1.5em;}
-#dialogs div.read{
-    overflow: auto;
-    width: 90%;
-    margin: auto;
-    padding-top: 0.4em;
-    height: 80%;
-    overflow-x: hidden;
-    text-align: left;
-}
-#dialogs .num_cd{margin:0;}
-#dialogs .sound_n{padding-left: 0.4em; box-sizing: border-box;}
+
 /*****************************************/
 #body{
 	position: relative;
@@ -105,6 +69,16 @@ li{cursor: pointer;}
     width: max-content;
     overflow: auto;
     overflow-y: hidden;
+}
+#body.body_home .btn{
+        color: white;
+    font-size: 0.8em;
+    font-weight: normal;
+    /* left: 1em; */
+    margin: 0;
+    margin-top: 1em;
+    margin-left: 1em;
+    border-width: 5px;
 }
 .placa{margin: 1em;width: 12em;height: 15em;position: relative;cursor: pointer;background-color: #282828;border-radius: 0.8em;}
 .placa div.img{width: 10em;height: 10em;background-size: 100% auto;display: inline-block;margin: 1em;background-size: 100% auto;background-repeat: no-repeat;background-position: center center;}
@@ -142,7 +116,7 @@ h2{margin: 0;margin-top: 0.7em;width: max-content;margin-left: 0.5em;}
 .icon{ background-size: 100% auto;background-repeat: no-repeat;background-position: top;}
 #Menu li.active .icon{background-position: bottom;}
 .home{background-image: url('../img/home.png');}
-.pdf{background-image: url('../img/pdf.png');}
+.help{background-image: url('../img/help.png');}
 .library{background-image: url('../img/library.png');}
 .CM_logo{background-image: url('../img/logo_CM.png');}
 span.cm_cel{display: none;}
@@ -189,8 +163,22 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 .col{flex-direction: column;display: flex;}
 .row{flex-direction: row;display: flex;}
 
-
-
+/***********************************************************************************************************/
+/* help */
+#body.body_help{
+    padding: 1em;
+    padding-bottom: 6em;
+    height: max-content;
+    box-sizing: border-box;
+    /* max-height: max-content; */
+}
+#body.body_help img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+    display: block;
+}
 /*************************************************************************************************************/
 /* artist */
 
@@ -328,6 +316,7 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
 #body.body_library{}
 .lib_head{height: 4em;}
 .lib_head .tab{
+	--device:pc;
 	height: 3em;
 	line-height: 3em;
 	padding-left: 1em;
@@ -338,19 +327,21 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
 	font-weight: bold;
 	width: 4em;
 	cursor: pointer;
+	text-align: center;
 }
 .sub_head{font-size: 0.8em;}
 .selector_tab{
-	width: 5.5rem;
+	--device:pc;
+	width: 6em;
 	margin-left: 0px;
 	height: 0.2em;
 	background-color: lime;
 	transition: all 0.4s ease;
 }
 .lib_head.sub_head .tab{
-    width: 10em;
+    /* width: 6em; */
 }
-.sub_head .selector_tab{width: 8rem;}
+.sub_head .selector_tab{/* width: 8rem; */}
 .library_sec ul{
     height: max-content;
     overflow: auto;
@@ -376,6 +367,8 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
 }
 .library_sec .music{background-image: url('../img/music.png');background-size: auto 100%;}
 .cover{background-image: url('../img/album.jpeg');background-size: auto 100%;width: 2.5em;}
+.cover.reader{background-image: url('../img/album.jpeg');}
+.cover.schoology{background-image: url('../img/album.jpeg');}
 .cover:after{
     content: ' ';
     display: block;
@@ -391,7 +384,7 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
 .cover.yellow:after{ background-color: yellow;}
 .cover.grey:after{ background-color: transparent;}
 #img_cd.cover{width: 4em;}
-.library_sec .pdf{background-size: auto 200%;}
+.library_sec .pdf{background-image: url('../img/pdf.png');background-size: auto 100%;}
 
 
 

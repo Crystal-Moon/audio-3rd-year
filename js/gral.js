@@ -34,15 +34,25 @@ function changeSubTab(...args){
 	
 	let params=[...args]
 	console.log('los arguments en subTab',params)
-	let inxTab=params[0], name=params[1], dos=params[2] || '';
-	//console.log('inx',inxTab, 'name', name, 'dos',dos);
+	let elem=params[0], inxTab=params[1], name=params[2], dos=params[3] || '';
+
+	let device= getComputedStyle(elem).getPropertyValue("--device");
+	console.log('device de elem',device)
+	console.log('inx',inxTab, 'name', name, 'dos',dos);
 	//console.log('inxTab en cahgeSub',inxTab);
 	//console.log('name en changeSub',name);
+	//let margin=inxTab * (!dos? 5.5 : 10.5);
 	let margin=inxTab * (!dos? 5.5 : 10.5);
 	//console.log('el id de selec','selector_tab'+dos);
 	//console.log('span',G('selector_tab'+dos));
-	G('selector_tab'+dos).style.marginLeft= margin+'rem';
-	let tabSelected=G('tab'+name+dos);
+
+
+//	let device= getComputedStyle(subMenu).getPropertyValue("--device");
+  //           menuMovil.style.height = (device=='tablet')?'13em':'19em'; 
+
+	G('selector_tab'+dos).style.marginLeft= device=='pc'? (inxTab*6)+'em' : (inxTab*25) + '%';
+
+	let tabSelected=G('tab'+name);
 	//console.log('tabSelected',tabSelected)
 	let sib=tabSelected.parentNode.childNodes;
 	sib.forEach(z=>{ if(z.hasChildNodes()) z.style.zIndex = '5'; });
@@ -123,11 +133,13 @@ function changePage(elem,tarea,act,...params){
 	if(act) history.replaceState({
 			page:elem.dataset.vista,
 			elem_data:JSON.parse(JSON.stringify(elem.dataset))
-		},'', './'+elem.dataset.vista+'.hbs')
+		//},'', './'+elem.dataset.vista+'.hbs')
+		},'')
 	else history.pushState({
 			page:elem.dataset.vista,
 			elem_data:JSON.parse(JSON.stringify(elem.dataset))
-		},'', './'+elem.dataset.vista+'.hbs')
+		//},'', './'+elem.dataset.vista+'.hbs')
+		},'')
 
 	/*	history.pushState({
 			page:elem.dataset.vista,
@@ -148,7 +160,7 @@ function loadHbs(hbs, datos, tarea,...params) {
 
 //console.log('data',datos)
 LOADER.style.display = 'block';
-	fetch('./'+hbs+'.hbs')
+	fetch('./pages/'+hbs+'.hbs')
 	.then(res=>{
 		if(res.status==200) return res.text()
 		else loadHbs(hbs);
@@ -169,7 +181,7 @@ LOADER.style.display = 'block';
     // 	if(action) history.replaceState({page:hbs},'', './'+hbs+'.hbs')
 	//	else history.pushState({page:hbs},'', './'+hbs+'.hbs')
 	//console.log('la subTrea :/',tarea)
-		if(tarea) tarea(...params);
+//		if(tarea) tarea(...params);
 		if(hbs!='pdf_view') LOADER.style.display='none';
 		setTimeout(()=>{ LOADER.style.display='none' }, 2500); //por las dudas q no funcione el iframe
       }

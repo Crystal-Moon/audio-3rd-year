@@ -61,6 +61,10 @@ Json.WORKBOOK_AUDIO.forEach((x,i)=>{
 	console.log(JSON.stringify(Json.WORKBOOK_AUDIO,null,4))
 }
 
+function clearRecently() {
+	localStorage.setItem('recently', null)
+	history.go();
+}
 
 /*
 
