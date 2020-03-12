@@ -176,22 +176,6 @@ LOADER.style.display = 'block';
 	})
 }
 
-function readDialoges(book,lesson) {
-	/// lesson='1A' book='book'||'wbook'
-	LOADER.style.displat='block';
-	let hbs=new Promise(done=>{	fetch('./dialoge.hbs').then(r=>r.text()).then(d=>{ done(d) }) });
-	let json=new Promise(done=>{ fetch('./db/'+book+'_dialoge.json').then(r=>r.json()).then(d=>{ done(d[lesson]) }) });
-	
-	Promise.all([hbs,json])
-	.then(pp=>{
-	  let temp = Handlebars.compile(pp[0], {noEscape:true});
-	//	DIALOGS.className='';
-	//	DIALOGS.classList.add('body_'+hbs);
-      DIALOGS.innerHTML=temp({dialogs:pp[1]})
-	  DIALOGS.style.display = 'block';
-	  LOADER.style.displat='none';
-	})
-}
 
 
 
