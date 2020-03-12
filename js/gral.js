@@ -88,20 +88,6 @@ function changePage(elem,tarea,act,...params){
 		case 'home':
 			datos.recently= JSON.parse(localStorage.getItem('recently'));
 			break;
-		case 'artist':
-		console.log('elem para artist',elem)
-			datos.album_cover=elem.dataset.album;
-			datos.lesson=elem.dataset.lesson;
-			//datos.book_audio=Json.BOOK_AUDIO.filter(x=>x.lesson==elem.dataset.lesson).sort((a,b)=>a.pag-b.pag)
-			datos.audios=(elem.dataset.album=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO)
-				.filter(x=>x.lesson==elem.dataset.lesson)
-		//	console.log('audios sin filter',datos.audios)
-	//		datos.audios.filter(x=>x.lesson==elem.dataset.lesson)
-				.sort((a,b)=>a.pag-b.pag)
-			datos.audios.forEach(z=>{z.cover=elem.dataset.album});
-			console.log('audio con filtro',datos.audios)
-			datos.pdf=Json.BOOK_PDF.find(x=>x.lesson==elem.dataset.lesson)
-			break;
 		case 'library':
 			datos.book_audio=[...new Set(Json.BOOK_AUDIO.sort((a,b)=>a.pag-b.pag)
 				.map(x=>({
@@ -123,6 +109,20 @@ function changePage(elem,tarea,act,...params){
 			datos.wbook_pdf=Json.WORKBOOK_PDF.sort((a,b)=>a.order-b.order)
 			//datos.wbook_pdf=datos.wbook_audio.forEach(x=>{x.name:x.type+' '+x.lesson})
 			//datos.wbook_pdf=[...new Set(datos.book_audio.map(JSON.stringify))].map(JSON.parse)
+			break;
+		case 'artist':
+		console.log('elem para artist',elem)
+			datos.album_cover=elem.dataset.album;
+			datos.lesson=elem.dataset.lesson;
+			//datos.book_audio=Json.BOOK_AUDIO.filter(x=>x.lesson==elem.dataset.lesson).sort((a,b)=>a.pag-b.pag)
+			datos.audios=(elem.dataset.album=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO)
+				.filter(x=>x.lesson==elem.dataset.lesson)
+		//	console.log('audios sin filter',datos.audios)
+	//		datos.audios.filter(x=>x.lesson==elem.dataset.lesson)
+				.sort((a,b)=>a.pag-b.pag)
+			datos.audios.forEach(z=>{z.cover=elem.dataset.album});
+			console.log('audio con filtro',datos.audios)
+			datos.pdf=Json.BOOK_PDF.find(x=>x.lesson==elem.dataset.lesson)
 			break;
 		case 'pdf_view':
 			datos.link=elem.dataset.link;

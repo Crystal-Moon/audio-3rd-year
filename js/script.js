@@ -33,15 +33,23 @@ function initJson(){
 LOADER.style.display = 'block';
 	let b_audio=new Promise(done=>{ fetch('./db/book_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
 	let b_pdf=new Promise(done=>{ fetch('./db/book_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
+
 	let wb_audio=new Promise(done=>{ fetch('./db/wbook_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
 	let wb_pdf=new Promise(done=>{ fetch('./db/wbook_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
+
+	let rb_audio=new Promise(done=>{ fetch('./db/reader_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
+	let rb_pdf=new Promise(done=>{ fetch('./db/reader_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
+
+	let sch_audio=new Promise(done=>{ fetch('./db/schoology_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
+	let sch_pdf=new Promise(done=>{ fetch('./db/schoology_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
 	
-	Promise.all([b_audio, b_pdf, wb_audio, wb_pdf])
+	Promise.all([b_audio,b_pdf, wb_audio,wb_pdf, rb_audio,rb_pdf, sch_audio,sch_pdf])
 	.then(pp=>{ 
-		Json.BOOK_AUDIO=pp[0];
-		Json.BOOK_PDF=pp[1];
-		Json.WORKBOOK_AUDIO=pp[2];
-		Json.WORKBOOK_PDF=pp[3]; //listo json
+		Json.BOOK={ album:'BOOK', audios: pp[0], pdf: pp[1] };
+		Json.WORKBOOK={ name:'WORKBOOK', audios: pp[2], pdf: pp[3] };
+		Json.READER={ name:'READER', audios: pp[4], pdf: pp[5] };
+		Json.SCHOOLOGY={ name:'SCHOOLOGY', audios: pp[6], pdf: pp[7] };
+		
 		LOADER.style.display = 'none';
 	})
 }
