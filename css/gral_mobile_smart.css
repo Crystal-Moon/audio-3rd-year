@@ -38,7 +38,9 @@ h2{
     margin: 0.5em;
 }
 /*************************************/
-#Menu{}
+#Menu{
+    position: fixed;
+}
 #Menu li,h1{}
 #Menu li>div, h1>div{}
 #Menu li:hover{}
