@@ -89,6 +89,44 @@ function changePage(elem,tarea,act,...params){
 			datos.recently= JSON.parse(localStorage.getItem('recently'));
 			break;
 		case 'library':
+			datos.datos=[]
+			for (k in Json) {
+				let p={
+					letter: Json[k].name[0].toUpperCase(),
+					name:k,
+					audios: [...new Set(Json[k].audios.sort((a,b)=>a.other?a.other.pag-b.other.pag:a.inx-b.inx)
+					  .map(x=>({
+						type: k=='workbook'?'Lesson':x.type, 
+						lesson:x.lesson,
+						other:x.other?{ 
+							pags: Json[k].pdf.find(z=>z.type==x.type||(z.lesson==x.lesson&&x.type=='Lesson') || z.lesson==x.lesson).other.pags
+						}:undefined,
+						color:x.color,
+						book: k,
+						//linkDownload: x.linkDownload,
+						//link: x.link
+					}))
+					  .map(JSON.stringify))].map(JSON.parse),
+					pdf: Json[k].pdf.sort((a,b)=>a.inx-b.inx)
+				}
+
+				
+			
+			//	console.log(p)
+				datos.datos.push(p)
+			}
+
+
+			
+				
+
+
+//despues de cargar hacer click en la primera tab
+
+
+
+/*
+
 			datos.book_audio=[...new Set(Json.BOOK_AUDIO.sort((a,b)=>a.pag-b.pag)
 				.map(x=>({
 					type:(x.type=='Exercise'?'Lesson':x.type), 
@@ -103,7 +141,7 @@ function changePage(elem,tarea,act,...params){
 
 			datos.wbook_audio=[...new Set(Json.WORKBOOK_AUDIO.sort((a,b)=>a.pag-b.pag)
 				.map(x=>({
-					type: 'Lesson'
+					type: 'Lesson',
 					lesson:x.lesson, 
 					pag: Json.WORKBOOK_PDF.find(z=>z.lesson==x.lesson).pag,
 					color: 'grey'
@@ -113,7 +151,7 @@ function changePage(elem,tarea,act,...params){
 
 			datos.wbook_pdf=Json.WORKBOOK_PDF.sort((a,b)=>a.order-b.order)
 			//datos.wbook_pdf=datos.wbook_audio.forEach(x=>{x.name:x.type+' '+x.lesson})
-			//datos.wbook_pdf=[...new Set(datos.book_audio.map(JSON.stringify))].map(JSON.parse)
+			//datos.wbook_pdf=[...new Set(datos.book_audio.map(JSON.stringify))].map(JSON.parse) */
 			break;
 		case 'artist':
 		console.log('elem para artist',elem)
@@ -187,6 +225,7 @@ LOADER.style.display = 'block';
 	//	else history.pushState({page:hbs},'', './'+hbs+'.hbs')
 	//console.log('la subTrea :/',tarea)
 //		if(tarea) tarea(...params);
+		if(hbs=='library') changeSubTab(G('tabDefault'),0,'book')
 		if(hbs!='pdf_view') LOADER.style.display='none';
 		setTimeout(()=>{ LOADER.style.display='none' }, 2500); //por las dudas q no funcione el iframe
       }
