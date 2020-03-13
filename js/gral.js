@@ -98,11 +98,16 @@ function changePage(elem,tarea,act,...params){
 				.map(JSON.stringify))].map(JSON.parse)
 			
 			
-			datos.book_pdf=Json.BOOK_PDF.sort((a,b)=>a.pag-b.pag);
+			datos.book_pdf=Json.BOOK_PDF.sort((a,b)=>a.order-b.order);
 		
 
 			datos.wbook_audio=[...new Set(Json.WORKBOOK_AUDIO.sort((a,b)=>a.pag-b.pag)
-				.map(x=>({lesson:x.lesson, pag: Json.WORKBOOK_PDF.find(z=>z.lesson==x.lesson).pag}))
+				.map(x=>({
+					type: 'Lesson'
+					lesson:x.lesson, 
+					pag: Json.WORKBOOK_PDF.find(z=>z.lesson==x.lesson).pag,
+					color: 'grey'
+				}))
 				.map(JSON.stringify))].map(JSON.parse)
 
 
