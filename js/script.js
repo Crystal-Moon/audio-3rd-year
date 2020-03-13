@@ -37,18 +37,18 @@ LOADER.style.display = 'block';
 	let wb_audio=new Promise(done=>{ fetch('./db/wbook_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
 	let wb_pdf=new Promise(done=>{ fetch('./db/wbook_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
 
-	let rb_audio=new Promise(done=>{ fetch('./db/reader_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
-	let rb_pdf=new Promise(done=>{ fetch('./db/reader_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
+//	let rb_audio=new Promise(done=>{ fetch('./db/reader_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
+//	let rb_pdf=new Promise(done=>{ fetch('./db/reader_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
 
-	let sch_audio=new Promise(done=>{ fetch('./db/schoology_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
-	let sch_pdf=new Promise(done=>{ fetch('./db/schoology_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
+//	let sch_audio=new Promise(done=>{ fetch('./db/schoology_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
+//	let sch_pdf=new Promise(done=>{ fetch('./db/schoology_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
 	
-	Promise.all([b_audio,b_pdf, wb_audio,wb_pdf, rb_audio,rb_pdf, sch_audio,sch_pdf])
+	Promise.all([b_audio,b_pdf, wb_audio,wb_pdf, /*rb_audio,rb_pdf, sch_audio,sch_pdf*/])
 	.then(pp=>{ 
-		Json.BOOK={ album:'BOOK', audios: pp[0], pdf: pp[1] };
-		Json.WORKBOOK={ name:'WORKBOOK', audios: pp[2], pdf: pp[3] };
-		Json.READER={ name:'READER', audios: pp[4], pdf: pp[5] };
-		Json.SCHOOLOGY={ name:'SCHOOLOGY', audios: pp[6], pdf: pp[7] };
+		Json.book={ name:'book', audios: pp[0], pdf: pp[1] };
+		Json.workbook={ name:'workbook', audios: pp[2], pdf: pp[3] };
+//		Json.reader={ name:'reader', audios: pp[4], pdf: pp[5] };
+//		Json.schoology={ name:'schoology', audios: pp[6], pdf: pp[7] };
 		
 		LOADER.style.display = 'none';
 	})
@@ -59,14 +59,38 @@ let colorr=['blue','green','red','green','violet','red','blue','green','red','gr
 function hacerJson(){
 //	Json.WORKBOOK_PDF.forEach(x=>{x.linkDownload=x.link.replace('/preview','&export=download').replace('file/d/','uc?id=')})
 
-Json.WORKBOOK_AUDIO.forEach((x,i)=>{
-	x.inx=i;
-})
+let newWB=Json.book.audios.map(x=>({
+	type: x.type,
+    link: x.link,
+    exc: x.exc,
+    other:{
+    	num: x.num,
+    	sound_n: x.sound_n,
+    	pag: x.pag,
+    	pags: Json.book.pdf.find(z=>z.type==x.type||(z.lesson==x.lesson&&x.type=='Exercise')).pag
+    },
+    lesson: x.lesson,
+    color: x.color,
+    inx: x.inx
+
+	}))
+
+
+let newWBpdf=Json.book.pdf.map(x=>({
+	type: x.type,
+    other:{
+    	pags: x.pag
+    },
+    lesson: x.lesson,
+    link: x.link,
+    inx: x.order,
+    linkDownload: x.linkDownload
+}))
 
 //	"https://drive.google.com/file/d/1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y/preview",
 //	"https://drive.google.com/uc?id=1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y&export=download",
 		
-	console.log(JSON.stringify(Json.WORKBOOK_AUDIO,null,4))
+	console.log(JSON.stringify(newWB,null,4))
 }
 
 function clearRecently() {
