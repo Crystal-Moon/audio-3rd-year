@@ -1,135 +1,52 @@
 <div class="col lib_head">
 			<div class="row">
-				<div class="tab" onclick="changeSubTab(this,0,'book')">Studen Book</div>
-				<div class="tab" onclick="changeSubTab(this,1,'wb')">WorkBook</div>
-				<div class="tab" onclick="changeSubTab(this,2,'rb')">Reader Book</div>
-				<div class="tab" onclick="changeSubTab(this,3,'sch')">Schology</div>
+				<div class="tab" onclick="changeSubTab(this,0,'book')">Student Book</div>
+				<div class="tab" onclick="changeSubTab(this,1,'workbook')">WorkBook</div>
+				<div class="tab" onclick="changeSubTab(this,2,'reader')">Reader Book</div>
+				<div class="tab" onclick="changeSubTab(this,3,'schoology')">Schology</div>
 			</div>
 			<div class="selector_tab" id="selector_tab"></div>
 		</div>
 <div class="lib_bdy">
 <!--  ***** STUDENT BOOK ********************************************* -->
-<div class="library_sec" id="tabbook" style="z-index:99;">
+{{#each datos}}
+<div class="library_sec" id="tab{{name}}" style="z-index:99;">
 	<div class="col lib_head sub_head">
 	  <div class="row">
-		<div class="tab" onclick="changeSubTab(this,0,'baudio','A')">Audios</div>
-		<div class="tab" onclick="changeSubTab(this,1,'bpdf','A')">PDF</div>
+		<div class="tab" onclick="changeSubTab(this,0,'{{name}}audio','{{letter}}')">Audios</div>
+		<div class="tab" onclick="changeSubTab(this,1,'{{name}}pdf','{{letter}}')">PDF</div>
 	  </div>
-	  <div class="selector_tab" id="selector_tabA"></div>
+	  <div class="selector_tab" id="selector_tab{{letter}}"></div>
 	</div>
 	<!-- ** AUDIOS ********************************* -->
-	<div class="library_sec" id="tabbaudio" style="z-index:90;">
+	<div class="library_sec" id="tab{{name}}audio" style="z-index:5;">
 	  <ul>
-	  		<li>TAB BOOK</li>
-	  {{#each book_audio}}
-	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="book">
+	  <li>{{name}} //borrar</li>
+	  {{#each audios}}
+	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="{{book}}">
 	  		<span class="w10 icon cover {{color}} to-artistspan"></span>
-	  		<span class="w90 to-artistspan">{{type}} {{lesson}}  (pags.{{pag}})</span>
-	  		<!-- <span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Download</a>--></li>
+	  		<span class="w90 to-artistspan">{{type}} {{lesson}} ~ 
+			{{#if other}}
+	  		(pags.{{other.pags}})
+			{{/if}}
+	  		</span>
+	  	</li>
 	  {{/each}}
 	  </ul>
 	</div>
 	<!-- ** PDF ******************************* -->
 	<div class="library_sec" id="tabbpdf">
 	  <ul> <!-- aqui va book_pdf -->
-	  {{#each wbook_audio}}
-	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="workbook">
-	  		<span class="w10 icon cover {{color}} to-artistspan"></span>
-	  		<span class="w90 to-artistspan">Lesson {{lesson}}  (pags.{{pag}})</span>
-	  		<!--<span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Download</a>-->
-	  	</li>
+	    {{#each pdf}}
+	  	<li class="row to-pdf_view" data-vista="pdf_view" data-link="{{link}}" data-download="{{linkDownload}}"><span class="w10 icon pdf to-pdf_viewspan"></span><span class="w65 to-pdf_viewspan">{{type}} {{lesson}} ~ 
+		{{#if other}}
+	  	(pag.{{other.pags}}])
+	  	{{/if}}
+	  	</span><span class="menu_point"></span><a href="{{linkDownload}}" target="_blank" class="desplegable hidden"><span></span>Download</a></li>
 	  {{/each}}
 	  </ul>
 	</div>
 </div>
-
-<!-- ******* WORKBOOK ********************************************** -->
-<div class=" library_sec" id="tabwb">
-	<div class="col lib_head sub_head">
-	  <div class="row">
-		<div class="tab" onclick="changeSubTab(this,0,'wbaudio','B')">Audios</div>
-		<div class="tab" onclick="changeSubTab(this,1,'wbpdf','B')">PDF</div>
-	  </div>
-	  <div class="selector_tab" id="selector_tabB"></div>
-	</div>
-	<!-- ** AUDIOS ********************************* -->
-	<div class="library_sec" id="tabwbaudio" style="z-index: 90">
-	  <ul>
-	  	<li>TAB WOORKBOOK</li>
-	  {{#each book_pdf}}
-	  	<li class="row to-pdf_view" data-vista="pdf_view" data-link="{{link}}" data-download="{{linkDownload}}"><span class="w10 icon pdf to-pdf_viewspan"></span><span class="w65 to-pdf_viewspan">{{type}} {{lesson}}    [pag.{{pag}}]</span><span class="menu_point"></span><a href="{{linkDownload}}" target="_blank" class="desplegable hidden"><span></span>Download</a></li>
-	  {{/each}}
-	  </ul>
-	</div>
-	<!-- ** PDF ******************************* -->
-	<div class="library_sec" id="tabwbpdf">
-	  <ul>
-	  {{#each wbook_pdf}}
-	  	<li class="row to-pdf_view" data-vista="pdf_view" data-link="{{link}}" data-download="{{linkDownload}}"><span class="w10 icon pdf to-pdf_viewspan"></span><span class="w65 to-pdf_viewspan">{{type}} {{lesson}}    [pag.{{pag}}]</span><span class="menu_point"></span><a href="{{linkDownload}}" target="_blank" class="desplegable hidden"><span></span>Download</a></li>
-	  {{/each}}
-	  </ul>
-	</div>
-</div>
-
-<!-- ******* READER ********************************************** -->
-<div class=" library_sec" id="tabrb">
-	<div class="col lib_head sub_head">
-	  <div class="row">
-		<div class="tab" onclick="changeSubTab(this,0,'rbaudio','C')">Audios</div>
-		<div class="tab" onclick="changeSubTab(this,1,'rbpdf','C')">PDF</div>
-	  </div>
-	  <div class="selector_tab" id="selector_tabC"></div>
-	</div>
-	<!-- ** AUDIOS ********************************* -->
-	<div class="library_sec" id="tabrbaudio" style="z-index: 90">
-	  <ul>
-	  		<li>TAB READER</li>
-	  {{#each book_pdf}}
-	  	<li class="row to-pdf_view" data-vista="pdf_view" data-link="{{link}}" data-download="{{linkDownload}}"><span class="w10 icon pdf to-pdf_viewspan"></span><span class="w65 to-pdf_viewspan">{{type}} {{lesson}}    [pag.{{pag}}]</span><span class="menu_point"></span><a href="{{linkDownload}}" target="_blank" class="desplegable hidden"><span></span>Download</a></li>
-	  {{/each}}
-	  </ul>
-	</div>
-	<!-- ** PDF ******************************* -->
-	<div class="library_sec" id="tabrbpdf">
-	  <ul>
-	  {{#each wbook_pdf}}
-	  	<li class="row to-pdf_view" data-vista="pdf_view" data-link="{{link}}" data-download="{{linkDownload}}"><span class="w10 icon pdf to-pdf_viewspan"></span><span class="w65 to-pdf_viewspan">{{type}} {{lesson}}    [pag.{{pag}}]</span><span class="menu_point"></span><a href="{{linkDownload}}" target="_blank" class="desplegable hidden"><span></span>Download</a></li>
-	  {{/each}}
-	  </ul>
-	</div>
-</div>
-
-<!-- ******* SCHOOLOGY ********************************************** -->
-<div class=" library_sec" id="tabsch">
-	<div class="col lib_head sub_head">
-	  <div class="row">
-		<div class="tab" onclick="changeSubTab(this,0,'schaudio','D')">Audios</div>
-		<div class="tab" onclick="changeSubTab(this,1,'schpdf','D')">PDF</div>
-	  </div>
-	  <div class="selector_tab" id="selector_tabD"></div>
-	</div>
-	<!-- ** AUDIOS ********************************* -->
-	<div class="library_sec" id="tabschaudio" style="z-index: 90">
-	  <ul>
-	  		<li>TAB SCHOOL</li>
-	  {{#each book_pdf}}
-	  	<li class="row to-pdf_view" data-vista="pdf_view" data-link="{{link}}" data-download="{{linkDownload}}"><span class="w10 icon pdf to-pdf_viewspan"></span><span class="w65 to-pdf_viewspan">{{type}} {{lesson}}    [pag.{{pag}}]</span><span class="menu_point"></span><a href="{{linkDownload}}" target="_blank" class="desplegable hidden"><span></span>Download</a></li>
-	  {{/each}}
-	  </ul>
-	</div>
-	<!-- ** PDF ******************************* -->
-	<div class="library_sec" id="tabschpdf">
-	  <ul>
-	  {{#each wbook_pdf}}
-	  	<li class="row to-pdf_view" data-vista="pdf_view" data-link="{{link}}" data-download="{{linkDownload}}"><span class="w10 icon pdf to-pdf_viewspan"></span><span class="w65 to-pdf_viewspan">{{type}} {{lesson}}    [pag.{{pag}}]</span><span class="menu_point"></span><a href="{{linkDownload}}" target="_blank" class="desplegable hidden"><span></span>Download</a></li>
-	  {{/each}}
-	  </ul>
-	</div>
-</div>
-
-
-
-
-
+{{/each}}
 
 <script type="text/javascript"> window.location='/'; </script>
