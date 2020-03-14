@@ -96,7 +96,7 @@ function changePage(elem,tarea,act,...params){
 					name:k,
 					audios: [...new Set(Json[k].audios.sort((a,b)=>a.other?a.other.pag-b.other.pag:a.inx-b.inx)
 					  .map(x=>({
-						type: k=='workbook'?'Lesson':x.type, 
+						type: k=='workbook'?'Lesson':k=='reader'?'':x.type, 
 						lesson:x.lesson,
 						other:x.other?{ 
 							pags: Json[k].pdf.find(z=>z.type==x.type||(z.lesson==x.lesson&&x.type=='Lesson') || z.lesson==x.lesson).other.pags
