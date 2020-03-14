@@ -10,7 +10,7 @@
             "pags": "4-5"
         },
         "lesson": "1A",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 0
     },
     {
@@ -52,7 +52,7 @@
             "pags": "4-5"
         },
         "lesson": "1A",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 3
     },
     {
@@ -66,7 +66,7 @@
             "pags": "4-5"
         },
         "lesson": "1A",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 4
     },
     {
@@ -80,7 +80,7 @@
             "pags": "4-5"
         },
         "lesson": "1A",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 5
     },
     {
@@ -94,7 +94,7 @@
             "pags": "4-5"
         },
         "lesson": "1A",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 6
     },
     {
@@ -108,7 +108,7 @@
             "pags": "6-7"
         },
         "lesson": "1B",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 7
     },
     {
@@ -178,7 +178,7 @@
             "pags": "6-7"
         },
         "lesson": "1B",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 12
     },
     {
@@ -192,7 +192,7 @@
             "pags": "6-7"
         },
         "lesson": "1B",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 13
     },
     {
@@ -206,7 +206,7 @@
             "pags": "6-7"
         },
         "lesson": "1B",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 14
     },
     {
@@ -220,7 +220,7 @@
             "pags": "6-7"
         },
         "lesson": "1B",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 15
     },
     {
@@ -248,7 +248,7 @@
             "pags": "8-9"
         },
         "lesson": "1C",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 17
     },
     {
@@ -262,7 +262,7 @@
             "pags": "8-9"
         },
         "lesson": "1C",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 18
     },
     {
@@ -304,7 +304,7 @@
             "pags": "8-9"
         },
         "lesson": "1C",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 21
     },
     {
@@ -318,7 +318,7 @@
             "pags": "8-9"
         },
         "lesson": "1C",
-        "color": "blue",
+        "color": "skyblue",
         "inx": 22
     },
     {
@@ -444,7 +444,7 @@
             "pags": "12-13"
         },
         "lesson": "2A",
-        "color": "green",
+        "color": "lime",
         "inx": 31
     },
     {
@@ -458,7 +458,7 @@
             "pags": "12-13"
         },
         "lesson": "2A",
-        "color": "green",
+        "color": "lime",
         "inx": 32
     },
     {
@@ -486,7 +486,7 @@
             "pags": "12-13"
         },
         "lesson": "2A",
-        "color": "green",
+        "color": "lime",
         "inx": 34
     },
     {
@@ -500,7 +500,7 @@
             "pags": "12-13"
         },
         "lesson": "2A",
-        "color": "green",
+        "color": "lime",
         "inx": 35
     },
     {
@@ -542,7 +542,7 @@
             "pags": "16-17"
         },
         "lesson": "2C",
-        "color": "green",
+        "color": "lime",
         "inx": 38
     },
     {
@@ -570,7 +570,7 @@
             "pags": "14-15"
         },
         "lesson": "2B",
-        "color": "green",
+        "color": "lime",
         "inx": 40
     },
     {
@@ -584,7 +584,7 @@
             "pags": "14-15"
         },
         "lesson": "2B",
-        "color": "green",
+        "color": "lime",
         "inx": 41
     },
     {
@@ -598,7 +598,7 @@
             "pags": "16-17"
         },
         "lesson": "2C",
-        "color": "green",
+        "color": "lime",
         "inx": 42
     },
     {
@@ -654,7 +654,7 @@
             "pags": "16-17"
         },
         "lesson": "2C",
-        "color": "green",
+        "color": "lime",
         "inx": 46
     },
     {
@@ -668,7 +668,7 @@
             "pags": "16-17"
         },
         "lesson": "2C",
-        "color": "green",
+        "color": "lime",
         "inx": 47
     },
     {
@@ -682,7 +682,7 @@
             "pags": "16-17"
         },
         "lesson": "2C",
-        "color": "green",
+        "color": "lime",
         "inx": 48
     },
     {
@@ -710,7 +710,7 @@
             "pags": "20-21"
         },
         "lesson": "3A",
-        "color": "red",
+        "color": "orange",
         "inx": 50
     },
     {
@@ -724,7 +724,7 @@
             "pags": "20-21"
         },
         "lesson": "3A",
-        "color": "red",
+        "color": "orange",
         "inx": 51
     },
     {
@@ -738,7 +738,7 @@
             "pags": "20-21"
         },
         "lesson": "3A",
-        "color": "red",
+        "color": "orange",
         "inx": 52
     },
     {
@@ -766,7 +766,7 @@
             "pags": "20-21"
         },
         "lesson": "3A",
-        "color": "red",
+        "color": "orange",
         "inx": 54
     },
     {
@@ -780,7 +780,7 @@
             "pags": "20-21"
         },
         "lesson": "3A",
-        "color": "red",
+        "color": "orange",
         "inx": 55
     },
     {
@@ -794,7 +794,7 @@
             "pags": "22-23"
         },
         "lesson": "3B",
-        "color": "red",
+        "color": "orange",
         "inx": 56
     },
     {
@@ -808,7 +808,7 @@
             "pags": "22-23"
         },
         "lesson": "3B",
-        "color": "red",
+        "color": "orange",
         "inx": 57
     },
     {
@@ -822,7 +822,7 @@
             "pags": "22-23"
         },
         "lesson": "3B",
-        "color": "red",
+        "color": "orange",
         "inx": 58
     },
     {
@@ -850,7 +850,7 @@
             "pags": "22-23"
         },
         "lesson": "3B",
-        "color": "red",
+        "color": "orange",
         "inx": 60
     },
     {
@@ -864,7 +864,7 @@
             "pags": "22-23"
         },
         "lesson": "3B",
-        "color": "red",
+        "color": "orange",
         "inx": 61
     },
     {
@@ -878,7 +878,7 @@
             "pags": "22-23"
         },
         "lesson": "3B",
-        "color": "red",
+        "color": "orange",
         "inx": 62
     },
     {
@@ -906,7 +906,7 @@
             "pags": "24-25"
         },
         "lesson": "3C",
-        "color": "red",
+        "color": "orange",
         "inx": 64
     },
     {
@@ -920,7 +920,7 @@
             "pags": "24-25"
         },
         "lesson": "3C",
-        "color": "red",
+        "color": "orange",
         "inx": 65
     },
     {
@@ -934,7 +934,7 @@
             "pags": "24-25"
         },
         "lesson": "3C",
-        "color": "red",
+        "color": "orange",
         "inx": 66
     },
     {
@@ -962,7 +962,7 @@
             "pags": "24-25"
         },
         "lesson": "3C",
-        "color": "red",
+        "color": "orange",
         "inx": 68
     },
     {
@@ -976,7 +976,7 @@
             "pags": "24-25"
         },
         "lesson": "3C",
-        "color": "red",
+        "color": "orange",
         "inx": 69
     },
     {

@@ -11,7 +11,11 @@
 	  	</div> 
 	  		<ul>
 	  		{{#each audios}}
-	  			<li class="row to-play" data-exc="{{exc}}" data-lesson="{{lesson}}" data-link="{{link}}" data-color="{{color}}" data-type="{{type}}" data-inx={{inx}} data-book="{{cover}}"><span class="w10 to-playspan">{{pag}}</span><span class="w60 to-playspan">{{type}} - {{exc}}</span><span class="num_cd w10 to-playspan">{{num}}</span><span class="sound_n w10 to-playspan">{{sound_n}}</span><span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Download</a></li>
+	  			<li class="row to-play" data-exc="{{exc}}" data-lesson="{{lesson}}" data-link="{{link}}" data-color="{{color}}" data-type="{{type}}" data-inx={{inx}} data-book="{{cover}}"><span class="w10 to-playspan">{{other.pag}}</span><span class="w60 to-playspan">{{type}} - {{exc}}</span>
+	  			{{#if other}}
+	  			<span class="num_cd w10 to-playspan">{{other.num}}</span><span class="sound_n w10 to-playspan">{{other.sound_n}}</span>
+	  			{{/if}}
+	  			<span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Download</a></li>
 			{{/each}}
 	  		</ul>
 	  </div>

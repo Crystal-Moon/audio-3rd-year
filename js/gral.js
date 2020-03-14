@@ -96,7 +96,7 @@ function changePage(elem,tarea,act,...params){
 					name:k,
 					audios: [...new Set(Json[k].audios.sort((a,b)=>a.other?a.other.pag-b.other.pag:a.inx-b.inx)
 					  .map(x=>({
-						type: k=='workbook'?'Lesson':k=='reader'?'':x.type, 
+						type: k=='workbook'?'Lesson':x.type, 
 						lesson:x.lesson,
 						other:x.other?{ 
 							pags: Json[k].pdf.find(z=>z.type==x.type||(z.lesson==x.lesson&&x.type=='Lesson') || z.lesson==x.lesson).other.pags
@@ -154,18 +154,30 @@ function changePage(elem,tarea,act,...params){
 			//datos.wbook_pdf=[...new Set(datos.book_audio.map(JSON.stringify))].map(JSON.parse) */
 			break;
 		case 'artist':
+	//	data-vista="artist" data-lesson="1A" data-album="book"
 		console.log('elem para artist',elem)
+
 			datos.album_cover=elem.dataset.album;
 			datos.lesson=elem.dataset.lesson;
-			//datos.book_audio=Json.BOOK_AUDIO.filter(x=>x.lesson==elem.dataset.lesson).sort((a,b)=>a.pag-b.pag)
-			datos.audios=(elem.dataset.album=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO)
+
+			datos.audios=Json[elem.dataset.album].audios
 				.filter(x=>x.lesson==elem.dataset.lesson)
+				.sort((a,b)=>a.other?a.other.pag-b.other.pag:a.inx-b.inx)
+
+			//datos.book_audio=Json.BOOK_AUDIO.filter(x=>x.lesson==elem.dataset.lesson).sort((a,b)=>a.pag-b.pag)
+		//	datos.audios=(elem.dataset.album=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO)
+		//		.filter(x=>x.lesson==elem.dataset.lesson)
 		//	console.log('audios sin filter',datos.audios)
 	//		datos.audios.filter(x=>x.lesson==elem.dataset.lesson)
-				.sort((a,b)=>a.pag-b.pag)
+		//		.sort((a,b)=>a.pag-b.pag)
 			datos.audios.forEach(z=>{z.cover=elem.dataset.album});
-			console.log('audio con filtro',datos.audios)
-			datos.pdf=Json.BOOK_PDF.find(x=>x.lesson==elem.dataset.lesson)
+			//console.log('audio con filtro',datos.audios)
+			datos.pdf=Json[elem.dataset.album].pdf.find(x=>x.lesson==elem.dataset.lesson)
+
+
+
+
+
 			break;
 		case 'pdf_view':
 			datos.link=elem.dataset.link;

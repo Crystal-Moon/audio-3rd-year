@@ -162,6 +162,8 @@
     right: 0;
     left: 0;
 }
+.track_control>span.up:first-child{margin-right: auto;}
+.track_control>span.up:last-child{margin-left: auto;}
 .track.up{
     position: absolute;
 }

@@ -43,7 +43,7 @@ LOADER.style.display = 'block';
 //	let sch_audio=new Promise(done=>{ fetch('./db/schoology_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
 //	let sch_pdf=new Promise(done=>{ fetch('./db/schoology_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
 	
-	Promise.all([b_audio,b_pdf, wb_audio,wb_pdf, /*rb_audio,rb_pdf, sch_audio,sch_pdf*/])
+	Promise.all([b_audio,b_pdf, wb_audio,wb_pdf, rb_audio,rb_pdf/*, sch_audio,sch_pdf*/])
 	.then(pp=>{ 
 		Json.book={ name:'book', audios: pp[0], pdf: pp[1] };
 		Json.workbook={ name:'workbook', audios: pp[2], pdf: pp[3] };
@@ -59,13 +59,14 @@ let colorr=['blue','green','red','green','violet','red','blue','green','red','gr
 function hacerJson(){
 //	Json.WORKBOOK_PDF.forEach(x=>{x.linkDownload=x.link.replace('/preview','&export=download').replace('file/d/','uc?id=')})
 
-let newWB=Json.reader.pdf.forEach(x=>({
+Json.reader.pdf.forEach((x,i)=>{
 	x.linkDownload=x.link.replace('file/d/','uc?id=').replace('/preview','&export=download')
+	x.inx=i;
 })
 //	"https://drive.google.com/file/d/1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y/preview",
 //	"https://drive.google.com/uc?id=1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y&export=download",
 		
-	console.log(JSON.stringify(newWB,null,4))
+	console.log(JSON.stringify(Json.reader.pdf,null,4))
 }
 
 function clearRecently() {

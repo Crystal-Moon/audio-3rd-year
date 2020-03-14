@@ -23,7 +23,7 @@
 	  <ul>
 	  {{#each audios}}
 	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="{{book}}">
-	  		<span class="w10 icon cover {{color}} to-artistspan"></span>
+	  		<span class="w10 icon cover {{color}} {{book}} to-artistspan"></span>
 	  		<span class="w90 to-artistspan">{{type}} {{lesson}}
 			{{#if other}}
 	  		 ~ (pags.{{other.pags}})
@@ -37,9 +37,9 @@
 	<div class="library_sec" id="tab{{name}}pdf">
 	  <ul> <!-- aqui va book_pdf -->
 	    {{#each pdf}}
-	  	<li class="row to-pdf_view" data-vista="pdf_view" data-link="{{link}}" data-download="{{linkDownload}}"><span class="w10 icon pdf to-pdf_viewspan"></span><span class="w75 to-pdf_viewspan">{{type}} {{lesson}} ~ 
+	  	<li class="row to-pdf_view" data-vista="pdf_view" data-link="{{link}}" data-download="{{linkDownload}}"><span class="w10 icon pdf to-pdf_viewspan"></span><span class="w75 to-pdf_viewspan">{{type}} {{lesson}}
 		{{#if other}}
-	  	(pag.{{other.pags}})
+	  	 ~ (pag.{{other.pags}})
 	  	{{/if}}
 	  	</span><span class="menu_point"></span><a href="{{linkDownload}}" target="_blank" class="desplegable hidden"><span></span>Download</a></li>
 	  {{/each}}
