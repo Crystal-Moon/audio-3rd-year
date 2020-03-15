@@ -5,6 +5,7 @@
         "exc": "1",
         "lesson": "1",
         "color": "darkblue",
+        "other":{"pag":6},
         "inx": 0
     },
     {
@@ -13,6 +14,7 @@
         "exc": "2",
         "lesson": "2",
         "color": "darkblue",
+        "other":{"pag":11},
         "inx": 1
     },
      {
@@ -21,6 +23,7 @@
         "exc": "3",
         "lesson": "3",
         "color": "darkblue",
+        "other":{"pag":16},
         "inx": 2
     },
      {
@@ -29,6 +32,7 @@
         "exc": "4",
         "lesson": "4",
         "color": "darkblue",
+        "other":{"pag":20},
         "inx": 3
     },
      {
@@ -37,6 +41,7 @@
         "exc": "5",
         "lesson": "5",
         "color": "darkblue",
+        "other":{"pag":25},
         "inx": 4
     },
      {
@@ -45,6 +50,7 @@
         "exc": "6",
         "lesson": "6",
         "color": "darkblue",
+        "other":{"pag":31},
         "inx": 5
     },
      {
@@ -53,6 +59,7 @@
         "exc": "7",
         "lesson": "7",
         "color": "darkblue",
+        "other":{"pag":34},
         "inx": 6
     },
      {
@@ -61,6 +68,7 @@
         "exc": "8",
         "lesson": "8",
         "color": "darkblue",
+        "other":{"pag":38},
         "inx": 7
     },
      {
@@ -69,6 +77,7 @@
         "exc": "9",
         "lesson": "9",
         "color": "darkblue",
+        "other":{"pag":42},
         "inx": 8
     },
      {
@@ -77,6 +86,7 @@
         "exc": "10",
         "lesson": "10",
         "color": "darkblue",
+        "other":{"pag":46},
         "inx": 9
     },
      {
@@ -85,6 +95,7 @@
         "exc": "11",
         "lesson": "11",
         "color": "darkblue",
+        "other":{"pag":51},
         "inx": 10
     },
     {
@@ -93,6 +104,7 @@
         "exc": "12",
         "lesson": "12",
         "color": "darkblue",
+        "other":{"pag":55},
         "inx": 11
     },
     {
@@ -101,6 +113,7 @@
         "exc": "13",
         "lesson": "13",
         "color": "darkblue",
+        "other":{"pag":60},
         "inx": 12
     }
 ]

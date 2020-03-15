@@ -102,15 +102,15 @@ width: max-content;
 margin-right: 0.5em; 
 margin-left: auto;
 }
-.placa{background-color: inherit;margin: 0;}
+.placa{background-color: inherit;margin: 0;--device:movil;}
 .placa div.img, .placa div.img.cover:after{border-radius: 50%;}
-.placa .play{}
+.placa .play{--device:movil;}
 .placa .play:hover{}
 .placa p{text-align: center;margin-left: auto;margin-right: auto;}
 
 /*************************************/
 #Menu{width: 100%;max-width: 100%;min-width: 100%;bottom: 0;/* margin-top: auto; */display: flex;flex-direction: row-reverse;height: 5em;padding: 0;z-index: 300;top: auto;}
-#Menu li,h1{flex-direction: column;width: min-content;height: max-content;}
+#Menu li,h1{flex-direction: column;width: min-content;height: max-content;/* --device:movil; */}
 #Menu li>div, h1>div{margin-left: auto;margin-right: auto;}
 #Menu li:hover{}
 #Menu li:hover .icon{}

@@ -80,13 +80,33 @@ li{cursor: pointer;}
     margin-left: 1em;
     border-width: 5px;
 }
-.placa{margin: 1em;width: 12em;height: 15em;position: relative;cursor: pointer;background-color: #282828;border-radius: 0.8em;}
+#body.body_home a{
+    color: lime;
+    margin: 0.5em;
+    display: block;
+    background-color: #282828;
+    border-radius: 2em;
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    width: inherit;
+}
+#body.body_home a>span{
+    display: inline-block;
+    margin: 0;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('../img/download.png');
+    background-size: 100% 100%;
+    float: right;
+}
+.placa{margin: 1em;width: 12em;height: 15em;position: relative;cursor: pointer;background-color: #282828;border-radius: 0.8em;--device:pc;}
 .placa div.img{width: 10em;height: 10em;background-size: 100% auto;display: inline-block;margin: 1em;background-size: 100% auto;background-repeat: no-repeat;background-position: center center;}
 .placa div.img.b{background-image: url('../img/album_book.jpg');}
 .placa div.img.wb{background-image: url('../img/album_workbook.jpg');}
 .placa div.img.r{background-image: url('../img/album_reader.jpg');}
-.placa div.img.sch{background-image: url('../img/album_schoology.png');}
-.placa .play{position: absolute;right: 0;margin-left: auto;height: 2em;bottom: 0;margin-bottom: 0.5em;width: 70%;margin-right: 0.5em;/* background-image: url('./img/play_circle_green.png'); */background-position: center right;background-size: auto 100%;background-repeat: no-repeat;z-index: 100;background-image: none;}
+.placa div.img.sch{background-image: url('../img/album_schoology.jpg');}
+.placa .play{position: absolute;right: 0;margin-left: auto;height: 2em;bottom: 0;margin-bottom: 0.5em;width: 70%;margin-right: 0.5em;/* background-image: url('./img/play_circle_green.png'); */background-position: center right;background-size: auto 100%;background-repeat: no-repeat;z-index: 100;background-image: none;--device:pc;}
 .placa .play:hover{background-image: url('../img/play_circle_green.png');}
 .placa p{
     margin: 1em;
@@ -224,7 +244,7 @@ h1{margin: 0;padding: 0;font-size: 1.5em;margin-top: 2em;/* z-index: 10000; */}
 .w60{width: 60%;}
 .w65{width: 65%;}
 .w50{width: 50%;}
-.w75{width: 75%;}
+.w75{width: 75%;min-width: max-content;}
 .w90{width: 90%;}
 .num_cd{width: 1.5em;
     text-align: center;
@@ -371,7 +391,7 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
 .library_sec .music{background-image: url('../img/music.png');background-size: auto 100%;}
 .cover{background-image: url('../img/album.jpeg');background-size: auto 100%;width: 2.5em;position: relative;/* font-size: 1em; */}
 .cover.reader{background-image: url('../img/album_reader.jpg');}
-.cover.schoology{background-image: url('../img/album_schoology.png');}
+.cover.schoology{background-image: url('../img/album_schoology.jpg');}
 .cover:before{
     content: '🎵';
     position: absolute;

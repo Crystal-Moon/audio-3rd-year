@@ -12,8 +12,8 @@ function upp(yes){
 	}
 }
 
-
 function changeTab(tab,subTarea,...params){
+	console.log('en hangeTab [tab,subtarea. ...param]',tab,subTarea,[...params])
 	//console.log(tab)
 	//console.log('la subtarea en changeTab',subTarea)
 	let arr=document.querySelectorAll('#ul li');
@@ -54,8 +54,9 @@ function changeSubTab(...args){
 
 	let tabSelected=G('tab'+name);
 	//console.log('tabSelected',tabSelected)
+	console.log('tabSelected',tabSelected)
 	let sib=tabSelected.parentNode.childNodes;
-	sib.forEach(z=>{ if(z.hasChildNodes()) z.style.zIndex = '5'; });
+	sib.forEach(z=>{ if(z.hasChildNodes()) z.style.zIndex = '5'; console.log('z ',z)});
 	tabSelected.style.zIndex = '100';
 }
 
@@ -80,9 +81,10 @@ function loadHtml(name,action,subTarea,...params) {
 }
 */
 
-function changePage(elem,tarea,act,...params){
-	console.log('elem en changePage',elem)
-	console.log('la data de elem',elem.dataset)
+function changePage(elem,tarea=null,act,...params){
+	console.log('en changePage [elem,tarea, act, ...param]',elem,tarea,act,[...params])
+	//console.log('elem en changePage',elem)
+	//console.log('la data de elem',elem.dataset)
 	let datos={};
 	switch(elem.dataset.vista){
 		case 'home':
@@ -154,7 +156,7 @@ function changePage(elem,tarea,act,...params){
 			//datos.wbook_pdf=[...new Set(datos.book_audio.map(JSON.stringify))].map(JSON.parse) */
 			break;
 		case 'artist':
-	//	data-vista="artist" data-lesson="1A" data-album="book"
+	//	data-vista="artist" data-lesson="1A" data-album="book" data-type="Grammar Bannk"
 		console.log('elem para artist',elem)
 
 			datos.album_cover=elem.dataset.album;
@@ -205,8 +207,8 @@ function changePage(elem,tarea,act,...params){
 	loadHbs(elem.dataset.vista, datos,tarea, ...params);
 }
 
-
 function loadHbs(hbs, datos, tarea,...params) {
+	console.log('en loadHBS [hbs,datos,tarea, ...param]',hbs, datos, tarea, [...params])
 //	console.log('params en loadHtml: ',params)
 //	console.log('params en loadHtml CON PUNTOS: ',...params)
 /*let datos={
@@ -235,9 +237,9 @@ LOADER.style.display = 'block';
 
     // 	if(action) history.replaceState({page:hbs},'', './'+hbs+'.hbs')
 	//	else history.pushState({page:hbs},'', './'+hbs+'.hbs')
-	//console.log('la subTrea :/',tarea)
-//		if(tarea) tarea(...params);
-		if(hbs=='library') changeSubTab(G('tabDefault'),0,'book')
+	console.log('la subTrea :/',tarea)
+		if(tarea) tarea(...params);
+		if(hbs=='library' && !tarea) changeSubTab(G('tabDefault'),0,'book')
 		if(hbs!='pdf_view') LOADER.style.display='none';
 		setTimeout(()=>{ LOADER.style.display='none' }, 2500); //por las dudas q no funcione el iframe
       }

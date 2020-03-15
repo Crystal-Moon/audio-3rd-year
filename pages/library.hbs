@@ -10,7 +10,7 @@
 <div class="lib_bdy">
 <!--  ***** *************************************************** -->
 {{#each datos}}
-<div class="library_sec" id="tab{{name}}" style="z-index:99;">
+<div class="library_sec" id="tab{{name}}" style="z-index:95;">
 	<div class="col lib_head sub_head">
 	  <div class="row">
 		<div class="tab" onclick="changeSubTab(this,0,'{{name}}audio','{{letter}}')">Audios</div>
@@ -22,7 +22,7 @@
 	<div class="library_sec" id="tab{{name}}audio" style="z-index:5;">
 	  <ul>
 	  {{#each audios}}
-	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="{{book}}">
+	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="{{book}}" data-type={{type}}>
 	  		<span class="w10 icon cover {{color}} {{book}} to-artistspan"></span>
 	  		<span class="w90 to-artistspan">{{type}} {{lesson}}
 			{{#if other}}

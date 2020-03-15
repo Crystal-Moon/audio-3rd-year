@@ -23,6 +23,25 @@ width: 90%;
     /* margin-right: 0.5em; */
 }
 #body.body_home>*:last-child{margin-bottom: 10em;}
+#body.body_home a{
+    padding: 0.5em;
+    width: 80%;
+    position: relative;
+    padding-left: 2.9em;
+    white-space: pre-line;
+    padding-right: 1em;
+    box-sizing: border-box;
+}
+#body.body_home a>span{
+    float: left;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    margin-left: 0.9em;
+}
 .placa{}
 .placa img{}
 .placa .play{}
@@ -109,7 +128,13 @@ h1{}
 
 /****************************************************/
 
-
+.lib_head .tab{
+    
+font-size: 0.9em;
+}
+.lib_head{
+    height: 3em;
+}
 .btn, .read{width: 60%;}
 /*********************************************************/
 

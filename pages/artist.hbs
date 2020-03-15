@@ -1,6 +1,6 @@
 <div class="back" style="background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%),url('./img/album_{{album_cover}}.jpg');"></div>
 	  <div class="artist gradiant">
-	  	<h2>Lesson {{lesson}}</h2>
+	  	<h2>{{type}} {{lesson}}</h2>
 	  	<div class="head sticky" id="head_sticky">
 	  		<button type="button" class="btn green to-pdf_view" data-link="{{pdf.link}}" data-download="{{pdf.linkDownload}}" data-vista="pdf_view">PDF</button>
 	  		<div class="row">
@@ -12,11 +12,10 @@
 	  		<ul>
 	  		{{#each audios}}
 	  			<li class="row to-play" data-exc="{{exc}}" data-lesson="{{lesson}}" data-link="{{link}}" data-color="{{color}}" data-type="{{type}}" data-inx={{inx}} data-book="{{cover}}"><span class="w10 to-playspan">{{other.pag}}</span><span class="w60 to-playspan">{{type}} - {{exc}}</span>
-	  			{{#if other}}
+	  			{{#if other.sound_n}}
 	  			<span class="num_cd w10 to-playspan">{{other.num}}</span><span class="sound_n w10 to-playspan">{{other.sound_n}}</span>
 	  			{{/if}}
 	  			<span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Download</a></li>
 			{{/each}}
 	  		</ul>
 	  </div>
-<script type="text/javascript"> window.location='/'; </script>
