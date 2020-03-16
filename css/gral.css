@@ -389,7 +389,7 @@ a.desplegable, a.desplegable:hover,a.desplegable:visited{
     text-align: center;
 }
 .library_sec .music{background-image: url('../img/music.png');background-size: auto 100%;}
-.cover{background-image: url('../img/album.jpeg');background-size: auto 100%;width: 2.5em;position: relative;/* font-size: 1em; */}
+.cover{background-image: url('../img/album.jpg');background-size: auto 100%;width: 2.5em;position: relative;/* font-size: 1em; */}
 .cover.reader{background-image: url('../img/album_reader.jpg');}
 .cover.schoology{background-image: url('../img/album_schoology.jpg');}
 .cover:before{
