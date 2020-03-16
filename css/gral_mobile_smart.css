@@ -22,7 +22,10 @@ width: 90%;
     /* padding-right: 0.5em; */
     /* margin-right: 0.5em; */
 }
-#body.body_home>*:last-child{margin-bottom: 10em;}
+#body.body_home{
+    padding-bottom: 1em;
+}
+#body.body_home>*:last-child{margin-bottom: 9em;}
 #body.body_home a{
     padding: 0.5em;
     width: 80%;
