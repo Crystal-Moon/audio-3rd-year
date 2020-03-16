@@ -1,23 +1,29 @@
 [
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/h1wjl70ah1zhm8j/ef3e_p-int_01a_1-02.mp3?dl=1",
         "exc": "1b",
-        "num": "1",
-        "sound_n": 2,
+        "other": {
+            "num": "1",
+            "sound_n": 2,
+            "pag": 4,
+            "pags": "4-5"
+        },
         "lesson": "1A",
-        "pag": 4,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 0
     },
     {
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/vtfp1klh2kd1i8x/ef3e_p-int_01a_1-03.mp3?dl=1",
         "exc": "1A",
-        "num": "1",
-        "sound_n": 3,
+        "other": {
+            "num": "1",
+            "sound_n": 3,
+            "pag": 126,
+            "pags": "126-127"
+        },
         "lesson": "1A",
-        "pag": 126,
         "color": "blue",
         "inx": 1
     },
@@ -25,76 +31,97 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/oa961xi5d0dt7ze/ef3e_p-int_01a_1-04.mp3?dl=1",
         "exc": "1A",
-        "num": "1",
-        "sound_n": 4,
+        "other": {
+            "num": "1",
+            "sound_n": 4,
+            "pag": 126,
+            "pags": "126-127"
+        },
         "lesson": "1A",
-        "pag": 126,
         "color": "blue",
         "inx": 2
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/qlofo0wjnmnadt3/ef3e_p-int_01a_1-05.mp3?dl=1",
         "exc": "3a",
-        "num": "1",
-        "sound_n": 5,
+        "other": {
+            "num": "1",
+            "sound_n": 5,
+            "pag": 5,
+            "pags": "4-5"
+        },
         "lesson": "1A",
-        "pag": 5,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 3
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/qgf3n6m3ch9j5vp/ef3e_p-int_01a_1-06.mp3?dl=1",
         "exc": "3d",
-        "num": "1",
-        "sound_n": 6,
+        "other": {
+            "num": "1",
+            "sound_n": 6,
+            "pag": 5,
+            "pags": "4-5"
+        },
         "lesson": "1A",
-        "pag": 5,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 4
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/jvef37o3xc0kp8d/ef3e_p-int_01a_1-07.mp3?dl=1",
-        "exc": "Exercise 4a",
-        "num": "1",
-        "sound_n": 7,
+        "exc": "4a",
+        "other": {
+            "num": "1",
+            "sound_n": 7,
+            "pag": 5,
+            "pags": "4-5"
+        },
         "lesson": "1A",
-        "pag": 5,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 5
     },
     {
-        "type": "Exercise",
-        "linkk": "https://www.dropbox.com/s/ncpppgwggmczb8h/ef3e_p-int_01a_1-08.mp3?dl=1",
+        "type": "Lesson",
+        "link": "https://www.dropbox.com/s/ncpppgwggmczb8h/ef3e_p-int_01a_1-08.mp3?dl=1",
         "exc": "4d",
-        "num": "1",
-        "sound_n": 8,
+        "other": {
+            "num": "1",
+            "sound_n": 8,
+            "pag": 5,
+            "pags": "4-5"
+        },
         "lesson": "1A",
-        "pag": 5,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 6
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/ncpppgwggmczb8h/ef3e_p-int_01a_1-08.mp3?dl=1",
         "exc": "1a",
-        "num": "1",
-        "sound_n": 9,
+        "other": {
+            "num": "1",
+            "sound_n": 9,
+            "pag": 6,
+            "pags": "6-7"
+        },
         "lesson": "1B",
-        "pag": 6,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 7
     },
     {
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/4vibb1mf9ue4tq6/ef3e_p-int_01b_1-10.mp3?dl=1",
         "exc": "1b",
-        "num": "1",
-        "sound_n": 10,
+        "other": {
+            "num": "1",
+            "sound_n": 10,
+            "pag": 150,
+            "pags": "126-127"
+        },
         "lesson": "1B",
-        "pag": 150,
         "color": "blue",
         "inx": 8
     },
@@ -102,10 +129,13 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/k4jwzahv2md0dhf/ef3e_p-int_01b_1-11.mp3?dl=1",
         "exc": "2c",
-        "num": "1",
-        "sound_n": 11,
+        "other": {
+            "num": "1",
+            "sound_n": 11,
+            "pag": 150,
+            "pags": "126-127"
+        },
         "lesson": "1B",
-        "pag": 150,
         "color": "blue",
         "inx": 9
     },
@@ -113,10 +143,13 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/k4jwzahv2md0dhf/ef3e_p-int_01b_1-11.mp3?dl=1",
         "exc": "1B",
-        "num": "1",
-        "sound_n": 12,
+        "other": {
+            "num": "1",
+            "sound_n": 12,
+            "pag": 126,
+            "pags": "126-127"
+        },
         "lesson": "1B",
-        "pag": 126,
         "color": "blue",
         "inx": 10
     },
@@ -124,98 +157,125 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/ehbsoi0u3kustlj/ef3e_p-int_01b_1-13.mp3?dl=1",
         "exc": "1B",
-        "num": "1",
-        "sound_n": 13,
+        "other": {
+            "num": "1",
+            "sound_n": 13,
+            "pag": 126,
+            "pags": "126-127"
+        },
         "lesson": "1B",
-        "pag": 126,
         "color": "blue",
         "inx": 11
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/svv9s1wjw8kq3d6/ef3e_p-int_01b_1-14.mp3?dl=1",
         "exc": "4a",
-        "num": "1",
-        "sound_n": 14,
+        "other": {
+            "num": "1",
+            "sound_n": 14,
+            "pag": 7,
+            "pags": "6-7"
+        },
         "lesson": "1B",
-        "pag": 7,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 12
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/ejc8lehlpoto7e7/ef3e_p-int_01b_1-15.mp3?dl=1",
         "exc": "4c",
-        "num": "1",
-        "sound_n": 15,
+        "other": {
+            "num": "1",
+            "sound_n": 15,
+            "pag": 7,
+            "pags": "6-7"
+        },
         "lesson": "1B",
-        "pag": 7,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 13
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/93tn228814pplit/ef3e_p-int_01b_1-16.mp3?dl=1",
         "exc": "5a",
-        "num": "1",
-        "sound_n": 16,
+        "other": {
+            "num": "1",
+            "sound_n": 16,
+            "pag": 7,
+            "pags": "6-7"
+        },
         "lesson": "1B",
-        "pag": 7,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 14
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/4y6043jgl992upu/ef3e_p-int_01b_1-17.mp3?dl=1",
         "exc": "5b",
-        "num": "1",
-        "sound_n": 17,
+        "other": {
+            "num": "1",
+            "sound_n": 17,
+            "pag": 7,
+            "pags": "6-7"
+        },
         "lesson": "1B",
-        "pag": 7,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 15
     },
     {
         "type": "Vocabulary Bank",
         "link": "https://www.dropbox.com/s/mjdzyae2vefwym3/ef3e_p-int_01c_1-19.mp3?dl=1",
         "exc": "1b",
-        "num": "1",
-        "sound_n": 19,
+        "other": {
+            "num": "1",
+            "sound_n": 19,
+            "pag": 151,
+            "pags": "150-163"
+        },
         "lesson": "1B",
-        "pag": 151,
         "color": "green",
         "inx": 16
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/003lhbpdocjwk64/ef3e_p-int_01c_1-20.mp3?dl=1",
         "exc": "2a",
-        "num": "1",
-        "sound_n": 20,
+        "other": {
+            "num": "1",
+            "sound_n": 20,
+            "pag": 8,
+            "pags": "8-9"
+        },
         "lesson": "1C",
-        "pag": 8,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 17
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/ctehffbf1e1ildw/ef3e_p-int_01c_1-21.mp3?dl=1",
         "exc": "2c",
-        "num": "1",
-        "sound_n": 21,
+        "other": {
+            "num": "1",
+            "sound_n": 21,
+            "pag": 8,
+            "pags": "8-9"
+        },
         "lesson": "1C",
-        "pag": 8,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 18
     },
     {
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/wpb748h2hbu59kt/ef3e_p-int_01c_1-22.mp3?dl=1",
         "exc": "1C",
-        "num": "1",
-        "sound_n": 22,
+        "other": {
+            "num": "1",
+            "sound_n": 22,
+            "pag": 126,
+            "pags": "126-127"
+        },
         "lesson": "1C",
-        "pag": 126,
         "color": "blue",
         "inx": 19
     },
@@ -223,43 +283,55 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/lrbple5nakf1ovv/ef3e_p-int_01c_1-23.mp3?dl=1",
         "exc": "1C",
-        "num": "1",
-        "sound_n": 23,
+        "other": {
+            "num": "1",
+            "sound_n": 23,
+            "pag": 126,
+            "pags": "126-127"
+        },
         "lesson": "1C",
-        "pag": 126,
         "color": "blue",
         "inx": 20
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/swugmfa8xwfi1gk/ef3e_p-int_01c_1-24.mp3?dl=1",
         "exc": "4a",
-        "num": "1",
-        "sound_n": 24,
+        "other": {
+            "num": "1",
+            "sound_n": 24,
+            "pag": 8,
+            "pags": "8-9"
+        },
         "lesson": "1C",
-        "pag": 8,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 21
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/k19ss9nyuij5cmi/ef3e_p-int_01c_1-25.mp3?dl=1",
         "exc": "5a",
-        "num": "1",
-        "sound_n": 25,
+        "other": {
+            "num": "1",
+            "sound_n": 25,
+            "pag": 9,
+            "pags": "8-9"
+        },
         "lesson": "1C",
-        "pag": 9,
-        "color": "blue",
+        "color": "skyblue",
         "inx": 22
     },
     {
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/tpc7v2ahdijrx1y/ef3e_p-int_pe1_1-26.mp3?dl=1",
         "exc": "1b",
-        "num": "1",
-        "sound_n": 26,
+        "other": {
+            "num": "1",
+            "sound_n": 26,
+            "pag": 10,
+            "pags": "10-11"
+        },
         "lesson": "1",
-        "pag": 10,
         "color": "yellow",
         "inx": 23
     },
@@ -267,10 +339,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/2xlfzr4dfulzdmb/ef3e_p-int_pe1_1-27.mp3?dl=1",
         "exc": "2a",
-        "num": "1",
-        "sound_n": 27,
+        "other": {
+            "num": "1",
+            "sound_n": 27,
+            "pag": 11,
+            "pags": "10-11"
+        },
         "lesson": "1",
-        "pag": 11,
         "color": "yellow",
         "inx": 24
     },
@@ -278,10 +353,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/07g2od24dhjgvb9/ef3e_p-int_pe1_1-28.mp3?dl=1",
         "exc": "2c",
-        "num": "1",
-        "sound_n": 28,
+        "other": {
+            "num": "1",
+            "sound_n": 28,
+            "pag": 11,
+            "pags": "10-11"
+        },
         "lesson": "1",
-        "pag": 11,
         "color": "yellow",
         "inx": 25
     },
@@ -289,10 +367,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/okrlzetp2u696pb/ef3e_p-int_pe1_1-29.mp3?dl=1",
         "exc": "3a",
-        "num": "1",
-        "sound_n": 29,
+        "other": {
+            "num": "1",
+            "sound_n": 29,
+            "pag": 11,
+            "pags": "10-11"
+        },
         "lesson": "1",
-        "pag": 11,
         "color": "yellow",
         "inx": 26
     },
@@ -300,10 +381,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/stf3o9kjl7g3g7x/ef3e_p-int_pe1_1-30.mp3?dl=1",
         "exc": "3d",
-        "num": "1",
-        "sound_n": 30,
+        "other": {
+            "num": "1",
+            "sound_n": 30,
+            "pag": 11,
+            "pags": "10-11"
+        },
         "lesson": "1",
-        "pag": 11,
         "color": "yellow",
         "inx": 27
     },
@@ -311,10 +395,13 @@
         "type": "Vocabulary Bank",
         "link": "https://www.dropbox.com/s/bewk2r90aqo4r9n/ef3e_p-int_02a_1-31.mp3?dl=1",
         "exc": "1b",
-        "num": "1",
-        "sound_n": 31,
+        "other": {
+            "num": "1",
+            "sound_n": 31,
+            "pag": 152,
+            "pags": "150-163"
+        },
         "lesson": "2A",
-        "pag": 152,
         "color": "green",
         "inx": 28
     },
@@ -322,10 +409,13 @@
         "type": "Vocabulary Bank",
         "link": "https://www.dropbox.com/s/fux9m1h6wwsjkbo/ef3e_p-int_02a_1-32.mp3?dl=1",
         "exc": "2b",
-        "num": "1",
-        "sound_n": 32,
+        "other": {
+            "num": "1",
+            "sound_n": 32,
+            "pag": 152,
+            "pags": "150-163"
+        },
         "lesson": "2A",
-        "pag": 152,
         "color": "green",
         "inx": 29
     },
@@ -333,76 +423,97 @@
         "type": "Vocabulary Bank",
         "link": "https://www.dropbox.com/s/fuypcz8j1f21q9h/ef3e_p-int_02a_1-33.mp3?dl=1",
         "exc": "3b",
-        "num": "1",
-        "sound_n": 33,
+        "other": {
+            "num": "1",
+            "sound_n": 33,
+            "pag": 152,
+            "pags": "150-163"
+        },
         "lesson": "2A",
-        "pag": 152,
         "color": "green",
         "inx": 30
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/a3nm6snjo0ushks/ef3e_p-int_02a_1-34.mp3?dl=1",
         "exc": "3a",
-        "num": "1",
-        "sound_n": 34,
+        "other": {
+            "num": "1",
+            "sound_n": 34,
+            "pag": 13,
+            "pags": "12-13"
+        },
         "lesson": "2A",
-        "pag": 13,
-        "color": "green",
+        "color": "lime",
         "inx": 31
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/gu3ngs0gizy4kv5/ef3e_p-int_02a_1-35.mp3?dl=1",
         "exc": "3c",
-        "num": "1",
-        "sound_n": 35,
+        "other": {
+            "num": "1",
+            "sound_n": 35,
+            "pag": 13,
+            "pags": "12-13"
+        },
         "lesson": "2A",
-        "pag": 13,
-        "color": "green",
+        "color": "lime",
         "inx": 32
     },
     {
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/6zq0ui7ume5z433/ef3e_p-int_02a_1-36.mp3?dl=1",
         "exc": "2A",
-        "num": "1",
-        "sound_n": 36,
+        "other": {
+            "num": "1",
+            "sound_n": 36,
+            "pag": 128,
+            "pags": "126-127"
+        },
         "lesson": "2A",
-        "pag": 128,
         "color": "blue",
         "inx": 33
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/u0xl6bbd53ni5ev/ef3e_p-int_02a_1-37.mp3?dl=1",
         "exc": "5a",
-        "num": "1",
-        "sound_n": 37,
+        "other": {
+            "num": "1",
+            "sound_n": 37,
+            "pag": 13,
+            "pags": "12-13"
+        },
         "lesson": "2A",
-        "pag": 13,
-        "color": "green",
+        "color": "lime",
         "inx": 34
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/5oaxq2h459v9ttc/ef3e_p-int_02a_1-38.mp3?dl=1",
         "exc": "5c",
-        "num": "1",
-        "sound_n": 38,
+        "other": {
+            "num": "1",
+            "sound_n": 38,
+            "pag": 13,
+            "pags": "12-13"
+        },
         "lesson": "2A",
-        "pag": 13,
-        "color": "green",
+        "color": "lime",
         "inx": 35
     },
     {
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/48sh5czx6slhpgi/ef3e_p-int_02b_1-39.mp3?dl=1",
         "exc": "2B",
-        "num": "1",
-        "sound_n": 39,
+        "other": {
+            "num": "1",
+            "sound_n": 39,
+            "pag": 128,
+            "pags": "126-127"
+        },
         "lesson": "2B",
-        "pag": 128,
         "color": "blue",
         "inx": 36
     },
@@ -410,76 +521,97 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/fijuj7x4dhrzldp/ef3e_p-int_02b_1-40.mp3?dl=1",
         "exc": "2B",
-        "num": "1",
-        "sound_n": 40,
+        "other": {
+            "num": "1",
+            "sound_n": 40,
+            "pag": 128,
+            "pags": "126-127"
+        },
         "lesson": "2B",
-        "pag": 128,
         "color": "blue",
         "inx": 37
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/nrvt9y2q2tsut6u/ef3e_p-int_02b_1-41.mp3?dl=1",
         "exc": "2b",
-        "num": "1",
-        "sound_n": 41,
+        "other": {
+            "num": "1",
+            "sound_n": 41,
+            "pag": 14,
+            "pags": "16-17"
+        },
         "lesson": "2C",
-        "pag": 14,
-        "color": "green",
+        "color": "lime",
         "inx": 38
     },
     {
         "type": "Vocabulary Bank",
         "link": "https://www.dropbox.com/s/42gvzfsczfiv32w/ef3e_p-int_02b_1-42.mp3?dl=1",
         "exc": "1b",
-        "num": "1",
-        "sound_n": 42,
+        "other": {
+            "num": "1",
+            "sound_n": 42,
+            "pag": 153,
+            "pags": "150-163"
+        },
         "lesson": "2C",
-        "pag": 153,
         "color": "green",
         "inx": 39
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/wn4drdg5ad219dr/ef3e_p-int_02b_1-43.mp3?dl=1",
         "exc": "4a",
-        "num": "1",
-        "sound_n": 43,
+        "other": {
+            "num": "1",
+            "sound_n": 43,
+            "pag": 15,
+            "pags": "14-15"
+        },
         "lesson": "2B",
-        "pag": 15,
-        "color": "green",
+        "color": "lime",
         "inx": 40
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/f8142s414hsz8xx/ef3e_p-int_02b_1-44.mp3?dl=1",
         "exc": "5c",
-        "num": "1",
-        "sound_n": 44,
+        "other": {
+            "num": "1",
+            "sound_n": 44,
+            "pag": 15,
+            "pags": "14-15"
+        },
         "lesson": "2B",
-        "pag": 15,
-        "color": "green",
+        "color": "lime",
         "inx": 41
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/f8142s414hsz8xx/ef3e_p-int_02b_1-44.mp3?dl=1",
         "exc": "1a",
-        "num": "1",
-        "sound_n": 45,
+        "other": {
+            "num": "1",
+            "sound_n": 45,
+            "pag": 16,
+            "pags": "16-17"
+        },
         "lesson": "2C",
-        "pag": 16,
-        "color": "green",
+        "color": "lime",
         "inx": 42
     },
     {
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/06m8bptjzfwg8j6/ef3e_p-int_02c_1-46.mp3?dl=1",
         "exc": "2C",
-        "num": "1",
-        "sound_n": 46,
+        "other": {
+            "num": "1",
+            "sound_n": 46,
+            "pag": 128,
+            "pags": "126-127"
+        },
         "lesson": "2C",
-        "pag": 128,
         "color": "blue",
         "inx": 43
     },
@@ -487,10 +619,13 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/7i3kepst5m1d9az/ef3e_p-int_02c_1-47.mp3?dl=1",
         "exc": "2C",
-        "num": "1",
-        "sound_n": 47,
+        "other": {
+            "num": "1",
+            "sound_n": 47,
+            "pag": 128,
+            "pags": "126-127"
+        },
         "lesson": "2C",
-        "pag": 128,
         "color": "blue",
         "inx": 44
     },
@@ -498,285 +633,363 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/7i3kepst5m1d9az/ef3e_p-int_02c_1-47.mp3?dl=1",
         "exc": "2C",
-        "num": "1",
-        "sound_n": 48,
+        "other": {
+            "num": "1",
+            "sound_n": 48,
+            "pag": 128,
+            "pags": "126-127"
+        },
         "lesson": "2C",
-        "pag": 128,
         "color": "blue",
         "inx": 45
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/2oibb852bm1ralb/ef3e_p-int_02c_1-49.mp3?dl=1",
         "exc": "2b",
-        "num": "1",
-        "sound_n": 49,
+        "other": {
+            "num": "1",
+            "sound_n": 49,
+            "pag": 17,
+            "pags": "16-17"
+        },
         "lesson": "2C",
-        "pag": 17,
-        "color": "green",
+        "color": "lime",
         "inx": 46
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/92eqpycykf8jztt/ef3e_p-int_02c_1-50.mp3?dl=1",
         "exc": "4d",
-        "num": "1",
-        "sound_n": 50,
+        "other": {
+            "num": "1",
+            "sound_n": 50,
+            "pag": 17,
+            "pags": "16-17"
+        },
         "lesson": "2C",
-        "pag": 17,
-        "color": "green",
+        "color": "lime",
         "inx": 47
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/kl83kcyu17kfrzo/ef3e_p-int_02c_1-51.mp3?dl=1",
         "exc": "4d",
-        "num": "1",
-        "sound_n": 51,
+        "other": {
+            "num": "1",
+            "sound_n": 51,
+            "pag": 17,
+            "pags": "16-17"
+        },
         "lesson": "2C",
-        "pag": 17,
-        "color": "green",
+        "color": "lime",
         "inx": 48
     },
     {
         "type": "Revice and Check",
         "link": "https://www.dropbox.com/s/emajyjwmp17grfh/ef3e_p-int_r%26c_1-53.mp3?dl=1",
         "exc": "1-53",
-        "num": "1",
-        "sound_n": 53,
+        "other": {
+            "num": "1",
+            "sound_n": 53,
+            "pag": 19,
+            "pags": "18-19"
+        },
         "lesson": "1&2",
-        "pag": 19,
         "color": "grey",
         "inx": 49
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/nnsnl5qb8mcr20n/ef3e_p-int_03a_1-54.mp3?dl=1",
         "exc": "3c",
-        "num": "1",
-        "sound_n": 54,
+        "other": {
+            "num": "1",
+            "sound_n": 54,
+            "pag": 20,
+            "pags": "20-21"
+        },
         "lesson": "3A",
-        "pag": 20,
-        "color": "red",
+        "color": "orange",
         "inx": 50
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/jfxthu3vfmuu6r3/ef3e_p-int_03a_1-55.mp3?dl=1",
         "exc": "2b",
-        "num": "1",
-        "sound_n": 55,
+        "other": {
+            "num": "1",
+            "sound_n": 55,
+            "pag": 20,
+            "pags": "20-21"
+        },
         "lesson": "3A",
-        "pag": 20,
-        "color": "red",
+        "color": "orange",
         "inx": 51
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/32ijxeexpctlh8i/ef3e_p-int_03a_1-56.mp3?dl=1",
         "exc": "3a",
-        "num": "1",
-        "sound_n": 56,
+        "other": {
+            "num": "1",
+            "sound_n": 56,
+            "pag": 21,
+            "pags": "20-21"
+        },
         "lesson": "3A",
-        "pag": 21,
-        "color": "red",
+        "color": "orange",
         "inx": 52
     },
     {
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/z1xzq1acdvbq3gk/ef3e_p-int_03a_1-57.mp3?dl=1",
         "exc": "3A",
-        "num": "1",
-        "sound_n": 57,
+        "other": {
+            "num": "1",
+            "sound_n": 57,
+            "pag": 130,
+            "pags": "126-127"
+        },
         "lesson": "3A",
-        "pag": 130,
         "color": "blue",
         "inx": 53
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/ymyi2cebo4a0mkl/ef3e_p-int_03a_1-58.mp3?dl=1",
         "exc": "4a",
-        "num": "1",
-        "sound_n": 58,
+        "other": {
+            "num": "1",
+            "sound_n": 58,
+            "pag": 21,
+            "pags": "20-21"
+        },
         "lesson": "3A",
-        "pag": 21,
-        "color": "red",
+        "color": "orange",
         "inx": 54
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/1h43g18infu3gn8/ef3e_p-int_03a_1-59.mp3?dl=1",
         "exc": "4b",
-        "num": "1",
-        "sound_n": 59,
+        "other": {
+            "num": "1",
+            "sound_n": 59,
+            "pag": 21,
+            "pags": "20-21"
+        },
         "lesson": "3A",
-        "pag": 21,
-        "color": "red",
+        "color": "orange",
         "inx": 55
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/n9ogpp4w7004dhy/ef3e_p-int_03b_1-61.mp3?dl=1",
         "exc": "1a",
-        "num": "1",
-        "sound_n": 61,
+        "other": {
+            "num": "1",
+            "sound_n": 61,
+            "pag": 22,
+            "pags": "22-23"
+        },
         "lesson": "3B",
-        "pag": 22,
-        "color": "red",
+        "color": "orange",
         "inx": 56
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/rj63frf0zkslt3t/ef3e_p-int_03b_1-62.mp3?dl=1",
         "exc": "1e",
-        "num": "1",
-        "sound_n": 62,
+        "other": {
+            "num": "1",
+            "sound_n": 62,
+            "pag": 22,
+            "pags": "22-23"
+        },
         "lesson": "3B",
-        "pag": 22,
-        "color": "red",
+        "color": "orange",
         "inx": 57
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/izq3pzye6wargzl/ef3e_p-int_03b_1-63.mp3?dl=1",
         "exc": "2b",
-        "num": "1",
-        "sound_n": 63,
+        "other": {
+            "num": "1",
+            "sound_n": 63,
+            "pag": 23,
+            "pags": "22-23"
+        },
         "lesson": "3B",
-        "pag": 23,
-        "color": "red",
+        "color": "orange",
         "inx": 58
     },
     {
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/dzp21irsl8mc28g/ef3e_p-int_03b_1-64.mp3?dl=1",
         "exc": "3B",
-        "num": "1",
-        "sound_n": 64,
+        "other": {
+            "num": "1",
+            "sound_n": 64,
+            "pag": 130,
+            "pags": "126-127"
+        },
         "lesson": "3B",
-        "pag": 130,
         "color": "blue",
         "inx": 59
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/o1s12yoz2wedfrh/ef3e_p-int_03b_1-65.mp3?dl=1",
         "exc": "2d",
-        "num": "1",
-        "sound_n": 65,
+        "other": {
+            "num": "1",
+            "sound_n": 65,
+            "pag": 23,
+            "pags": "22-23"
+        },
         "lesson": "3B",
-        "pag": 23,
-        "color": "red",
+        "color": "orange",
         "inx": 60
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/xpjuk9dnrtmhkmw/ef3e_p-int_03b_1-66.mp3?dl=1",
         "exc": "2g",
-        "num": "1",
-        "sound_n": 66,
+        "other": {
+            "num": "1",
+            "sound_n": 66,
+            "pag": 23,
+            "pags": "22-23"
+        },
         "lesson": "3B",
-        "pag": 23,
-        "color": "red",
+        "color": "orange",
         "inx": 61
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/49cobxmr975bajf/ef3e_p-int_03b_1-67.mp3?dl=1",
         "exc": "3a",
-        "num": "1",
-        "sound_n": 67,
+        "other": {
+            "num": "1",
+            "sound_n": 67,
+            "pag": 23,
+            "pags": "22-23"
+        },
         "lesson": "3B",
-        "pag": 23,
-        "color": "red",
+        "color": "orange",
         "inx": 62
     },
     {
         "type": "Vocabulary Bank",
         "link": "https://www.dropbox.com/s/0la1nvrnq5ney0a/ef3e_p-int_03b_1-68.mp3?dl=1",
         "exc": "2b",
-        "num": "1",
-        "sound_n": 68,
+        "other": {
+            "num": "1",
+            "sound_n": 68,
+            "pag": 153,
+            "pags": "150-163"
+        },
         "lesson": "3B",
-        "pag": 153,
         "color": "green",
         "inx": 63
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/84tjd92137zphtg/ef3e_p-int_03c_2-02.mp3?dl=1",
         "exc": "1b",
-        "num": "2",
-        "sound_n": 2,
+        "other": {
+            "num": "2",
+            "sound_n": 2,
+            "pag": 24,
+            "pags": "24-25"
+        },
         "lesson": "3C",
-        "pag": 24,
-        "color": "red",
+        "color": "orange",
         "inx": 64
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/fsm6j06x3de2koh/ef3e_p-int_03c_2-03.mp3?dl=1",
         "exc": "1c",
-        "num": "2",
-        "sound_n": 3,
+        "other": {
+            "num": "2",
+            "sound_n": 3,
+            "pag": 24,
+            "pags": "24-25"
+        },
         "lesson": "3C",
-        "pag": 24,
-        "color": "red",
+        "color": "orange",
         "inx": 65
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/t8o79g13vszpmqx/ef3e_p-int_03c_2-04.mp3?dl=1",
         "exc": "1d",
-        "num": "2",
-        "sound_n": 4,
+        "other": {
+            "num": "2",
+            "sound_n": 4,
+            "pag": 24,
+            "pags": "24-25"
+        },
         "lesson": "3C",
-        "pag": 24,
-        "color": "red",
+        "color": "orange",
         "inx": 66
     },
     {
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/pxnshllvgpzca9y/ef3e_p-int_03c_2-05.mp3?dl=1",
         "exc": "3C",
-        "num": "2",
-        "sound_n": 5,
+        "other": {
+            "num": "2",
+            "sound_n": 5,
+            "pag": 130,
+            "pags": "126-127"
+        },
         "lesson": "3C",
-        "pag": 130,
         "color": "blue",
         "inx": 67
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/bmgfnrhqir4dzlt/ef3e_p-int_03c_2-06.mp3?dl=1",
         "exc": "3b",
-        "num": "2",
-        "sound_n": 6,
+        "other": {
+            "num": "2",
+            "sound_n": 6,
+            "pag": 24,
+            "pags": "24-25"
+        },
         "lesson": "3C",
-        "pag": 24,
-        "color": "red",
+        "color": "orange",
         "inx": 68
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/o1mzu1yo0vcsn6r/ef3e_p-int_03c_2-07.mp3?dl=1",
         "exc": "6c",
-        "num": "2",
-        "sound_n": 7,
+        "other": {
+            "num": "2",
+            "sound_n": 7,
+            "pag": 25,
+            "pags": "24-25"
+        },
         "lesson": "3C",
-        "pag": 25,
-        "color": "red",
+        "color": "orange",
         "inx": 69
     },
     {
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/2s98ncgu510f8x2/ef3e_p-int_pe2_2-08.mp3?dl=1",
         "exc": "1a",
-        "num": "2",
-        "sound_n": 8,
+        "other": {
+            "num": "2",
+            "sound_n": 8,
+            "pag": 26,
+            "pags": "10-11"
+        },
         "lesson": "2",
-        "pag": 26,
         "color": "yellow",
         "inx": 70
     },
@@ -784,10 +997,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/oabp0278652sf1x/ef3e_p-int_pe2_2-09.mp3?dl=1",
         "exc": "3a",
-        "num": "2",
-        "sound_n": 9,
+        "other": {
+            "num": "2",
+            "sound_n": 9,
+            "pag": 26,
+            "pags": "10-11"
+        },
         "lesson": "2",
-        "pag": 26,
         "color": "yellow",
         "inx": 71
     },
@@ -795,10 +1011,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/09ttdlgoxv43q4g/ef3e_p-int_pe2_2-10.mp3?dl=1",
         "exc": "3c",
-        "num": "2",
-        "sound_n": 10,
+        "other": {
+            "num": "2",
+            "sound_n": 10,
+            "pag": 27,
+            "pags": "10-11"
+        },
         "lesson": "2",
-        "pag": 27,
         "color": "yellow",
         "inx": 72
     },
@@ -806,10 +1025,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/h2swrkubmxrw58k/ef3e_p-int_pe2_2-11.mp3?dl=1",
         "exc": "4a",
-        "num": "2",
-        "sound_n": 11,
+        "other": {
+            "num": "2",
+            "sound_n": 11,
+            "pag": 27,
+            "pags": "10-11"
+        },
         "lesson": "2",
-        "pag": 27,
         "color": "yellow",
         "inx": 73
     },
@@ -817,10 +1039,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/j9sugv204fzmnyj/ef3e_p-int_pe2_2-12.mp3?dl=1",
         "exc": "4d",
-        "num": "2",
-        "sound_n": 12,
+        "other": {
+            "num": "2",
+            "sound_n": 12,
+            "pag": 27,
+            "pags": "10-11"
+        },
         "lesson": "2",
-        "pag": 27,
         "color": "yellow",
         "inx": 74
     },
@@ -828,10 +1053,13 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/iqfc6ronjhs9sjt/ef3e_p-int_04a_2-13.mp3?dl=1",
         "exc": "4A",
-        "num": "2",
-        "sound_n": 13,
+        "other": {
+            "num": "2",
+            "sound_n": 13,
+            "pag": 154,
+            "pags": "126-127"
+        },
         "lesson": "4A",
-        "pag": 154,
         "color": "blue",
         "inx": 75
     },
@@ -839,21 +1067,27 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/pehyxo543u9ek6a/ef3e_p-int_04a_2-14.mp3?dl=1",
         "exc": "2b",
-        "num": "2",
-        "sound_n": 14,
+        "other": {
+            "num": "2",
+            "sound_n": 14,
+            "pag": 154,
+            "pags": "126-127"
+        },
         "lesson": "4A",
-        "pag": 154,
         "color": "blue",
         "inx": 76
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/xswsq20ck6u8893/ef3e_p-int_04a_2-15.mp3?dl=1",
         "exc": "3a",
-        "num": "2",
-        "sound_n": 15,
+        "other": {
+            "num": "2",
+            "sound_n": 15,
+            "pag": 28,
+            "pags": "28-29"
+        },
         "lesson": "4A",
-        "pag": 28,
         "color": "green",
         "inx": 77
     },
@@ -861,10 +1095,13 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/71e8qwyw1aonp9j/ef3e_p-int_04a_2-16.mp3?dl=1",
         "exc": "4A",
-        "num": "2",
-        "sound_n": 16,
+        "other": {
+            "num": "2",
+            "sound_n": 16,
+            "pag": 132,
+            "pags": "126-127"
+        },
         "lesson": "4A",
-        "pag": 132,
         "color": "blue",
         "inx": 78
     },
@@ -872,76 +1109,97 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/yvb3cyxlqey5aeh/ef3e_p-int_04a_2-17.mp3?dl=1",
         "exc": "4A",
-        "num": "2",
-        "sound_n": 17,
+        "other": {
+            "num": "2",
+            "sound_n": 17,
+            "pag": 132,
+            "pags": "126-127"
+        },
         "lesson": "4A",
-        "pag": 132,
         "color": "blue",
         "inx": 79
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/hjhrxil15p80rgl/ef3e_p-int_04a_2-18.mp3?dl=1",
         "exc": "3f",
-        "num": "2",
-        "sound_n": 18,
+        "other": {
+            "num": "2",
+            "sound_n": 18,
+            "pag": 29,
+            "pags": "28-29"
+        },
         "lesson": "4A",
-        "pag": 29,
         "color": "green",
         "inx": 80
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/06p3jy9i47qvlep/ef3e_p-int_04a_2-19.mp3?dl=1",
         "exc": "4a",
-        "num": "2",
-        "sound_n": 19,
+        "other": {
+            "num": "2",
+            "sound_n": 19,
+            "pag": 29,
+            "pags": "28-29"
+        },
         "lesson": "4A",
-        "pag": 29,
         "color": "green",
         "inx": 81
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/qjta3qc96eda4a4/ef3e_p-int_04a_2-20.mp3?dl=1",
         "exc": "4b",
-        "num": "2",
-        "sound_n": 20,
+        "other": {
+            "num": "2",
+            "sound_n": 20,
+            "pag": 29,
+            "pags": "28-29"
+        },
         "lesson": "4A",
-        "pag": 29,
         "color": "green",
         "inx": 82
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/fvii624iha8nwei/ef3e_p-int_04a_2-21.mp3?dl=1",
         "exc": "4e",
-        "num": "2",
-        "sound_n": 21,
+        "other": {
+            "num": "2",
+            "sound_n": 21,
+            "pag": 29,
+            "pags": "28-29"
+        },
         "lesson": "4A",
-        "pag": 29,
         "color": "green",
         "inx": 83
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/o496lyglg1dwb5p/ef3e_p-int_04a_2-22.mp3?dl=1",
         "exc": "5a",
-        "num": "2",
-        "sound_n": 22,
+        "other": {
+            "num": "2",
+            "sound_n": 22,
+            "pag": 29,
+            "pags": "28-29"
+        },
         "lesson": "4A",
-        "pag": 29,
         "color": "green",
         "inx": 84
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/gdi9r3ff0t9ipg8/ef3e_p-int_04a_2-23.mp3?dl=1",
         "exc": "5b",
-        "num": "2",
-        "sound_n": 23,
+        "other": {
+            "num": "2",
+            "sound_n": 23,
+            "pag": 29,
+            "pags": "28-29"
+        },
         "lesson": "4A",
-        "pag": 29,
         "color": "green",
         "inx": 85
     },
@@ -949,10 +1207,13 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/dohz6odhob1lbo9/ef3e_p-int_04b_2-24.mp3?dl=1",
         "exc": "4B",
-        "num": "2",
-        "sound_n": 24,
+        "other": {
+            "num": "2",
+            "sound_n": 24,
+            "pag": 132,
+            "pags": "126-127"
+        },
         "lesson": "4B",
-        "pag": 132,
         "color": "blue",
         "inx": 86
     },
@@ -960,32 +1221,41 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/2w28fwa7bw2wlbt/ef3e_p-int_04b_2-25.mp3?dl=1",
         "exc": "4B",
-        "num": "2",
-        "sound_n": 25,
+        "other": {
+            "num": "2",
+            "sound_n": 25,
+            "pag": 132,
+            "pags": "126-127"
+        },
         "lesson": "4B",
-        "pag": 132,
         "color": "blue",
         "inx": 87
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/wt7nerpey47m74f/ef3e_p-int_04b_2-26.mp3?dl=1",
         "exc": "3a",
-        "num": "2",
-        "sound_n": 26,
+        "other": {
+            "num": "2",
+            "sound_n": 26,
+            "pag": 31,
+            "pags": "30-31"
+        },
         "lesson": "4B",
-        "pag": 31,
         "color": "green",
         "inx": 88
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/29wo1cttdi8ikq2/ef3e_p-int_04b_2-27.mp3?dl=1",
         "exc": "4a",
-        "num": "2",
-        "sound_n": 27,
+        "other": {
+            "num": "2",
+            "sound_n": 27,
+            "pag": 31,
+            "pags": "30-31"
+        },
         "lesson": "4B",
-        "pag": 31,
         "color": "green",
         "inx": 89
     },
@@ -993,10 +1263,13 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/9kr9ofton3gtt51/ef3e_p-int_04b_2-28.mp3?dl=1",
         "exc": "1b",
-        "num": "2",
-        "sound_n": 28,
+        "other": {
+            "num": "2",
+            "sound_n": 28,
+            "pag": 155,
+            "pags": "126-127"
+        },
         "lesson": "4B",
-        "pag": 155,
         "color": "blue",
         "inx": 90
     },
@@ -1004,54 +1277,69 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/eq28kg1vvyp7zqn/ef3e_p-int_04b_2-29.mp3?dl=1",
         "exc": "2b",
-        "num": "2",
-        "sound_n": 29,
+        "other": {
+            "num": "2",
+            "sound_n": 29,
+            "pag": 155,
+            "pags": "126-127"
+        },
         "lesson": "4B",
-        "pag": 155,
         "color": "blue",
         "inx": 91
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/9wq9abmdk5blu1t/ef3e_p-int_04b_2-30.mp3?dl=1",
         "exc": "5a",
-        "num": "2",
-        "sound_n": 30,
+        "other": {
+            "num": "2",
+            "sound_n": 30,
+            "pag": 31,
+            "pags": "30-31"
+        },
         "lesson": "4B",
-        "pag": 31,
         "color": "green",
         "inx": 92
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/hh9b2ghsh2ba5ls/ef3e_p-int_04b_2-31.mp3?dl=1",
         "exc": "5c",
-        "num": "2",
-        "sound_n": 31,
+        "other": {
+            "num": "2",
+            "sound_n": 31,
+            "pag": 31,
+            "pags": "30-31"
+        },
         "lesson": "4B",
-        "pag": 31,
         "color": "green",
         "inx": 93
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/djd5trxpyzp5dne/ef3e_p-int_04c_2-32.mp3?dl=1",
         "exc": "1a",
-        "num": "2",
-        "sound_n": 32,
+        "other": {
+            "num": "2",
+            "sound_n": 32,
+            "pag": 32,
+            "pags": "32-33"
+        },
         "lesson": "4C",
-        "pag": 32,
         "color": "green",
         "inx": 94
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/pvcclq1vaiik49p/ef3e_p-int_04c_2-33.mp3?dl=1",
         "exc": "2a",
-        "num": "2",
-        "sound_n": 33,
+        "other": {
+            "num": "2",
+            "sound_n": 33,
+            "pag": 32,
+            "pags": "32-33"
+        },
         "lesson": "4C",
-        "pag": 32,
         "color": "green",
         "inx": 95
     },
@@ -1059,43 +1347,55 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/xaqww95bxf9kbbs/ef3e_p-int_04c_2-34.mp3?dl=1",
         "exc": "4C",
-        "num": "2",
-        "sound_n": 34,
+        "other": {
+            "num": "2",
+            "sound_n": 34,
+            "pag": 132,
+            "pags": "126-127"
+        },
         "lesson": "4C",
-        "pag": 132,
         "color": "blue",
         "inx": 96
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/s67ygt9llvjbrzp/ef3e_p-int_04c_2-35.mp3?dl=1",
         "exc": "3b",
-        "num": "2",
-        "sound_n": 35,
+        "other": {
+            "num": "2",
+            "sound_n": 35,
+            "pag": 32,
+            "pags": "32-33"
+        },
         "lesson": "4C",
-        "pag": 32,
         "color": "green",
         "inx": 97
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/zkddgaxb9zppudi/ef3e_p-int_04c_2-36.mp3?dl=1",
         "exc": "3c",
-        "num": "2",
-        "sound_n": 36,
+        "other": {
+            "num": "2",
+            "sound_n": 36,
+            "pag": 32,
+            "pags": "32-33"
+        },
         "lesson": "4C",
-        "pag": 32,
         "color": "green",
         "inx": 98
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/5w1tekz07glajoa/ef3e_p-int_04c_2-37.mp3?dl=1",
         "exc": "6b",
-        "num": "2",
-        "sound_n": 37,
+        "other": {
+            "num": "2",
+            "sound_n": 37,
+            "pag": 33,
+            "pags": "32-33"
+        },
         "lesson": "4C",
-        "pag": 33,
         "color": "green",
         "inx": 99
     },
@@ -1103,10 +1403,13 @@
         "type": "Revice and Check",
         "link": "https://www.dropbox.com/s/luaz85swk8437pu/ef3e_p-int_r%26c_2-39.mp3?dl=1",
         "exc": "2",
-        "num": "2",
-        "sound_n": 39,
+        "other": {
+            "num": "2",
+            "sound_n": 39,
+            "pag": 35,
+            "pags": "18-19"
+        },
         "lesson": "3&4",
-        "pag": 35,
         "color": "grey",
         "inx": 100
     },
@@ -1114,32 +1417,41 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/xhp2m407zrqvxq2/ef3e_p-int_05a_2-40.mp3?dl=1",
         "exc": "5A",
-        "num": "2",
-        "sound_n": 40,
+        "other": {
+            "num": "2",
+            "sound_n": 40,
+            "pag": 134,
+            "pags": "126-127"
+        },
         "lesson": "5A",
-        "pag": 134,
         "color": "blue",
         "inx": 101
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/1qjsyw4yny8mvku/ef3e_p-int_05a_2-41.mp3?dl=1",
         "exc": "3a",
-        "num": "2",
-        "sound_n": 41,
+        "other": {
+            "num": "2",
+            "sound_n": 41,
+            "pag": 37,
+            "pags": "36-37"
+        },
         "lesson": "5A",
-        "pag": 37,
         "color": "violet",
         "inx": 102
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/0079vqtdoi5tlnh/ef3e_p-int_05a_2-42.mp3?dl=1",
         "exc": "5b",
-        "num": "2",
-        "sound_n": 42,
+        "other": {
+            "num": "2",
+            "sound_n": 42,
+            "pag": 37,
+            "pags": "36-37"
+        },
         "lesson": "5A",
-        "pag": 37,
         "color": "violet",
         "inx": 103
     },
@@ -1147,32 +1459,41 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/0wi9ngys077obs0/ef3e_p-int_05b_2-43.mp3?dl=1",
         "exc": "5B",
-        "num": "2",
-        "sound_n": 43,
+        "other": {
+            "num": "2",
+            "sound_n": 43,
+            "pag": 134,
+            "pags": "126-127"
+        },
         "lesson": "5B",
-        "pag": 134,
         "color": "blue",
         "inx": 104
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/nx7h5ih3rpgd4ir/ef3e_p-int_05b_2-44.mp3?dl=1",
         "exc": "2b",
-        "num": "2",
-        "sound_n": 44,
+        "other": {
+            "num": "2",
+            "sound_n": 44,
+            "pag": 38,
+            "pags": "38-39"
+        },
         "lesson": "5B",
-        "pag": 38,
         "color": "violet",
         "inx": 105
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/dz6012unhaxvlv9/ef3e_p-int_05b_2-45.mp3?dl=1",
         "exc": "4a",
-        "num": "2",
-        "sound_n": 45,
+        "other": {
+            "num": "2",
+            "sound_n": 45,
+            "pag": 39,
+            "pags": "38-39"
+        },
         "lesson": "5B",
-        "pag": 39,
         "color": "violet",
         "inx": 106
     },
@@ -1180,10 +1501,13 @@
         "type": "Vocabulary Bank",
         "link": "https://www.dropbox.com/s/g4lzpfxjzs5ozba/ef3e_p-int_05b_2-46.mp3?dl=1",
         "exc": "1b",
-        "num": "2",
-        "sound_n": 46,
+        "other": {
+            "num": "2",
+            "sound_n": 46,
+            "pag": 156,
+            "pags": "150-163"
+        },
         "lesson": "5B",
-        "pag": 156,
         "color": "green",
         "inx": 107
     },
@@ -1191,10 +1515,13 @@
         "type": "Vocabulary Bank",
         "link": "https://www.dropbox.com/s/f6zkktt9peydms4/ef3e_p-int_05b_2-47.mp3?dl=1",
         "exc": "2c",
-        "num": "2",
-        "sound_n": 47,
+        "other": {
+            "num": "2",
+            "sound_n": 47,
+            "pag": 156,
+            "pags": "150-163"
+        },
         "lesson": "5B",
-        "pag": 156,
         "color": "green",
         "inx": 108
     },
@@ -1202,32 +1529,41 @@
         "type": "Vocabulary Bank",
         "link": "https://www.dropbox.com/s/tbzat6o1oys9xej/ef3e_p-int_05b_2-48.mp3?dl=1",
         "exc": "3b",
-        "num": "2",
-        "sound_n": 48,
+        "other": {
+            "num": "2",
+            "sound_n": 48,
+            "pag": 156,
+            "pags": "150-163"
+        },
         "lesson": "5B",
-        "pag": 156,
         "color": "green",
         "inx": 109
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/vn0h3giu4ypr1z0/ef3e_p-int_05c_2-50.mp3?dl=1",
         "exc": "2c",
-        "num": "2",
-        "sound_n": 50,
+        "other": {
+            "num": "2",
+            "sound_n": 50,
+            "pag": 41,
+            "pags": "40-41"
+        },
         "lesson": "5C",
-        "pag": 41,
         "color": "violet",
         "inx": 110
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/lx6487a0cr57dt7/ef3e_p-int_05c_2-51.mp3?dl=1",
         "exc": "2e",
-        "num": "2",
-        "sound_n": 51,
+        "other": {
+            "num": "2",
+            "sound_n": 51,
+            "pag": 41,
+            "pags": "40-41"
+        },
         "lesson": "5C",
-        "pag": 41,
         "color": "violet",
         "inx": 111
     },
@@ -1235,10 +1571,13 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/laqll6t621tmgxy/ef3e_p-int_05c_2-52.mp3?dl=1",
         "exc": "5C",
-        "num": "2",
-        "sound_n": 52,
+        "other": {
+            "num": "2",
+            "sound_n": 52,
+            "pag": 134,
+            "pags": "126-127"
+        },
         "lesson": "5C",
-        "pag": 134,
         "color": "blue",
         "inx": 112
     },
@@ -1246,21 +1585,27 @@
         "type": "Grammar Bank",
         "link": "https://www.dropbox.com/s/mzvvzbnsro85e1l/ef3e_p-int_05c_2-53.mp3?dl=1",
         "exc": "5C",
-        "num": "2",
-        "sound_n": 53,
+        "other": {
+            "num": "2",
+            "sound_n": 53,
+            "pag": 134,
+            "pags": "126-127"
+        },
         "lesson": "5C",
-        "pag": 134,
         "color": "blue",
         "inx": 113
     },
     {
-        "type": "Exercise",
+        "type": "Lesson",
         "link": "https://www.dropbox.com/s/37pxbvrnapizx7t/ef3e_p-int_05c_2-54.mp3?dl=1",
         "exc": "4b",
-        "num": "2",
-        "sound_n": 54,
+        "other": {
+            "num": "2",
+            "sound_n": 54,
+            "pag": 41,
+            "pags": "40-41"
+        },
         "lesson": "5C",
-        "pag": 41,
         "color": "violet",
         "inx": 114
     },
@@ -1268,10 +1613,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/a2zbf8m012ncqar/ef3e_p-int_pe3_2-55.mp3?dl=1",
         "exc": "1a",
-        "num": "2",
-        "sound_n": 55,
+        "other": {
+            "num": "2",
+            "sound_n": 55,
+            "pag": 42,
+            "pags": "10-11"
+        },
         "lesson": "3",
-        "pag": 42,
         "color": "yellow",
         "inx": 115
     },
@@ -1279,10 +1627,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/hhvq6msksg7bujh/ef3e_p-int_pe3_2-56.mp3?dl=1",
         "exc": "1b",
-        "num": "2",
-        "sound_n": 56,
+        "other": {
+            "num": "2",
+            "sound_n": 56,
+            "pag": 42,
+            "pags": "10-11"
+        },
         "lesson": "3",
-        "pag": 42,
         "color": "yellow",
         "inx": 116
     },
@@ -1290,10 +1641,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/66914qnxtsc5pki/ef3e_p-int_pe3_2-57.mp3?dl=1",
         "exc": "3a",
-        "num": "2",
-        "sound_n": 57,
+        "other": {
+            "num": "2",
+            "sound_n": 57,
+            "pag": 42,
+            "pags": "10-11"
+        },
         "lesson": "3",
-        "pag": 42,
         "color": "yellow",
         "inx": 117
     },
@@ -1301,10 +1655,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/jjph27q7jac285z/ef3e_p-int_pe3_2-58.mp3?dl=1",
         "exc": "3c",
-        "num": "2",
-        "sound_n": 58,
+        "other": {
+            "num": "2",
+            "sound_n": 58,
+            "pag": 43,
+            "pags": "10-11"
+        },
         "lesson": "3",
-        "pag": 43,
         "color": "yellow",
         "inx": 118
     },
@@ -1312,10 +1669,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/vslwdurkdzod32p/ef3e_p-int_pe3_2-59.mp3?dl=1",
         "exc": "4a",
-        "num": "2",
-        "sound_n": 59,
+        "other": {
+            "num": "2",
+            "sound_n": 59,
+            "pag": 43,
+            "pags": "10-11"
+        },
         "lesson": "3",
-        "pag": 43,
         "color": "yellow",
         "inx": 119
     },
@@ -1323,10 +1683,13 @@
         "type": "Practical English",
         "link": "https://www.dropbox.com/s/h3qolxy9w99xu8t/ef3e_p-int_pe3_2-60.mp3?dl=1",
         "exc": "4c",
-        "num": "2",
-        "sound_n": 60,
+        "other": {
+            "num": "2",
+            "sound_n": 60,
+            "pag": 43,
+            "pags": "10-11"
+        },
         "lesson": "3",
-        "pag": 43,
         "color": "yellow",
         "inx": 120
     }

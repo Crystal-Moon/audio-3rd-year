@@ -33,15 +33,23 @@ function initJson(){
 LOADER.style.display = 'block';
 	let b_audio=new Promise(done=>{ fetch('./db/book_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
 	let b_pdf=new Promise(done=>{ fetch('./db/book_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
+
 	let wb_audio=new Promise(done=>{ fetch('./db/wbook_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
 	let wb_pdf=new Promise(done=>{ fetch('./db/wbook_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
+
+	let rb_audio=new Promise(done=>{ fetch('./db/reader_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
+	let rb_pdf=new Promise(done=>{ fetch('./db/reader_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
+
+	let sch_audio=new Promise(done=>{ fetch('./db/schoology_audio.json').then(r=>r.json()).then(d=>{ done(d) }) });
+	let sch_pdf=new Promise(done=>{ fetch('./db/schoology_pdf.json').then(r=>r.json()).then(d=>{ done(d) }) });
 	
-	Promise.all([b_audio, b_pdf, wb_audio, wb_pdf])
+	Promise.all([b_audio,b_pdf, wb_audio,wb_pdf, rb_audio,rb_pdf, sch_audio,sch_pdf])
 	.then(pp=>{ 
-		Json.BOOK_AUDIO=pp[0];
-		Json.BOOK_PDF=pp[1];
-		Json.WORKBOOK_AUDIO=pp[2];
-		Json.WORKBOOK_PDF=pp[3]; //listo json
+		Json.book={ name:'book', audios: pp[0], pdf: pp[1] };
+		Json.workbook={ name:'workbook', audios: pp[2], pdf: pp[3] };
+		Json.reader={ name:'reader', audios: pp[4], pdf: pp[5] };
+		Json.schoology={ name:'schoology', audios: pp[6], pdf: pp[7] };
+		
 		LOADER.style.display = 'none';
 	})
 }
@@ -51,16 +59,20 @@ let colorr=['blue','green','red','green','violet','red','blue','green','red','gr
 function hacerJson(){
 //	Json.WORKBOOK_PDF.forEach(x=>{x.linkDownload=x.link.replace('/preview','&export=download').replace('file/d/','uc?id=')})
 
-Json.WORKBOOK_AUDIO.forEach((x,i)=>{
+Json.reader.pdf.forEach((x,i)=>{
+	x.linkDownload=x.link.replace('file/d/','uc?id=').replace('/preview','&export=download')
 	x.inx=i;
 })
-
 //	"https://drive.google.com/file/d/1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y/preview",
 //	"https://drive.google.com/uc?id=1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y&export=download",
 		
-	console.log(JSON.stringify(Json.WORKBOOK_AUDIO,null,4))
+	console.log(JSON.stringify(Json.reader.pdf,null,4))
 }
 
+function clearRecently() {
+	localStorage.setItem('recently', null)
+	history.go();
+}
 
 /*
 
