@@ -1,6 +1,5 @@
 /* Landscape phones and down */
 @media (max-width: 480px) {
-<<<<<<< HEAD
 
 
 html, body{}
@@ -74,22 +73,43 @@ h2{
 .CM_logo{}
 h1{}
 
-=======
-#body{padding-bottom: 7em;}
-#body .sec{margin-left: 0.5em;margin-right: 0.5em;}
-#body.body_home>*:last-child{margin-bottom: 10em;}
-.nada{margin-left: auto;margin-right: auto;}
-h2{font-size: 1.3em;margin: 0;margin: 0.5em;}
->>>>>>> 5fdf54f7efa4a96e53b4b0849f1c59d2ef2641b9
 /*************************************/
-#player{height: 5em;max-height: 6em;min-height: 5em; margin-bottom: 5em;}
+#player{
+    height: 5em;
+    max-height: 6em;
+    min-height: 5em;
+    margin-bottom: 5em;
+}
+#player.up{}
 .arrow{display: none;}
-.label{margin-right: 0;margin-top: 0.5em;margin-left: 0.5em;margin-bottom: 0;}
-.player_control{width: 100%;max-width: 100%;}
-.ctrl-btn{margin: 0;right: 0;margin-left: 30%;  }
-.play{margin-right: 1em;}
+.gradiant{}
+.gradiant.up{}
+.label{
+    /* margin: 0.5em; */
+    margin-right: 0;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0;
+}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{
+    width: 100%;
+    max-width: 100%;
+}
+.ctrl-btn{
+    margin: 0;
+    right: 0;
+    margin-left: 30%;
+    /* position: absolute; */
+}
+.ctrl-btn:active{}
+.play{
+    /* margin-left: 55%; */
+    margin-right: 1em;
+}
 .pause{ margin-right: 1em;}
-<<<<<<< HEAD
 .sig{}
 .prev{}
 .track_control>span{}
@@ -115,20 +135,234 @@ font-size: 0.9em;
 .lib_head{
     height: 3em;
 }
-=======
->>>>>>> 5fdf54f7efa4a96e53b4b0849f1c59d2ef2641b9
 .btn, .read{width: 60%;}
-#pdf_aqui{margin-bottom: 10.5em;}
+/*********************************************************/
+
+#pdf_aqui>iframe{}
+#pdf_aqui{margin-bottom: 10.5em;/* padding-bottom: 10.5em; */}
+
 }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-#player{width: 100%;}
-.arrow{display: none;}
-.play{margin-left: auto;}
-.pause{margin-left: auto;}
-.control{margin: 0;width: min-content;margin-right: 1em;position: relative;width: 100%;margin-top: 1em;}
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+h2{}
+/*************************************/
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{
+    width: 100%;
 }
+#player.up{}
+.arrow{display: none;}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{
+    margin-left: auto;
+}
+.pause{margin-left: auto;}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{
+    margin: 0;
+    /* margin-left: auto; */
+    width: min-content;
+    /* width: min-content; */
+    /* right: 0; */
+    /* margin-left: auto; */
+    /* position: absolute; */
+    /* height: 100%; */
+    /* position: absolute; */
+    margin-right: 1em;
+    /* margin-left: 58%; */
+    /* float: right; */
+    position: relative;
+    width: 100%;
+    margin-top: 1em;
+}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
+}
+
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
-.player_control{min-width: 200px;}
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{
+    /* width: 64%; */
+}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{}
+#Menu li,h1{
+    /* margin: 0.2em; */
+    /* width: min-content; */
+    /* text-align: center; */
+}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{
+    min-width: 200px;
+}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px){
+
+
+html, body{}
+ul{}
+
+/*****************************************/
+#body{}
+#body .sec{}
+#body .sec>div{}
+.placa{}
+.placa img{}
+.placa .play{}
+.placa .play:hover{}
+.placa p{}
+
+/*************************************/
+#Menu{}
+#Menu li,h1{}
+#Menu li>div, h1>div{}
+#Menu li:hover{}
+#Menu li:hover .icon{}
+#Menu li.active{}
+.icon{}
+#Menu li.active .icon{}
+.home{}
+.pdf{}
+.library{}
+.CM_logo{}
+h1{}
+
+/*************************************/
+#player{}
+#player.up{}
+.gradiant{}
+.gradiant.up{}
+.label{}
+.img_cd{}
+.title_song{}
+.album_cd{}
+.player_control{}
+.ctrl-btn{}
+.ctrl-btn:active{}
+.play{}
+.pause{}
+.sig{}
+.prev{}
+.track_control>span{}
+.control{}
+.track_control{}
+.track{}
+.track_play{}
+.point_song{}
+.volume_div{}
+.volume{}
+.track_volume{}
+
+
+.col{}
+.row{}
+
+
 }

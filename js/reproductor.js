@@ -11,22 +11,32 @@ const artist = G('album_cd');
 const art = G('img_cd');
 const timeActual = G('current_time');
 const totalTime = G('total_time');
+//let current_track = 0;
 let song={}, duration=0;
 let AUDIO = new Audio();
 let playing = false;
+let cover='';
 
 function playSong(elem) {
     G('player').style='';
     LOADER.style.display='block';
+    console.log('elem en playSong',elem)
+    //song = songs[current_track];
+ //   audio = new Audio();
     AUDIO.src = elem.dataset.link;
     title.textContent = 'Excercise '+elem.dataset.exc;
-    artist.textContent = elem.dataset.type+' - Lesson '+elem.dataset.lesson;
+    artist.textContent = 'Lesson '+elem.dataset.lesson;
     art.style.backgroundImage = 'url("./img/album.jpeg")';
+    console.log('color en playSong',elem.dataset.color)
     art.className='img_cd cover'+(/.*(up).*/.test(art.className)?' up':'');
+    console.log(' el color q falla',elem.dataset.color)
     art.classList.add(elem.dataset.color)
     song=JSON.parse(JSON.stringify(elem.dataset))
+  //  current_track=elem.dataset.inx;
     saveRecent(JSON.parse(JSON.stringify(elem.dataset)));
+
 }
+
 
 let songs = [{
     title: 'Mother\'s Day',
@@ -49,6 +59,17 @@ let songs = [{
     art: 'http://abarcarodriguez.com/365/files/rainbow.jpg'
 }];
 
+//window.addEventListener('load', init(), false);
+/*
+function init() {
+    //song = songs[current_track];
+    audio = new Audio();
+   // audio.src = song.url;
+   // title.textContent = song.title;
+   // artist.textContent = song.artist;
+   // art.src = song.art;    // revisar si usar una clase cpara book y wb o si poner numero o imagen en style inline
+}
+*/
 AUDIO.addEventListener('timeupdate', updateTrack, false);
 AUDIO.addEventListener('loadedmetadata', function () {
     duration = this.duration;
@@ -106,28 +127,53 @@ function seekTrack(e) {
     timeActual.innerText = msToMin(AUDIO.currentTime);
 }
 function nextTrack() {
+    console.log('song al empezar nexttrack',song)
     let current_track=song.inx
     let audios=song.book=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO
+    //console.log('aupdios',audios)
+    console.log('current_track antes de +', current_track)
     current_track++;
+    console.log('operacion match ',current_track % (audios.length))
     current_track = current_track % (audios.length); //sirve para dar la vuelta
+    console.log('current_track desp de op',current_track);
+   // song = songs[current_track];
+   console.log('song elejida',audios[current_track])
     let nsong=audios.find(z=>z.inx==current_track)
     nsong.book=song.book
     song=nsong;
-    playSong({dataset:nsong});
- 
+    //AUDIO.src = song.link;
+  //  AUDIO.onloadeddata = function() {
+      playSong({dataset:nsong});
+    //}
 }
 
 function prevTrack() {
-    let current_track=song.inx;
-    let audios=song.book=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO;
+    let current_track=song.inx
+    console.log('current_track antes de --', current_track)
+    let audios=song.book=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO
     current_track--;
+    console.log('operacion match ',current_track % (audios.length))
     current_track = (current_track == -1 ? (audios.length - 1) : current_track);
-    let nsong=audios.find(z=>z.inx==current_track);
-    nsong.book=song.book;
+    console.log('current_track desp de op',current_track);
+   let nsong=audios.find(z=>z.inx==current_track)
+    nsong.book=song.book
     song=nsong;
-    playSong({dataset:nsong});
+    //AUDIO.src = song.link;
+  //  AUDIO.onloadeddata = function() {
+      playSong({dataset:nsong});
+    //}
 }
-
+/*
+function updateInfo() {
+    title.textContent = song.title;
+    artist.textContent = song.artist;
+    art.src = song.art;
+    //aqui agregar a recently
+    art.onload = function() {
+        AUDIO.play();
+    }
+}
+*/
 function msToMin(seconds) {
   let minute = Math.floor((seconds / 60) % 60);
   minute = (minute < 10)? '0' + minute : minute;
@@ -153,6 +199,7 @@ volumeTrack.onmousedown = function (e) {
     holding = true;
     seekVolume(e);
 }
+
 function seekVolume(e) {
     event = e || window.event;
     let x = e.pageX - volumeTrack.offsetLeft;
