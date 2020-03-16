@@ -38,7 +38,7 @@ function playSong(elem) {
 
 }
 
-
+/*
 let songs = [{
     title: 'Mother\'s Day',
     artist: 'Offspring Fling',
@@ -59,7 +59,7 @@ let songs = [{
     url: 'http://abarcarodriguez.com/365/files/rainbow.mp3',
     art: 'http://abarcarodriguez.com/365/files/rainbow.jpg'
 }];
-
+*/
 //window.addEventListener('load', init(), false);
 /*
 function init() {
@@ -130,7 +130,8 @@ function seekTrack(e) {
 function nextTrack() {
     console.log('song al empezar nexttrack',song)
     let current_track=song.inx
-    let audios=song.book=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO
+    //let audios=song.book=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO
+    let audios = Json[song.book].audios;
     //console.log('aupdios',audios)
     console.log('current_track antes de +', current_track)
     current_track++;
@@ -151,7 +152,7 @@ function nextTrack() {
 function prevTrack() {
     let current_track=song.inx
     console.log('current_track antes de --', current_track)
-    let audios=song.book=='book'?Json.BOOK_AUDIO:Json.WORKBOOK_AUDIO
+    let audios = Json[song.book].audios;
     current_track--;
     console.log('operacion match ',current_track % (audios.length))
     current_track = (current_track == -1 ? (audios.length - 1) : current_track);
