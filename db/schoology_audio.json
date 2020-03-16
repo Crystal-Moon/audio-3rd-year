@@ -1,9 +1,9 @@
 [
     {
-        "type": "Comming soon",
+        "type": "Coming soon",
         "link": "",
-        "exc": "0",
-        "lesson": "0",
+        "exc": "",
+        "lesson": "",
         "color": "skyblue",
         "inx": 0
     }

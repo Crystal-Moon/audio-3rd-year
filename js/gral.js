@@ -13,7 +13,7 @@ function upp(yes){
 }
 
 function changeTab(tab,subTarea,...params){
-	console.log('en hangeTab [tab,subtarea. ...param]',tab,subTarea,[...params])
+//	console.log('en hangeTab [tab,subtarea. ...param]',tab,subTarea,[...params])
 	//console.log(tab)
 	//console.log('la subtarea en changeTab',subTarea)
 	let arr=document.querySelectorAll('#ul li');
@@ -37,8 +37,8 @@ function changeSubTab(...args){
 	let elem=params[0], inxTab=params[1], name=params[2], dos=params[3] || '';
 
 	let device= getComputedStyle(elem).getPropertyValue("--device");
-	console.log('device de elem',device)
-	console.log('inx',inxTab, 'name', name, 'dos',dos);
+//	console.log('device de elem',device)
+//	console.log('inx',inxTab, 'name', name, 'dos',dos);
 	//console.log('inxTab en cahgeSub',inxTab);
 	//console.log('name en changeSub',name);
 	//let margin=inxTab * (!dos? 5.5 : 10.5);
@@ -54,9 +54,12 @@ function changeSubTab(...args){
 
 	let tabSelected=G('tab'+name);
 	//console.log('tabSelected',tabSelected)
-	console.log('tabSelected',tabSelected)
+//	console.log('tabSelected',tabSelected)
 	let sib=tabSelected.parentNode.childNodes;
-	sib.forEach(z=>{ if(z.hasChildNodes()) z.style.zIndex = '5'; console.log('z ',z)});
+	sib.forEach(z=>{ 
+		if(z.hasChildNodes()) z.style.zIndex = '5';
+		//console.log('z ',z)
+	});
 	tabSelected.style.zIndex = '100';
 }
 
@@ -82,7 +85,7 @@ function loadHtml(name,action,subTarea,...params) {
 */
 
 function changePage(elem,tarea=null,act,...params){
-	console.log('en changePage [elem,tarea, act, ...param]',elem,tarea,act,[...params])
+//	console.log('en changePage [elem,tarea, act, ...param]',elem,tarea,act,[...params])
 	//console.log('elem en changePage',elem)
 	//console.log('la data de elem',elem.dataset)
 	let datos={};
@@ -101,7 +104,7 @@ function changePage(elem,tarea=null,act,...params){
 						type: k=='workbook'?'Lesson':x.type, 
 						lesson:x.lesson,
 						other:x.other?{ 
-							pags: Json[k].pdf.find(z=>z.type==x.type||(z.lesson==x.lesson&&x.type=='Lesson') || z.lesson==x.lesson).other.pags
+							pags: Json[k].pdf.find(z=>(z.lesson==x.lesson&&x.type=='Lesson')||z.lesson==x.lesson).other.pags //necesito para el tab de reader
 						}:undefined,
 						color:x.color,
 						book: k,
@@ -208,7 +211,7 @@ function changePage(elem,tarea=null,act,...params){
 }
 
 function loadHbs(hbs, datos, tarea,...params) {
-	console.log('en loadHBS [hbs,datos,tarea, ...param]',hbs, datos, tarea, [...params])
+//	console.log('en loadHBS [hbs,datos,tarea, ...param]',hbs, datos, tarea, [...params])
 //	console.log('params en loadHtml: ',params)
 //	console.log('params en loadHtml CON PUNTOS: ',...params)
 /*let datos={
@@ -237,7 +240,7 @@ LOADER.style.display = 'block';
 
     // 	if(action) history.replaceState({page:hbs},'', './'+hbs+'.hbs')
 	//	else history.pushState({page:hbs},'', './'+hbs+'.hbs')
-	console.log('la subTrea :/',tarea)
+//	console.log('la subTrea :/',tarea)
 		if(tarea) tarea(...params);
 		if(hbs=='library' && !tarea) changeSubTab(G('tabDefault'),0,'book')
 		if(hbs!='pdf_view') LOADER.style.display='none';
