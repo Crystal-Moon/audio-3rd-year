@@ -1,0 +1,64 @@
+<div class="col lib_head">
+			<div class="row">
+				<div class="tab" onclick="changeSubTab(0,'audios')">Audios</div>
+				<div class="tab" onclick="changeSubTab(1,'pdf')">PDF</div>
+			</div>
+			<div class="selector_tab" id="selector_tab"></div>
+		</div>
+		<div class="lib_bdy">
+<div class="library_sec" id="tabaudios" style="z-index:99;">
+	<div class="col lib_head sub_head">
+	  <div class="row">
+		<div class="tab" onclick="changeSubTab(0,'audiobook','A')">Student Book</div>
+		<div class="tab" onclick="changeSubTab(1,'audiowb','A')">WorkBook</div>
+	  </div>
+	  <div class="selector_tab" id="selector_tabA"></div>
+	</div>
+
+	<div class="library_sec" id="tabaudiobookA" style="z-index:90;">
+	  <ul>
+	  {{#each book_audio}}
+	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="book">
+	  		<span class="w10 icon cover {{color}} to-artistspan"></span>
+	  		<span class="w90 to-artistspan">{{type}} {{lesson}}  (pags.{{pag}})</span>
+	  		<!-- <span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a>--></li>
+	  {{/each}}
+	  </ul>
+	</div>
+	<div class="library_sec" id="tabaudiowbA">
+	  <ul> <!-- aqui va book_pdf -->
+	  {{#each wbook_audio}}
+	  	<li class="row to-artist" data-vista="artist" data-lesson="{{lesson}}" data-album="workbook">
+	  		<span class="w10 icon cover {{color}} to-artistspan"></span>
+	  		<span class="w90 to-artistspan">Lesson {{lesson}}  (pags.{{pag}})</span>
+	  		<!--<span class="menu_point"></span><a href="{{link}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a>-->
+	  	</li>
+	  {{/each}}
+	  </ul>
+	</div>
+</div>
+<div class=" library_sec" id="tabpdf">
+	<div class="col lib_head sub_head">
+	  <div class="row">
+		<div class="tab" onclick="changeSubTab(0,'pdfbook','B')">Book</div>
+		<div class="tab" onclick="changeSubTab(1,'pdfwb','B')">WorkBook</div>
+	  </div>
+	  <div class="selector_tab" id="selector_tabB"></div>
+	</div>
+
+	<div class="library_sec" id="tabpdfbookB" style="z-index: 90">
+	  <ul>
+	  {{#each book_pdf}}
+	  	<li class="row to-pdf_view" data-vista="pdf_view" data-link="{{link}}" data-download="{{linkDownload}}"><span class="w10 icon pdf to-pdf_viewspan"></span><span class="w75 to-pdf_viewspan">{{type}} {{lesson}}    [pag.{{pag}}]</span><span class="menu_point"></span><a href="{{linkDownload}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  {{/each}}
+	  </ul>
+	</div>
+	<div class="library_sec" id="tabpdfwbB">
+	  <ul>
+	  {{#each wbook_pdf}}
+	  	<li class="row to-pdf_view" data-vista="pdf_view" data-link="{{link}}" data-download="{{linkDownload}}"><span class="w10 icon pdf to-pdf_viewspan"></span><span class="w75 to-pdf_viewspan">{{type}} {{lesson}}    [pag.{{pag}}]</span><span class="menu_point"></span><a href="{{linkDownload}}" target="_blank" class="desplegable hidden"><span></span>Descargar</a></li>
+	  {{/each}}
+	  </ul>
+	</div>
+</div>
+<script type="text/javascript"> window.location='/'; </script>

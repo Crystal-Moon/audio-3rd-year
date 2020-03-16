@@ -1,9 +1,6 @@
 
-let cleck=null;
 document.onclick=function(eve) {
-	//eve.preventDefault();
- document.querySelectorAll('.desplegable').forEach(z=>{z.classList.add('hidden')});
-	cleck=eve.target;
+  document.querySelectorAll('.desplegable').forEach(z=>{z.classList.add('hidden')});
 	if(/.*(menu_point).*/.test(eve.target.className)) showDownload(eve)
 	else if (/.*(arrow_izq).*/.test(eve.target.className)) back(eve)
 	else if (/.*(to-playspan).*/.test(eve.target.className)) playSong(eve.target.parentNode)
@@ -18,13 +15,6 @@ document.onclick=function(eve) {
 window.onpopstate = function(e) {
 	console.log('=== evento popstate =======')
 	console.dir(e)
-//	console.log("location: " + document.location + ", state: " + e.state.page)
-//  alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
-	
-	//if(!e.state) loadHtml('home')
-	//else loadHtml(e.state.page,'replace')
-
-	//al hacer para atras tmb necesito el elem o al pushar mandar el lesaon y album, y todo u,u
 	if(!e.state) changePage('home')
 	else changePage({dataset:e.state.elem_data},null,'replace')
 };
@@ -54,6 +44,7 @@ LOADER.style.display = 'block';
 	})
 }
 
+<<<<<<< HEAD
 let colorr=['blue','green','red','green','violet','red','blue','green','red','green','violet','red']
 
 function hacerJson(){
@@ -74,72 +65,24 @@ function clearRecently() {
 	history.go();
 }
 
+=======
+function saveRecent(s) {
+	let n=s.type.split(' ');
+	s.name= (s.type=='Exercise'?'Lesson':(n[1]?n[0][0]+n[1][0]:s.type))+' '+s.lesson+' - exc.'+s.exc;
+    let recent=JSON.parse(localStorage.getItem('recently'));
+    if(!recent) recent=[];
+    let exist=recent.find(x=>JSON.stringify(x)==JSON.stringify(s));
+    if(!exist) recent.unshift(s);
+    if(recent.length>=7) recent.splice(0,7);
+	localStorage.setItem('recently', JSON.stringify(recent));
+}
+
+>>>>>>> 5fdf54f7efa4a96e53b4b0849f1c59d2ef2641b9
 /*
 
-
-let reciente=[
-{
-		type: "exercise", 
-		link: "https://www.dropbox.com/s/h1wjl70ah1zhm8j/ef3e_p-int_01a_1-02.mp3?dl=0",
-		exc: "1b",
-		num: "1",
-		sound_n: 2,
-		lesson: "1A",
-		pag: 4
-	},
-	{
-		type: "Grammar Bank", 
-		link: "https://www.dropbox.com/s/vtfp1klh2kd1i8x/ef3e_p-int_01a_1-03.mp3?dl=0",
-		exc: "1A",
-		num: "1",
-		sound_n: 3,
-		lesson: "1A",
-		pag: 126
-	},
-	{
-		type: "Grammar Bank", 
-		link: "https://www.dropbox.com/s/oa961xi5d0dt7ze/ef3e_p-int_01a_1-04.mp3?dl=0",
-		exc: "1A",
-		num: "1",
-		sound_n: 4,
-		lesson: "1A",
-		pag: 126
-	},
-	{
-		type: "exercise", 
-		link: "https://www.dropbox.com/s/qlofo0wjnmnadt3/ef3e_p-int_01a_1-05.mp3?dl=0",
-		exc: "3a",
-		num: "1",
-		sound_n: 5,
-		lesson: "1A",
-		pag: 5
-	}
-]
-
-localStorage.setItem('recently', JSON.stringify(reciente));
-*/
-
-function saveRecent(s) {
-let n=s.type.split(' ')
-
-s.name= (s.type=='Exercise'?'Lesson':(n[1]?n[0][0]+n[1][0]:s.type))+' '+s.lesson+' - exc.'+s.exc;
-//console.log('n',n)
-//console.log('escuchado  ',s)
-//exc: "2C"
-//lesson: "2C"
-//link: "https://www.dropbox.com/s/7i3kepst5m1d9az/ef3e_p-int_02c_1-47.mp3?dl=1"
-//color: "blue"
-
-    let recent=JSON.parse(localStorage.getItem('recently'));
-//console.log('recently de local antesde ṕpush', recent)
-    if(!recent) recent=[]
-    let exist=recent.find(x=>JSON.stringify(x)==JSON.stringify(s))
-//console.log('ya existia s?? ',exist)
-//console.log(recent)
-    if(!exist) recent.unshift(s)
-    if(recent.length>=7) recent.splice(0,7)
-localStorage.setItem('recently', JSON.stringify(recent))
-
-
-
+function hacerJson(){
+console.log(JSON.stringify(Json.WORKBOOK_AUDIO,null,4))
 }
+
+
+*/
