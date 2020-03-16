@@ -71,8 +71,9 @@ function changePage(elem,tarea=null,act,...params){
 	  datos.audios=Json[elem.dataset.album].audios
 			.filter(x=>x.lesson==elem.dataset.lesson)
 			.sort((a,b)=>a.other?a.other.pag-b.other.pag:a.inx-b.inx)
-	  datos.audios.forEach(z=>{z.cover=elem.dataset.album});
+	  datos.audios.forEach(z=>{z.cover=elem.dataset.album; if(z.type=='Lesson') z.type='Exercise';});
 	  datos.pdf=Json[elem.dataset.album].pdf.find(x=>x.lesson==elem.dataset.lesson)
+	  datos.type= elem.dataset.album=='workbook'?'Lesson':datos.audios[0].type;
 	  break;
 	case 'pdf_view':
 	  datos.link=elem.dataset.link;

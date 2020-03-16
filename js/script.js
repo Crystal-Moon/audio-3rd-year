@@ -66,7 +66,7 @@ function clearRecently(btn) {
 
 function saveRecent(s) {
 	let n=s.type.split(' ')
-	s.name= (s.type=='Exercise'?'Lesson':(n[1]?n[0][0]+n[1][0]:s.type))+' '+s.lesson+' - exc.'+s.exc;
+	s.name= (s.type=='Exercise'?'Lesson':(n[1]?n[0][0]+n[1][0]:s.type))+' '+s.lesson+' - '+s.exc;
     let recent=JSON.parse(localStorage.getItem('recently'));
     if(!recent) recent=[]
     let exist=recent.find(x=>JSON.stringify(x)==JSON.stringify(s))

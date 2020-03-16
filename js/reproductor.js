@@ -24,13 +24,14 @@ function playSong(elem) {
     //song = songs[current_track];
  //   audio = new Audio();
     AUDIO.src = elem.dataset.link;
-    title.textContent = 'Excercise '+elem.dataset.exc;
+    title.textContent = elem.dataset.type+' '+elem.dataset.exc;
     artist.textContent = 'Lesson '+elem.dataset.lesson;
-    art.style.backgroundImage = 'url("./img/album.jpeg")';
+   // art.style.backgroundImage = 'url("./img/album_'+elem.dataset.book+'.jpg")';
     console.log('color en playSong',elem.dataset.color)
     art.className='img_cd cover'+(/.*(up).*/.test(art.className)?' up':'');
     console.log(' el color q falla',elem.dataset.color)
-    art.classList.add(elem.dataset.color)
+    art.classList.add(elem.dataset.color);
+    art.classList.add(elem.dataset.book);
     song=JSON.parse(JSON.stringify(elem.dataset))
   //  current_track=elem.dataset.inx;
     saveRecent(JSON.parse(JSON.stringify(elem.dataset)));
