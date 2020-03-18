@@ -37,6 +37,7 @@ function changeSubTab(...args){
 }
 
 function changePage(elem,tarea=null,act,...params){
+  const B=/.*(book).*/;
   let datos={};
   switch(elem.dataset.vista){
 	case 'home':
@@ -50,7 +51,7 @@ function changePage(elem,tarea=null,act,...params){
 			name:k,
 			audios: [...new Set(Json[k].audios.sort((a,b)=>a.other?a.other.pag-b.other.pag:a.inx-b.inx)
 				.map(x=>({
-				  type: k=='workbook'?'Lesson':x.type, 
+				  type: B.test(k)?'Lesson':x.type, 
 				  lesson:x.lesson,
 				  other:x.other?{ 
 					pags: Json[k].pdf.find(z=>(z.lesson==x.lesson&&x.type=='Lesson')||z.lesson==x.lesson).other.pags //necesito para el tab de reader
@@ -66,14 +67,17 @@ function changePage(elem,tarea=null,act,...params){
 	  }
 	  break;
 	case 'artist':
+	  if(B.test(elem.dataset.album)) datos.n=true;
 	  datos.album_cover=elem.dataset.album;
 	  datos.lesson=elem.dataset.lesson;
 	  datos.audios=Json[elem.dataset.album].audios
 			.filter(x=>x.lesson==elem.dataset.lesson)
 			.sort((a,b)=>a.other?a.other.pag-b.other.pag:a.inx-b.inx)
-	  datos.audios.forEach(z=>{z.cover=elem.dataset.album; if(z.type=='Lesson') z.type='Exercise';});
+	  datos.audios.forEach((z,i)=>{z.cover=elem.dataset.album; if(z.type=='Lesson') z.type='Exercise';});
+	 // datos.audios.forEach(function(z,i){this[i].cover=elem.dataset.album; if(this[i].type=='Lesson') this[i].type='Exercise';},datos.audios)
+		//a2.forEach(function(x,i){this[i].a=x.a+2},a2)
 	  datos.pdf=Json[elem.dataset.album].pdf.find(x=>x.lesson==elem.dataset.lesson)
-	  datos.type= elem.dataset.album=='workbook'?'Lesson':datos.audios[0].type;
+	  datos.type= B.test(elem.dataset.album)?'Lesson':datos.audios[0].type;
 	  break;
 	case 'pdf_view':
 	  datos.link=elem.dataset.link;
