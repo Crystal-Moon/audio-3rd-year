@@ -23,7 +23,7 @@ function changeTab(tab,subTarea,...params){
 function changeSubTab(...args){
 	
 	let params=[...args]
-	console.log('los arguments en subTab',params)
+	//console.log('los arguments en subTab',params)
 	let elem=params[0], inxTab=params[1], name=params[2], dos=params[3] || '';
 
 	let device= getComputedStyle(elem).getPropertyValue("--device");

@@ -54,7 +54,7 @@ Json.reader.pdf.forEach((x,i)=>{
 //	"https://drive.google.com/file/d/1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y/preview",
 //	"https://drive.google.com/uc?id=1PuFLRbPjadVvTMg7QtJns1JMTqId5K1Y&export=download",
 		
-	console.log(JSON.stringify(Json.reader.pdf,null,4))
+	//console.log(JSON.stringify(Json.reader.pdf,null,4))
 }
 
 function clearRecently(btn) {
